@@ -1,0 +1,33 @@
+{
+  "title": "polyqep: PolyQEP piecewise-continuous modulus framework and PW-R/PW-RG reduced-order models",
+  "description": "Reference implementation of PolyQEP, a piecewise-continuous modulus framework for frequency-response analysis of structures with frequency-dependent viscoelastic damping, together with the PW-R and PW-RG reduced-order models. Accompanies the manuscript \"PolyQEP: A Piecewise-Continuous Modulus Framework and Reduced-Order Models for Efficient Frequency-Response Analysis of Structures with Frequency-Dependent Viscoelastic Damping\" (S.-H. Bae, S. Baek, T. Kim, I. Song).",
+  "creators": [
+    {
+      "name": "Bae, Seung-Hoon",
+      "affiliation": "Korea Institute of Machinery and Materials (KIMM)"
+    },
+    {
+      "name": "Baek, Seunghun",
+      "affiliation": "Pusan National University"
+    },
+    {
+      "name": "Kim, Tae-Wan",
+      "affiliation": "Korea Institute of Machinery and Materials (KIMM)"
+    },
+    {
+      "name": "Song, In-Yeong",
+      "affiliation": "Korea Institute of Machinery and Materials (KIMM)"
+    }
+  ],
+  "keywords": [
+    "viscoelastic damping",
+    "sandwich plate",
+    "frequency-dependent modulus",
+    "quadratic eigenvalue problem",
+    "reduced-order model",
+    "structural dynamics"
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open"
+}

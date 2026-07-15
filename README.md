@@ -11,7 +11,7 @@ This repository accompanies the paper:
 > *PolyQEP: A Piecewise-Continuous Modulus Framework and Reduced-Order Models
 > for Efficient Frequency-Response Analysis of Structures with
 > Frequency-Dependent Viscoelastic Damping*, submitted to
-> Computer Methods in Applied Mechanics and Engineering.
+> the Journal of Sound and Vibration.
 
 ## What it does
 
