@@ -1,5 +1,7 @@
 # PolyQEP
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21372623.svg)](https://doi.org/10.5281/zenodo.21372623)
+
 Reference implementation of **PolyQEP**, a piecewise-continuous modulus
 framework for frequency-response analysis of structures with
 frequency-dependent viscoelastic damping, together with the **PW-R** and
