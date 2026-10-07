@@ -1,0 +1,178 @@
+{
+  "poles_per_decade": 8,
+  "band_extension_decades": 4,
+  "results": [
+    {
+      "data_set": "representative, uniform 1-1500 Hz (submitted fit grid)",
+      "n_samples": 200,
+      "band_hz": [
+        1.0,
+        1500.0
+      ],
+      "n_poles": 90,
+      "pole_range_hz": [
+        0.0001,
+        15000000.000000004
+      ],
+      "data_loss_factor_range": [
+        1.15,
+        1.4
+      ],
+      "data_storage_loglog_slope_range": [
+        -4.547473508864641e-13,
+        1.0187112204941684
+      ],
+      "joint_fit": {
+        "rms_relative_residual_pct": 9.4073379062777,
+        "n_active_terms": 5,
+        "re_max": 86.0716607215583,
+        "re_mean": 5.893010759283825,
+        "im_max": 88.5038765941716,
+        "im_mean": 10.90124003071866
+      },
+      "storage_only_fit": {
+        "storage_error": 7.03430548704537,
+        "implied_loss_over_data_loss_min": 0.01045981533434081,
+        "implied_loss_over_data_loss_max": 0.6739623068949335,
+        "implied_loss_factor_range": [
+          0.014732322287121217,
+          0.8269825249689676
+        ]
+      },
+      "loss_only_fit": {
+        "loss_error": 5.539673210432231,
+        "implied_storage_over_data_storage_min": 1.1667697873516867,
+        "implied_storage_over_data_storage_max": 4.153004724811773
+      }
+    },
+    {
+      "data_set": "representative, log 5-500 Hz",
+      "n_samples": 200,
+      "band_hz": [
+        5.0,
+        500.0
+      ],
+      "n_poles": 81,
+      "pole_range_hz": [
+        0.0004999999999999999,
+        4999999.999999999
+      ],
+      "data_loss_factor_range": [
+        1.2040502318823099,
+        1.4
+      ],
+      "data_storage_loglog_slope_range": [
+        -5.684341886080802e-14,
+        1.0406672161600454
+      ],
+      "joint_fit": {
+        "rms_relative_residual_pct": 20.341736029537856,
+        "n_active_terms": 6,
+        "re_max": 66.27822947587156,
+        "re_mean": 25.88761429841336,
+        "im_max": 50.414026991772765,
+        "im_mean": 24.49987684205137
+      },
+      "storage_only_fit": {
+        "storage_error": 5.2617939764349115,
+        "implied_loss_over_data_loss_min": 0.05377286146070473,
+        "implied_loss_over_data_loss_max": 0.71741277395884,
+        "implied_loss_factor_range": [
+          0.07576007512849262,
+          0.886441275394797
+        ]
+      },
+      "loss_only_fit": {
+        "loss_error": 4.993933997840994,
+        "implied_storage_over_data_storage_min": 1.6506931081892078,
+        "implied_storage_over_data_storage_max": 3.2930174155114282
+      }
+    },
+    {
+      "data_set": "representative, log 10-1000 Hz (anchor span)",
+      "n_samples": 200,
+      "band_hz": [
+        10.0,
+        1000.0
+      ],
+      "n_poles": 81,
+      "pole_range_hz": [
+        0.001,
+        10000000.0
+      ],
+      "data_loss_factor_range": [
+        1.15,
+        1.4
+      ],
+      "data_storage_loglog_slope_range": [
+        0.06227209933854283,
+        1.0418596448846529
+      ],
+      "joint_fit": {
+        "rms_relative_residual_pct": 15.124669281469078,
+        "n_active_terms": 5,
+        "re_max": 58.78360146262887,
+        "re_mean": 19.436717113488754,
+        "im_max": 41.9534696996198,
+        "im_mean": 16.225605626744354
+      },
+      "storage_only_fit": {
+        "storage_error": 5.959708984325568,
+        "implied_loss_over_data_loss_min": 0.21128112920160183,
+        "implied_loss_over_data_loss_max": 0.6777041966465498,
+        "implied_loss_factor_range": [
+          0.29379894897377173,
+          0.8349803011516235
+        ]
+      },
+      "loss_only_fit": {
+        "loss_error": 5.452713085474286,
+        "implied_storage_over_data_storage_min": 2.335714151806599,
+        "implied_storage_over_data_storage_max": 4.763137429730329
+      }
+    },
+    {
+      "data_set": "digitized Fig. 7, 75-639 Hz (142 points)",
+      "n_samples": 142,
+      "band_hz": [
+        75.0,
+        639.0
+      ],
+      "n_poles": 72,
+      "pole_range_hz": [
+        0.007500000000000001,
+        6389999.999999994
+      ],
+      "data_loss_factor_range": [
+        1.1143,
+        1.3180000000000003
+      ],
+      "data_storage_loglog_slope_range": [
+        0.4284078919430385,
+        0.9289207003049
+      ],
+      "joint_fit": {
+        "rms_relative_residual_pct": 3.6264095261492733,
+        "n_active_terms": 3,
+        "re_max": 26.786149776474105,
+        "re_mean": 4.850915004655009,
+        "im_max": 6.788121391245443,
+        "im_mean": 3.4802322830600483
+      },
+      "storage_only_fit": {
+        "storage_error": 1.5574045151258622,
+        "implied_loss_over_data_loss_min": 1.174414059049166,
+        "implied_loss_over_data_loss_max": 1.4812112546632987,
+        "implied_loss_factor_range": [
+          1.4802290048995652,
+          1.8303602163490953
+        ]
+      },
+      "loss_only_fit": {
+        "loss_error": 1.0066732249369528,
+        "implied_storage_over_data_storage_min": 0.3372710454971485,
+        "implied_storage_over_data_storage_max": 0.7793326028223172
+      }
+    }
+  ]
+}

@@ -1,0 +1,4237 @@
+{
+  "environment": {
+    "processor": "Apple M5 Max",
+    "machine_model": "Mac17,6",
+    "cores_physical": "18",
+    "memory_gb": 128.0,
+    "os": "Darwin 26.6.2 (arm64)",
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "numpy_blas_lapack": {
+      "blas": {
+        "name": "accelerate",
+        "version": "unknown"
+      },
+      "lapack": {
+        "name": "accelerate",
+        "version": "unknown"
+      }
+    },
+    "scipy_blas_lapack": {
+      "blas": {
+        "name": "openblas",
+        "version": "0.3.27"
+      },
+      "lapack": {
+        "name": "openblas",
+        "version": "0.3.27"
+      }
+    },
+    "thread_env": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "version": "0.3.27",
+        "num_threads": 1
+      }
+    ],
+    "timestamp": "2026-10-04 23:53:15 +0900"
+  },
+  "seed": 20260509,
+  "n_starts": 30,
+  "orders": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "samplings": {
+    "A_uniform_1_1500": [
+      1.0,
+      1500.0,
+      200
+    ],
+    "B_log_1_1500": [
+      1.0,
+      1500.0,
+      200
+    ],
+    "C_log_5_500": [
+      5.0,
+      500.0,
+      200
+    ],
+    "D_uniform_5_500": [
+      5.0,
+      500.0,
+      200
+    ]
+  },
+  "submitted_cases": [
+    {
+      "method": "GHM",
+      "order": 3,
+      "n_aug": 1569,
+      "fit_re_max": 58.398716671340466,
+      "fit_re_mean": 8.770584822731633,
+      "fit_im_max": 97.62541348102418,
+      "fit_im_mean": 5.003785404526823,
+      "objective": 1.727499787924185,
+      "frf_augmented_max_pct": 34.41463101493357,
+      "frf_augmented_mean_pct": 7.4486893763682955,
+      "frf_condensed_max_pct": 34.414631014976976,
+      "frf_condensed_mean_pct": 7.448689376361785,
+      "augmented_vs_condensed_rel": 2.7024273876618252e-12
+    },
+    {
+      "method": "GHM",
+      "order": 5,
+      "n_aug": 2301,
+      "fit_re_max": 80.78939805215134,
+      "fit_re_mean": 4.26867468966951,
+      "fit_im_max": 64.2063234265333,
+      "fit_im_mean": 4.189509846984167,
+      "objective": 1.2035415764592985,
+      "frf_augmented_max_pct": 46.71676679774218,
+      "frf_augmented_mean_pct": 5.484623746770244,
+      "frf_condensed_max_pct": 46.71676679750906,
+      "frf_condensed_mean_pct": 5.484623746776658,
+      "augmented_vs_condensed_rel": 3.2831789645481173e-12
+    },
+    {
+      "method": "ADF",
+      "order": 2,
+      "n_aug": 1674,
+      "fit_re_max": 32.75314064658366,
+      "fit_re_mean": 8.457028550641553,
+      "fit_im_max": 98.78304772043349,
+      "fit_im_mean": 14.448880305494969,
+      "objective": 2.48766633624933,
+      "frf_augmented_max_pct": 63.71217077676754,
+      "frf_augmented_mean_pct": 10.186099786450256,
+      "frf_condensed_max_pct": 63.71217207582956,
+      "frf_condensed_mean_pct": 10.186099808991777,
+      "augmented_vs_condensed_rel": 2.899580996460907e-08
+    },
+    {
+      "method": "ADF",
+      "order": 5,
+      "n_aug": 2772,
+      "fit_re_max": 90.13239976732554,
+      "fit_re_mean": 8.727909721949214,
+      "fit_im_max": 91.28404683753246,
+      "fit_im_mean": 13.678235247516001,
+      "objective": 2.3072277348747168,
+      "frf_augmented_max_pct": 43.412429587352406,
+      "frf_augmented_mean_pct": 9.265364776487003,
+      "frf_condensed_max_pct": 43.41243037199304,
+      "frf_condensed_mean_pct": 9.265364729394076,
+      "augmented_vs_condensed_rel": 1.9478549967862403e-08
+    }
+  ],
+  "order_study": [
+    {
+      "method": "GHM",
+      "sampling": "A_uniform_1_1500",
+      "order": 1,
+      "n_params": 4,
+      "objective": 4.295451968505566,
+      "objective_rms_rel_pct": 21.477259842527832,
+      "starts": {
+        "n": 30,
+        "best": 4.295451968505566,
+        "median": 4.2954519713231125,
+        "worst": 11.643398065461355,
+        "n_within_1pct_of_best": 20,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 22,
+        "best_optimality": 0.0002937155422806721,
+        "best_jacobian_condition_free": 7.450407179284938
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "zeta_1@upper"
+      ],
+      "parameters": {
+        "G_inf_Pa": 2045379.3395474511,
+        "alpha": [
+          6.215653125480497
+        ],
+        "what_hz": [
+          2204.6529187133265
+        ],
+        "zeta": [
+          0.9499999999999998
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 63.476797647959685,
+        "re_mean": 25.566018637169208,
+        "im_max": 99.49565082743565,
+        "im_mean": 19.865665253783842,
+        "f_at_re_max_hz": 1500.0,
+        "f_at_im_max_hz": 1.0
+      },
+      "comparison_band_errors": {
+        "re_max": 35.92507176130894,
+        "re_mean": 24.665097374523267,
+        "im_max": 97.47827418447537,
+        "im_mean": 44.50304088526523,
+        "f_at_re_max_hz": 388.0653266331658,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 266.9087434323346,
+      "frf_peak_band_mean_pct": 33.88514554044972
+    },
+    {
+      "method": "GHM",
+      "sampling": "A_uniform_1_1500",
+      "order": 2,
+      "n_params": 7,
+      "objective": 2.222786784961019,
+      "objective_rms_rel_pct": 11.113933924805094,
+      "starts": {
+        "n": 30,
+        "best": 2.222786784961019,
+        "median": 2.2227867868211817,
+        "worst": 11.643398338980516,
+        "n_within_1pct_of_best": 22,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 24,
+        "best_optimality": 0.00021905657584908255,
+        "best_jacobian_condition_free": 19.99712945291517
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "what_2@upper",
+        "zeta_1@upper"
+      ],
+      "parameters": {
+        "G_inf_Pa": 1628169.7928155472,
+        "alpha": [
+          3.8866429335376695,
+          22.512167106907448
+        ],
+        "what_hz": [
+          764.8714932741855,
+          4499.999999999989
+        ],
+        "zeta": [
+          0.9499999999999998,
+          0.28131203127566445
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 13.708346709331334,
+        "re_mean": 7.562664525439022,
+        "im_max": 99.06545437593968,
+        "im_mean": 9.356513036175375,
+        "f_at_re_max_hz": 1500.0,
+        "f_at_im_max_hz": 1.0
+      },
+      "comparison_band_errors": {
+        "re_max": 11.266333592566646,
+        "re_mean": 6.173045788479669,
+        "im_max": 95.32750872577883,
+        "im_mean": 15.087951818442741,
+        "f_at_re_max_hz": 131.85929648241205,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 103.19728649384776,
+      "frf_peak_band_mean_pct": 9.88849314855465,
+      "nesting": {
+        "objective_prev_order": 4.295451968505566,
+        "objective_embedded": 4.29541940176643,
+        "objective_warm_start": 2.2227867849548977,
+        "multistart_minus_warm": 6.121325668573263e-12,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "GHM",
+      "sampling": "A_uniform_1_1500",
+      "order": 3,
+      "n_params": 10,
+      "objective": 1.7274997880894098,
+      "objective_rms_rel_pct": 8.637498940447049,
+      "starts": {
+        "n": 30,
+        "best": 1.7274997880894098,
+        "median": 1.7274997917608625,
+        "worst": 4.214207752883758,
+        "n_within_1pct_of_best": 17,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 69,
+        "best_optimality": 0.0004094863674256095,
+        "best_jacobian_condition_free": 66.43390259670983
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "what_3@upper",
+        "zeta_1@upper",
+        "zeta_2@upper"
+      ],
+      "parameters": {
+        "G_inf_Pa": 644995.2392987291,
+        "alpha": [
+          2.536215309083858,
+          11.61949094081705,
+          71.87703021115426
+        ],
+        "what_hz": [
+          89.92531325749077,
+          1038.4403885148424,
+          4499.999999999989
+        ],
+        "zeta": [
+          0.9499999999999998,
+          0.9499999999999998,
+          0.1609800876948967
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 58.39858304966029,
+        "re_mean": 8.770581809487373,
+        "im_max": 97.62541908020172,
+        "im_mean": 5.003780688185849,
+        "f_at_re_max_hz": 1.0,
+        "f_at_im_max_hz": 1.0
+      },
+      "comparison_band_errors": {
+        "re_max": 57.560303239496506,
+        "re_mean": 11.428912606038937,
+        "im_max": 88.16509763107699,
+        "im_mean": 10.12556329634716,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 34.41456864790339,
+      "frf_peak_band_mean_pct": 7.44869617583536,
+      "nesting": {
+        "objective_prev_order": 2.222786784961019,
+        "objective_embedded": 2.2227689535777357,
+        "objective_warm_start": 1.7274997882167407,
+        "multistart_minus_warm": -1.2733081256044443e-10,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "GHM",
+      "sampling": "A_uniform_1_1500",
+      "order": 4,
+      "n_params": 13,
+      "objective": 1.482188475794564,
+      "objective_rms_rel_pct": 7.410942378972821,
+      "starts": {
+        "n": 30,
+        "best": 1.482188475794564,
+        "median": 1.5243155176375829,
+        "worst": 4.214207658273319,
+        "n_within_1pct_of_best": 11,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 74,
+        "best_optimality": 8.072107770581474e-05,
+        "best_jacobian_condition_free": 162.45039059526883
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "alpha_4@upper",
+        "what_4@upper",
+        "zeta_1@upper",
+        "zeta_3@upper"
+      ],
+      "parameters": {
+        "G_inf_Pa": 43836.26225197565,
+        "alpha": [
+          5.616127625745873,
+          41.62787067348297,
+          164.2109165588784,
+          999.9999994955153
+        ],
+        "what_hz": [
+          0.9751784561734977,
+          69.24372601068674,
+          974.8016048688568,
+          4499.999999999989
+        ],
+        "zeta": [
+          0.041974634763189925,
+          0.9499999999999998,
+          0.9499999999999998,
+          0.1849883774449416
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 76.44054416846272,
+        "re_mean": 8.726155209188036,
+        "im_max": 73.87970166800581,
+        "im_mean": 4.644531260631866,
+        "f_at_re_max_hz": 8.532663316582916,
+        "f_at_im_max_hz": 8.532663316582916
+      },
+      "comparison_band_errors": {
+        "re_max": 79.06319643115167,
+        "re_mean": 11.734861920309017,
+        "im_max": 84.50560328210969,
+        "im_mean": 9.310067242684818,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 48.65523384965946,
+      "frf_peak_band_mean_pct": 6.992578652434398,
+      "nesting": {
+        "objective_prev_order": 1.7274997880894098,
+        "objective_embedded": 1.7275566613905964,
+        "objective_warm_start": 1.4821884828807592,
+        "multistart_minus_warm": -7.086195186190025e-09,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "GHM",
+      "sampling": "A_uniform_1_1500",
+      "order": 5,
+      "n_params": 16,
+      "objective": 1.2035415763789448,
+      "objective_rms_rel_pct": 6.017707881894724,
+      "starts": {
+        "n": 30,
+        "best": 1.2035415763789448,
+        "median": 1.382747312349662,
+        "worst": 4.214207692026637,
+        "n_within_1pct_of_best": 10,
+        "status_counts": {
+          "0": 1,
+          "2": 29
+        },
+        "best_status": 2,
+        "best_nfev": 78,
+        "best_optimality": 8.222583373125376e-05,
+        "best_jacobian_condition_free": 707.3423699263858
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "alpha_5@upper",
+        "what_5@upper",
+        "zeta_1@upper",
+        "zeta_2@upper",
+        "zeta_3@lower",
+        "zeta_5@lower"
+      ],
+      "parameters": {
+        "G_inf_Pa": 65035.287285259634,
+        "alpha": [
+          0.9352092871270913,
+          24.735413112225384,
+          47.00974557904895,
+          156.5978013964843,
+          999.9999999999989
+        ],
+        "what_hz": [
+          0.9932401002310132,
+          41.490771032503964,
+          473.9892387875716,
+          1676.5230203479978,
+          4499.999999999989
+        ],
+        "zeta": [
+          0.01000000000000001,
+          0.9499999999999998,
+          0.9499999999999998,
+          0.8018549594194381,
+          0.01000000000000001
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 80.78772389539444,
+        "re_mean": 4.26882477512568,
+        "im_max": 64.20459082442935,
+        "im_mean": 4.189568202066086,
+        "f_at_re_max_hz": 8.532663316582916,
+        "f_at_im_max_hz": 8.532663316582916
+      },
+      "comparison_band_errors": {
+        "re_max": 87.80674176253903,
+        "re_mean": 7.198028250212121,
+        "im_max": 78.30642268463404,
+        "im_mean": 8.650701411384036,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 46.71446579455048,
+      "frf_peak_band_mean_pct": 5.485058130447868,
+      "nesting": {
+        "objective_prev_order": 1.482188475794564,
+        "objective_embedded": 1.4821923631861176,
+        "objective_warm_start": 1.4821882052384552,
+        "multistart_minus_warm": -0.2786466288595104,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "GHM",
+      "sampling": "A_uniform_1_1500",
+      "order": 6,
+      "n_params": 19,
+      "objective": 1.094121131151841,
+      "objective_rms_rel_pct": 5.470605655759205,
+      "starts": {
+        "n": 30,
+        "best": 1.094121131151841,
+        "median": 1.2336085252256037,
+        "worst": 1.4794448305802053,
+        "n_within_1pct_of_best": 4,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 155,
+        "best_optimality": 3.4886138911209e-05,
+        "best_jacobian_condition_free": 581.0261476322436
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "alpha_6@upper",
+        "what_6@upper",
+        "zeta_1@lower",
+        "zeta_2@lower",
+        "zeta_3@upper",
+        "zeta_4@upper",
+        "zeta_6@lower"
+      ],
+      "parameters": {
+        "G_inf_Pa": 65374.4357631149,
+        "alpha": [
+          0.9378195346976513,
+          0.6247956983628647,
+          24.683312024024424,
+          54.73986454965781,
+          143.43903591739814,
+          999.9999999999305
+        ],
+        "what_hz": [
+          0.9932563215944533,
+          15.914420511349896,
+          52.520827648197255,
+          537.0897252748468,
+          1619.9922092801771,
+          4499.999999999989
+        ],
+        "zeta": [
+          0.01000000000000001,
+          0.01000000000000001,
+          0.9499999999999998,
+          0.9499999999999998,
+          0.7337632566732469,
+          0.010000000000000082
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 85.75007652398884,
+        "re_mean": 3.7849694464669983,
+        "im_max": 69.56010031601903,
+        "im_mean": 3.6508443397161794,
+        "f_at_re_max_hz": 8.532663316582916,
+        "f_at_im_max_hz": 8.532663316582916
+      },
+      "comparison_band_errors": {
+        "re_max": 90.85353009220628,
+        "re_mean": 7.2748866987798415,
+        "im_max": 81.80825840164056,
+        "im_mean": 7.746891928073402,
+        "f_at_re_max_hz": 14.949748743718592,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 54.38035091108373,
+      "frf_peak_band_mean_pct": 5.049536437170746,
+      "nesting": {
+        "objective_prev_order": 1.2035415763789448,
+        "objective_embedded": 1.2035373956314535,
+        "objective_warm_start": 1.1567509901337032,
+        "multistart_minus_warm": -0.06262985898186213,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "ADF",
+      "sampling": "A_uniform_1_1500",
+      "order": 1,
+      "n_params": 3,
+      "objective": 3.989060709043712,
+      "objective_rms_rel_pct": 19.94530354521856,
+      "starts": {
+        "n": 30,
+        "best": 3.989060709043712,
+        "median": 3.989060710520607,
+        "worst": 3.989060712864301,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 17,
+        "best_optimality": 0.0004248826660162188,
+        "best_jacobian_condition_free": 4.804072609395022
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [],
+      "parameters": {
+        "G_e_Pa": 1830409.9722247135,
+        "Gv_Pa": [
+          15901776.685570247
+        ],
+        "Omega_hz": [
+          1279.971788336922
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 59.964743685608255,
+        "re_mean": 24.481299064154108,
+        "im_max": 99.42812325574282,
+        "im_mean": 15.969699076508702,
+        "f_at_re_max_hz": 1500.0,
+        "f_at_im_max_hz": 1.0
+      },
+      "comparison_band_errors": {
+        "re_max": 33.71436955035273,
+        "re_mean": 23.247313195812975,
+        "im_max": 97.14065816542507,
+        "im_mean": 38.71879529218367,
+        "f_at_re_max_hz": 343.29145728643215,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 194.68481304374728,
+      "frf_peak_band_mean_pct": 29.69433332467872
+    },
+    {
+      "method": "ADF",
+      "sampling": "A_uniform_1_1500",
+      "order": 2,
+      "n_params": 5,
+      "objective": 2.487666336251715,
+      "objective_rms_rel_pct": 12.438331681258575,
+      "starts": {
+        "n": 30,
+        "best": 2.487666336251715,
+        "median": 2.4876663362767353,
+        "worst": 2.4876663364961407,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 14,
+        "best_optimality": 1.9937895927411265e-05,
+        "best_jacobian_condition_free": 6.683135731849491
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "Omega_2@upper"
+      ],
+      "parameters": {
+        "G_e_Pa": 1060809.7391308658,
+        "Gv_Pa": [
+          4955299.02968445,
+          29830638.719715163
+        ],
+        "Omega_hz": [
+          250.15949744719998,
+          4499.999999999989
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 32.75321716211099,
+        "re_mean": 8.45702884580274,
+        "im_max": 98.78304618963377,
+        "im_mean": 14.448887795768128,
+        "f_at_re_max_hz": 23.597989949748744,
+        "f_at_im_max_hz": 1.0
+      },
+      "comparison_band_errors": {
+        "re_max": 32.79071558691153,
+        "re_mean": 8.349690387439272,
+        "im_max": 93.91698049783508,
+        "im_mean": 18.163866524164842,
+        "f_at_re_max_hz": 22.412060301507537,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 63.71206062331374,
+      "frf_peak_band_mean_pct": 10.18610817543849,
+      "nesting": {
+        "objective_prev_order": 3.989060709043712,
+        "objective_embedded": 3.9890607097229798,
+        "objective_warm_start": 2.4876663365673553,
+        "multistart_minus_warm": -3.1564040270382066e-10,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "ADF",
+      "sampling": "A_uniform_1_1500",
+      "order": 3,
+      "n_params": 7,
+      "objective": 2.309881300642459,
+      "objective_rms_rel_pct": 11.549406503212294,
+      "starts": {
+        "n": 30,
+        "best": 2.309881300642459,
+        "median": 2.3098813006608223,
+        "worst": 2.4876663362492955,
+        "n_within_1pct_of_best": 28,
+        "status_counts": {
+          "2": 29,
+          "3": 1
+        },
+        "best_status": 2,
+        "best_nfev": 20,
+        "best_optimality": 4.183291400950281e-06,
+        "best_jacobian_condition_free": 16.82400262864813
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "G_e@lower",
+        "Omega_3@upper"
+      ],
+      "parameters": {
+        "G_e_Pa": 100.00000001021694,
+        "Gv_Pa": [
+          1664309.2294392544,
+          4621331.929151843,
+          28974624.933069363
+        ],
+        "Omega_hz": [
+          18.734055711899046,
+          318.6648304675273,
+          4499.999999999989
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 99.6857970469698,
+        "re_mean": 8.774251054491014,
+        "im_max": 94.95827498242342,
+        "im_mean": 13.565527179951518,
+        "f_at_re_max_hz": 1.0,
+        "f_at_im_max_hz": 1.0
+      },
+      "comparison_band_errors": {
+        "re_max": 92.78593252453364,
+        "re_mean": 6.056641704429976,
+        "im_max": 76.09370677890409,
+        "im_mean": 17.076302067213952,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 46.295076345275724,
+      "frf_peak_band_mean_pct": 9.047695827691687,
+      "nesting": {
+        "objective_prev_order": 2.487666336251715,
+        "objective_embedded": 2.487668123565336,
+        "objective_warm_start": 2.3098813006429597,
+        "multistart_minus_warm": -5.009326287108706e-13,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "ADF",
+      "sampling": "A_uniform_1_1500",
+      "order": 4,
+      "n_params": 9,
+      "objective": 2.3072270649115123,
+      "objective_rms_rel_pct": 11.536135324557561,
+      "starts": {
+        "n": 30,
+        "best": 2.3072270649115123,
+        "median": 2.309883945491133,
+        "worst": 2.3099176631196943,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 82,
+        "best_optimality": 4.850984044103692e-05,
+        "best_jacobian_condition_free": 241230.7831817551
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "Omega_4@upper"
+      ],
+      "parameters": {
+        "G_e_Pa": 358.0663681385277,
+        "Gv_Pa": [
+          218998.5684371741,
+          1478407.3689419485,
+          4594691.650765938,
+          28980302.727132924
+        ],
+        "Omega_hz": [
+          0.680358360936035,
+          22.10233962620248,
+          320.81855288244736,
+          4499.999999999989
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 90.13179999228497,
+        "re_mean": 8.727951731328892,
+        "im_max": 91.28315739744745,
+        "im_mean": 13.678222547414409,
+        "f_at_re_max_hz": 1.0,
+        "f_at_im_max_hz": 1.0
+      },
+      "comparison_band_errors": {
+        "re_max": 81.4076405033918,
+        "re_mean": 5.944920023687887,
+        "im_max": 79.22986715692365,
+        "im_mean": 17.461011437040508,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 43.41236726197473,
+      "frf_peak_band_mean_pct": 9.265392299095895,
+      "nesting": {
+        "objective_prev_order": 2.309881300642459,
+        "objective_embedded": 2.3098813278613815,
+        "objective_warm_start": 2.3098813006579486,
+        "multistart_minus_warm": -0.0026542357464363064,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "ADF",
+      "sampling": "A_uniform_1_1500",
+      "order": 5,
+      "n_params": 11,
+      "objective": 2.3072159524582547,
+      "objective_rms_rel_pct": 11.536079762291273,
+      "starts": {
+        "n": 30,
+        "best": 2.3072159524582547,
+        "median": 2.3098859026070913,
+        "worst": 2.309916270677781,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 40,
+        "best_optimality": 3.209164958811426e-05,
+        "best_jacobian_condition_free": 2048488349.2579308
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "Omega_5@upper"
+      ],
+      "parameters": {
+        "G_e_Pa": 116.64894685188924,
+        "Gv_Pa": [
+          219294.07667645116,
+          663524.0905529928,
+          814837.1233862794,
+          4594684.918859575,
+          28980301.356649254
+        ],
+        "Omega_hz": [
+          0.6803815123365141,
+          22.09455769060462,
+          22.11049784593138,
+          320.81912650314604,
+          4499.999999999989
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 90.13457169972894,
+        "re_mean": 8.727967227609067,
+        "im_max": 91.277009066329,
+        "im_mean": 13.678205373141928,
+        "f_at_re_max_hz": 1.0,
+        "f_at_im_max_hz": 1.0
+      },
+      "comparison_band_errors": {
+        "re_max": 81.4050623951728,
+        "re_mean": 5.944909129031098,
+        "im_max": 79.22907260137497,
+        "im_mean": 17.46104875337882,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 43.40941044335456,
+      "frf_peak_band_mean_pct": 9.265391698800256,
+      "nesting": {
+        "objective_prev_order": 2.3072270649115123,
+        "objective_embedded": 2.3072274916861257,
+        "objective_warm_start": 2.3072161703938203,
+        "multistart_minus_warm": -2.179355655940185e-07,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "ADF",
+      "sampling": "A_uniform_1_1500",
+      "order": 6,
+      "n_params": 13,
+      "objective": 2.307223983720939,
+      "objective_rms_rel_pct": 11.536119918604696,
+      "starts": {
+        "n": 30,
+        "best": 2.307223983720939,
+        "median": 2.3099056521055665,
+        "worst": 2.3099178530708686,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 716,
+        "best_optimality": 3.705002396500469e-05,
+        "best_jacobian_condition_free": 2104819019.939889
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "Omega_6@upper"
+      ],
+      "parameters": {
+        "G_e_Pa": 291.10826242358115,
+        "Gv_Pa": [
+          219088.95752351196,
+          666219.9536900154,
+          156320.17318408933,
+          655848.9522457329,
+          4594687.527607032,
+          28980301.63494666
+        ],
+        "Omega_hz": [
+          0.6802106676829062,
+          22.092498088446018,
+          22.101776984681685,
+          22.113627762748763,
+          320.81894760288594,
+          4499.999999999989
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 90.13081854332653,
+        "re_mean": 8.727950862775756,
+        "im_max": 91.2817061297749,
+        "im_mean": 13.678225935715654,
+        "f_at_re_max_hz": 1.0,
+        "f_at_im_max_hz": 1.0
+      },
+      "comparison_band_errors": {
+        "re_max": 81.40638700362666,
+        "re_mean": 5.94491965815614,
+        "im_max": 79.23008604381431,
+        "im_mean": 17.461044474667847,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 43.411730886054706,
+      "frf_peak_band_mean_pct": 9.265409726903394,
+      "nesting": {
+        "objective_prev_order": 2.3072159524582547,
+        "objective_embedded": 2.307216379275087,
+        "objective_warm_start": 2.3072163670451658,
+        "multistart_minus_warm": 7.616675773203241e-06,
+        "objective_monotone": false
+      }
+    },
+    {
+      "method": "GHM",
+      "sampling": "B_log_1_1500",
+      "order": 1,
+      "n_params": 4,
+      "objective": 8.229242123852583,
+      "objective_rms_rel_pct": 41.14621061926292,
+      "starts": {
+        "n": 30,
+        "best": 8.229242123852583,
+        "median": 8.229242135501616,
+        "worst": 8.229242144475382,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 26,
+        "best_optimality": 0.002656495132635301,
+        "best_jacobian_condition_free": 3.892203065426974
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "zeta_1@upper"
+      ],
+      "parameters": {
+        "G_inf_Pa": 1530326.9924803067,
+        "alpha": [
+          6.522573320384799
+        ],
+        "what_hz": [
+          930.3816787020319
+        ],
+        "zeta": [
+          0.9499999999999998
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 86.30836284278087,
+        "re_mean": 14.389635468525789,
+        "im_max": 99.06167713280605,
+        "im_mean": 57.864691032055205,
+        "f_at_re_max_hz": 1500.0,
+        "f_at_im_max_hz": 1.0
+      },
+      "comparison_band_errors": {
+        "re_max": 28.819800671304197,
+        "re_mean": 9.709582612262485,
+        "im_max": 95.30859508734595,
+        "im_mean": 15.984961331679974,
+        "f_at_re_max_hz": 500.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 98.12866458698603,
+      "frf_peak_band_mean_pct": 10.167618603607957
+    },
+    {
+      "method": "GHM",
+      "sampling": "B_log_1_1500",
+      "order": 2,
+      "n_params": 7,
+      "objective": 6.81109992096337,
+      "objective_rms_rel_pct": 34.05549960481685,
+      "starts": {
+        "n": 30,
+        "best": 6.81109992096337,
+        "median": 6.811099938596779,
+        "worst": 6.811099947515753,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 26,
+        "best_optimality": 0.0013909897079205603,
+        "best_jacobian_condition_free": 4.600207791773847
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "alpha_2@upper",
+        "zeta_1@upper",
+        "zeta_2@upper"
+      ],
+      "parameters": {
+        "G_inf_Pa": 11010.381369247916,
+        "alpha": [
+          181.0961036229467,
+          999.9999999999989
+        ],
+        "what_hz": [
+          6.12137921170331,
+          1181.7565238239702
+        ],
+        "zeta": [
+          0.9499999999999998,
+          0.9499999999999998
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 104.48548679037428,
+        "re_mean": 33.62022767103208,
+        "im_max": 80.22254174069526,
+        "im_mean": 41.99223218606654,
+        "f_at_re_max_hz": 1500.0,
+        "f_at_im_max_hz": 18.2330930808733
+      },
+      "comparison_band_errors": {
+        "re_max": 46.59661503150818,
+        "re_mean": 7.3688614229815945,
+        "im_max": 80.13810469733039,
+        "im_mean": 17.511398166838152,
+        "f_at_re_max_hz": 9.974874371859297,
+        "f_at_im_max_hz": 17.43718592964824
+      },
+      "frf_peak_band_max_pct": 153.3437254937513,
+      "frf_peak_band_mean_pct": 10.682618044733161,
+      "nesting": {
+        "objective_prev_order": 8.229242123852583,
+        "objective_embedded": 8.229278793124514,
+        "objective_warm_start": 6.811099938286588,
+        "multistart_minus_warm": -1.732321841529938e-08,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "GHM",
+      "sampling": "B_log_1_1500",
+      "order": 3,
+      "n_params": 10,
+      "objective": 5.9610306860209095,
+      "objective_rms_rel_pct": 29.805153430104546,
+      "starts": {
+        "n": 30,
+        "best": 5.9610306860209095,
+        "median": 5.961030699901147,
+        "worst": 5.9610307100601965,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 33,
+        "best_optimality": 0.001172937021193655,
+        "best_jacobian_condition_free": 23.75025016999253
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "alpha_3@upper",
+        "what_3@upper",
+        "zeta_1@upper",
+        "zeta_2@upper"
+      ],
+      "parameters": {
+        "G_inf_Pa": 38089.53998884745,
+        "alpha": [
+          48.71933088669262,
+          130.0545192726806,
+          999.9999999999989
+        ],
+        "what_hz": [
+          5.378144604357722,
+          455.8369024040061,
+          4499.999999999989
+        ],
+        "zeta": [
+          0.9499999999999998,
+          0.9499999999999998,
+          0.4067974832869227
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 87.19551045163375,
+        "re_mean": 29.500482803379473,
+        "im_max": 75.43111664949637,
+        "im_mean": 38.066700027122025,
+        "f_at_re_max_hz": 1.0,
+        "f_at_im_max_hz": 14.625098629210544
+      },
+      "comparison_band_errors": {
+        "re_max": 39.40553747083549,
+        "re_mean": 29.25212343561114,
+        "im_max": 75.4106490052516,
+        "im_mean": 15.451525548715471,
+        "f_at_re_max_hz": 199.02010050251255,
+        "f_at_im_max_hz": 14.949748743718592
+      },
+      "frf_peak_band_max_pct": 73.7768184882555,
+      "frf_peak_band_mean_pct": 16.227604926695516,
+      "nesting": {
+        "objective_prev_order": 6.81109992096337,
+        "objective_embedded": 6.811092372137764,
+        "objective_warm_start": 5.961030708034822,
+        "multistart_minus_warm": -2.2013912470697505e-08,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "GHM",
+      "sampling": "B_log_1_1500",
+      "order": 4,
+      "n_params": 13,
+      "objective": 5.5839784646016914,
+      "objective_rms_rel_pct": 27.919892323008455,
+      "starts": {
+        "n": 30,
+        "best": 5.5839784646016914,
+        "median": 5.5839784815278275,
+        "worst": 5.583978572764552,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 41,
+        "best_optimality": 0.0006793705227212493,
+        "best_jacobian_condition_free": 189.40957503319402
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "alpha_4@upper",
+        "zeta_1@upper",
+        "zeta_2@upper",
+        "zeta_3@upper"
+      ],
+      "parameters": {
+        "G_inf_Pa": 59934.597985215725,
+        "alpha": [
+          23.311489442943724,
+          19.696580018783326,
+          126.5654328265793,
+          999.9999999999989
+        ],
+        "what_hz": [
+          3.690556269825292,
+          47.84187236925937,
+          858.9685365767125,
+          4340.991522775276
+        ],
+        "zeta": [
+          0.9499999999993419,
+          0.9499999999999998,
+          0.9499999999999998,
+          0.15336975587576973
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 80.26128656039134,
+        "re_mean": 28.96773414780997,
+        "im_max": 67.4077286569058,
+        "im_mean": 34.625755397404504,
+        "f_at_re_max_hz": 1.0,
+        "f_at_im_max_hz": 1.0
+      },
+      "comparison_band_errors": {
+        "re_max": 58.33206784939334,
+        "re_mean": 24.89260085982205,
+        "im_max": 67.13079564935916,
+        "im_mean": 14.784106389802105,
+        "f_at_re_max_hz": 49.77386934673366,
+        "f_at_im_max_hz": 7.4874371859296485
+      },
+      "frf_peak_band_max_pct": 66.60773555977364,
+      "frf_peak_band_mean_pct": 12.205893751703133,
+      "nesting": {
+        "objective_prev_order": 5.9610306860209095,
+        "objective_embedded": 5.96103119766678,
+        "objective_warm_start": 5.583978466367135,
+        "multistart_minus_warm": -1.765443791157395e-09,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "GHM",
+      "sampling": "B_log_1_1500",
+      "order": 5,
+      "n_params": 16,
+      "objective": 5.428782233999065,
+      "objective_rms_rel_pct": 27.14391116999532,
+      "starts": {
+        "n": 30,
+        "best": 5.428782233999065,
+        "median": 5.428782299219791,
+        "worst": 5.42878293626834,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 80,
+        "best_optimality": 0.000922935749015266,
+        "best_jacobian_condition_free": 213.93659335448297
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "alpha_5@upper",
+        "zeta_2@upper",
+        "zeta_3@upper",
+        "zeta_4@upper"
+      ],
+      "parameters": {
+        "G_inf_Pa": 53044.36746810179,
+        "alpha": [
+          7.84200012455671,
+          22.348767989317277,
+          22.018066483297392,
+          165.05924549989402,
+          999.9999999999989
+        ],
+        "what_hz": [
+          1.1000432276074843,
+          6.404714496044875,
+          70.8455817907587,
+          1003.5271825276626,
+          3840.6148970704107
+        ],
+        "zeta": [
+          0.15265698605854075,
+          0.9499999989570017,
+          0.9499999999999998,
+          0.9499999999999998,
+          0.11399789547989969
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 108.44176335021496,
+        "re_mean": 28.4190399933405,
+        "im_max": 67.1859058054367,
+        "im_mean": 33.553551959310646,
+        "f_at_re_max_hz": 1.0,
+        "f_at_im_max_hz": 1.6727984067381045
+      },
+      "comparison_band_errors": {
+        "re_max": 54.38914283710496,
+        "re_mean": 24.203590063836696,
+        "im_max": 62.58817925335346,
+        "im_mean": 13.057829902252276,
+        "f_at_re_max_hz": 74.64824120603015,
+        "f_at_im_max_hz": 12.462311557788944
+      },
+      "frf_peak_band_max_pct": 54.860566182984115,
+      "frf_peak_band_mean_pct": 11.660585522087443,
+      "nesting": {
+        "objective_prev_order": 5.5839784646016914,
+        "objective_embedded": 5.583972511658561,
+        "objective_warm_start": 5.428782241550991,
+        "multistart_minus_warm": -7.551926195503711e-09,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "GHM",
+      "sampling": "B_log_1_1500",
+      "order": 6,
+      "n_params": 19,
+      "objective": 5.34030406572065,
+      "objective_rms_rel_pct": 26.70152032860325,
+      "starts": {
+        "n": 30,
+        "best": 5.34030406572065,
+        "median": 5.3403044029916185,
+        "worst": 5.374481115168842,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 153,
+        "best_optimality": 0.004795499464643888,
+        "best_jacobian_condition_free": 244.49912354923077
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "alpha_6@upper",
+        "zeta_3@upper",
+        "zeta_4@upper",
+        "zeta_5@upper"
+      ],
+      "parameters": {
+        "G_inf_Pa": 48661.72005637232,
+        "alpha": [
+          5.222261435004352,
+          8.96067698075948,
+          22.340726456518716,
+          24.95043514788543,
+          213.37589896246394,
+          999.9999999999989
+        ],
+        "what_hz": [
+          1.0008054111418347,
+          1.5864326324791327,
+          9.95290242611456,
+          101.40638173485242,
+          1189.230574843542,
+          3489.481964407241
+        ],
+        "zeta": [
+          0.06549475899821272,
+          0.23849189913932978,
+          0.9499999999999998,
+          0.9499999999999998,
+          0.9499999999999998,
+          0.06750356903714957
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 89.41512689516698,
+        "re_mean": 27.620477520694305,
+        "im_max": 68.12046275511385,
+        "im_mean": 32.838513971302355,
+        "f_at_re_max_hz": 1.0,
+        "f_at_im_max_hz": 2.5999601837727586
+      },
+      "comparison_band_errors": {
+        "re_max": 54.22835561670354,
+        "re_mean": 23.971613733394417,
+        "im_max": 58.32268762365174,
+        "im_mean": 11.110921675562809,
+        "f_at_re_max_hz": 99.52261306532662,
+        "f_at_im_max_hz": 14.949748743718592
+      },
+      "frf_peak_band_max_pct": 53.74057419981416,
+      "frf_peak_band_mean_pct": 11.730706706700358,
+      "nesting": {
+        "objective_prev_order": 5.428782233999065,
+        "objective_embedded": 5.428784096118216,
+        "objective_warm_start": 5.428782149530543,
+        "multistart_minus_warm": -0.08847808380989264,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "ADF",
+      "sampling": "B_log_1_1500",
+      "order": 1,
+      "n_params": 3,
+      "objective": 7.981156307892212,
+      "objective_rms_rel_pct": 39.90578153946106,
+      "starts": {
+        "n": 30,
+        "best": 7.981156307892212,
+        "median": 7.981156312740395,
+        "worst": 7.981156320811386,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 31,
+        "best_optimality": 0.0022415425148711926,
+        "best_jacobian_condition_free": 2.9437165539707966
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [],
+      "parameters": {
+        "G_e_Pa": 1479263.8437766018,
+        "Gv_Pa": [
+          11974387.929039698
+        ],
+        "Omega_hz": [
+          500.3259198160263
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 77.69471218289947,
+        "re_mean": 15.905071080773252,
+        "im_max": 98.89831855541233,
+        "im_mean": 56.186271871233814,
+        "f_at_re_max_hz": 1500.0,
+        "f_at_im_max_hz": 1.0
+      },
+      "comparison_band_errors": {
+        "re_max": 38.7716941940003,
+        "re_mean": 16.649682100162032,
+        "im_max": 94.4921208426959,
+        "im_mean": 15.021088550267857,
+        "f_at_re_max_hz": 500.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 78.30152153154995,
+      "frf_peak_band_mean_pct": 11.853340593545813
+    },
+    {
+      "method": "ADF",
+      "sampling": "B_log_1_1500",
+      "order": 2,
+      "n_params": 5,
+      "objective": 6.307168622171331,
+      "objective_rms_rel_pct": 31.535843110856653,
+      "starts": {
+        "n": 30,
+        "best": 6.307168622171331,
+        "median": 6.307168630181833,
+        "worst": 6.3071686358798535,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 14,
+        "best_optimality": 0.0016175046853211578,
+        "best_jacobian_condition_free": 3.8280663519637095
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "G_e@lower"
+      ],
+      "parameters": {
+        "G_e_Pa": 100.00000000000013,
+        "Gv_Pa": [
+          2289720.3975213612,
+          14375069.575874513
+        ],
+        "Omega_hz": [
+          3.274566260480292,
+          783.954267051565
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 96.9211569259963,
+        "re_mean": 34.49878117589006,
+        "im_max": 69.71423274952816,
+        "im_mean": 38.473891226363065,
+        "f_at_re_max_hz": 1500.0,
+        "f_at_im_max_hz": 1.0
+      },
+      "comparison_band_errors": {
+        "re_max": 37.728610242706445,
+        "re_mean": 14.280917882829659,
+        "im_max": 67.45804253374048,
+        "im_mean": 14.790708754449906,
+        "f_at_re_max_hz": 19.924623115577887,
+        "f_at_im_max_hz": 19.924623115577887
+      },
+      "frf_peak_band_max_pct": 128.1969951802674,
+      "frf_peak_band_mean_pct": 10.163854948182413,
+      "nesting": {
+        "objective_prev_order": 7.981156307892212,
+        "objective_embedded": 7.981156308227583,
+        "objective_warm_start": 6.3071686314973965,
+        "multistart_minus_warm": -9.32606525338997e-09,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "ADF",
+      "sampling": "B_log_1_1500",
+      "order": 3,
+      "n_params": 7,
+      "objective": 5.761655402518307,
+      "objective_rms_rel_pct": 28.80827701259153,
+      "starts": {
+        "n": 30,
+        "best": 5.761655402518307,
+        "median": 5.761655403262192,
+        "worst": 5.761655405035931,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 16,
+        "best_optimality": 0.00016441543710151026,
+        "best_jacobian_condition_free": 5.407439503028685
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "G_e@lower",
+        "Omega_3@upper"
+      ],
+      "parameters": {
+        "G_e_Pa": 100.00000000054779,
+        "Gv_Pa": [
+          2065278.871318244,
+          4325194.883517181,
+          37048504.13966539
+        ],
+        "Omega_hz": [
+          2.641975287164526,
+          211.85432272005502,
+          4499.999999999989
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 83.30863192935823,
+        "re_mean": 30.911411394791326,
+        "im_max": 67.20666445227782,
+        "im_mean": 36.19095642194279,
+        "f_at_re_max_hz": 1.0,
+        "f_at_im_max_hz": 1.0
+      },
+      "comparison_band_errors": {
+        "re_max": 51.24795398978142,
+        "re_mean": 30.465713839741557,
+        "im_max": 64.78184077613659,
+        "im_mean": 14.130464037532793,
+        "f_at_re_max_hz": 199.02010050251255,
+        "f_at_im_max_hz": 14.949748743718592
+      },
+      "frf_peak_band_max_pct": 67.1649602597337,
+      "frf_peak_band_mean_pct": 16.848941040912738,
+      "nesting": {
+        "objective_prev_order": 6.307168622171331,
+        "objective_embedded": 6.307136783147721,
+        "objective_warm_start": 5.761655404897829,
+        "multistart_minus_warm": -2.3795223569322843e-09,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "ADF",
+      "sampling": "B_log_1_1500",
+      "order": 4,
+      "n_params": 9,
+      "objective": 5.698276403870763,
+      "objective_rms_rel_pct": 28.491382019353818,
+      "starts": {
+        "n": 30,
+        "best": 5.698276403870763,
+        "median": 5.698276410214515,
+        "worst": 5.761655402663517,
+        "n_within_1pct_of_best": 28,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 15,
+        "best_optimality": 0.0008851200353930019,
+        "best_jacobian_condition_free": 18.19380283644201
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "G_e@lower",
+        "Omega_4@upper"
+      ],
+      "parameters": {
+        "G_e_Pa": 100.00000000058571,
+        "Gv_Pa": [
+          1747463.495676777,
+          871565.480650206,
+          4432532.365332571,
+          34955694.87161012
+        ],
+        "Omega_hz": [
+          2.1225167070430984,
+          27.51517187751219,
+          307.1859976447608,
+          4499.999999999989
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 79.45987974144155,
+        "re_mean": 31.071361292095034,
+        "im_max": 66.50837452766504,
+        "im_mean": 35.585525298488626,
+        "f_at_re_max_hz": 1.0,
+        "f_at_im_max_hz": 1.0
+      },
+      "comparison_band_errors": {
+        "re_max": 46.7596992526598,
+        "re_mean": 29.751362053364133,
+        "im_max": 61.08126147198595,
+        "im_mean": 12.846870337588753,
+        "f_at_re_max_hz": 49.77386934673366,
+        "f_at_im_max_hz": 7.4874371859296485
+      },
+      "frf_peak_band_max_pct": 69.8030538763629,
+      "frf_peak_band_mean_pct": 15.427290970720513,
+      "nesting": {
+        "objective_prev_order": 5.761655402518307,
+        "objective_embedded": 5.761653746155924,
+        "objective_warm_start": 5.698276415139339,
+        "multistart_minus_warm": -1.1268575406120362e-08,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "ADF",
+      "sampling": "B_log_1_1500",
+      "order": 5,
+      "n_params": 11,
+      "objective": 5.698276402689367,
+      "objective_rms_rel_pct": 28.491382013446838,
+      "starts": {
+        "n": 30,
+        "best": 5.698276402689367,
+        "median": 5.698278014510464,
+        "worst": 5.761655402785228,
+        "n_within_1pct_of_best": 29,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 20,
+        "best_optimality": 0.0013849477533117458,
+        "best_jacobian_condition_free": 18.192583104385797
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "G_e@lower",
+        "Gv_4@lower",
+        "Omega_4@upper",
+        "Omega_5@upper"
+      ],
+      "parameters": {
+        "G_e_Pa": 100.00000003762568,
+        "Gv_Pa": [
+          1747466.1917344304,
+          871633.8605898196,
+          4432639.46614768,
+          100.022441374049,
+          34955004.440960385
+        ],
+        "Omega_hz": [
+          2.1224946271008394,
+          27.517674113384775,
+          307.20845788455733,
+          4499.9992042363565,
+          4499.999998812571
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 79.45950789751785,
+        "re_mean": 31.07126568505298,
+        "im_max": 66.50817764025301,
+        "im_mean": 35.58548993099454,
+        "f_at_re_max_hz": 1.0,
+        "f_at_im_max_hz": 1.0
+      },
+      "comparison_band_errors": {
+        "re_max": 46.7604663010888,
+        "re_mean": 29.750887719708214,
+        "im_max": 61.08170333291313,
+        "im_mean": 12.846644951512516,
+        "f_at_re_max_hz": 49.77386934673366,
+        "f_at_im_max_hz": 7.4874371859296485
+      },
+      "frf_peak_band_max_pct": 69.80264201907535,
+      "frf_peak_band_mean_pct": 15.42693777696728,
+      "nesting": {
+        "objective_prev_order": 5.698276403870763,
+        "objective_embedded": 5.698276648056355,
+        "objective_warm_start": 5.6982764016813,
+        "multistart_minus_warm": 1.0080674073265072e-09,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "ADF",
+      "sampling": "B_log_1_1500",
+      "order": 6,
+      "n_params": 13,
+      "objective": 5.698276401721563,
+      "objective_rms_rel_pct": 28.491382008607815,
+      "starts": {
+        "n": 30,
+        "best": 5.698276401721563,
+        "median": 5.69828659080275,
+        "worst": 5.698319913309824,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 16,
+        "best_optimality": 3.632632493017226e-06,
+        "best_jacobian_condition_free": 18.193888749100292
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "G_e@lower",
+        "Gv_4@lower",
+        "Gv_5@lower",
+        "Omega_4@upper",
+        "Omega_5@upper",
+        "Omega_6@upper"
+      ],
+      "parameters": {
+        "G_e_Pa": 100.00000001034253,
+        "Gv_Pa": [
+          1747519.799640485,
+          871638.4775586629,
+          4432652.413509615,
+          100.00000000003699,
+          100.00000001816942,
+          34954654.23852316
+        ],
+        "Omega_hz": [
+          2.122628997124225,
+          27.52206126101242,
+          307.2199902898255,
+          4499.994436633223,
+          4499.997259761244,
+          4499.999983909859
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 79.46102329375489,
+        "re_mean": 31.071590336068603,
+        "im_max": 66.50872565764783,
+        "im_mean": 35.585316418490955,
+        "f_at_re_max_hz": 1.0,
+        "f_at_im_max_hz": 1.0
+      },
+      "comparison_band_errors": {
+        "re_max": 46.76039784566362,
+        "re_mean": 29.750664111006913,
+        "im_max": 61.08145252595132,
+        "im_mean": 12.846576510232962,
+        "f_at_re_max_hz": 49.77386934673366,
+        "f_at_im_max_hz": 7.4874371859296485
+      },
+      "frf_peak_band_max_pct": 69.80117165887995,
+      "frf_peak_band_mean_pct": 15.426784216683375,
+      "nesting": {
+        "objective_prev_order": 5.698276402689367,
+        "objective_embedded": 5.698276646665106,
+        "objective_warm_start": 5.698276401560819,
+        "multistart_minus_warm": 1.6074341857574836e-10,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "GHM",
+      "sampling": "C_log_5_500",
+      "order": 1,
+      "n_params": 4,
+      "objective": 6.8275920637845084,
+      "objective_rms_rel_pct": 34.137960318922545,
+      "starts": {
+        "n": 30,
+        "best": 6.8275920637845084,
+        "median": 6.827592067707705,
+        "worst": 6.827592072402081,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 23,
+        "best_optimality": 0.0005164057778180132,
+        "best_jacobian_condition_free": 5.2464334112283
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "zeta_1@upper"
+      ],
+      "parameters": {
+        "G_inf_Pa": 1485429.024476984,
+        "alpha": [
+          6.446697164397821
+        ],
+        "what_hz": [
+          688.0888018704923
+        ],
+        "zeta": [
+          0.9499999999999998
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 66.21843506384599,
+        "re_mean": 12.903278794582526,
+        "im_max": 93.91460435772534,
+        "im_mean": 47.72245352095914,
+        "f_at_re_max_hz": 500.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "comparison_band_errors": {
+        "re_max": 66.21843506384599,
+        "re_mean": 28.5543726468157,
+        "im_max": 93.91460435772534,
+        "im_mean": 19.918479008614444,
+        "f_at_re_max_hz": 500.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 66.37517507163824,
+      "frf_peak_band_mean_pct": 17.22714965096262
+    },
+    {
+      "method": "GHM",
+      "sampling": "C_log_5_500",
+      "order": 2,
+      "n_params": 7,
+      "objective": 4.602698749804426,
+      "objective_rms_rel_pct": 23.01349374902213,
+      "starts": {
+        "n": 30,
+        "best": 4.602698749804426,
+        "median": 4.602698752451863,
+        "worst": 4.6026987556603425,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 26,
+        "best_optimality": 0.00017898375188052875,
+        "best_jacobian_condition_free": 9.815982426924505
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "alpha_2@upper",
+        "zeta_1@upper",
+        "zeta_2@upper"
+      ],
+      "parameters": {
+        "G_inf_Pa": 12824.294320754205,
+        "alpha": [
+          158.72726699462643,
+          999.9999999999989
+        ],
+        "what_hz": [
+          19.76406351907817,
+          1081.1384687138786
+        ],
+        "zeta": [
+          0.9499999999999998,
+          0.9499999999999998
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 78.84974908744553,
+        "re_mean": 27.726085606333267,
+        "im_max": 54.13230608720673,
+        "im_mean": 29.74879658310437,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "comparison_band_errors": {
+        "re_max": 78.84974908744553,
+        "re_mean": 19.947339757353504,
+        "im_max": 54.13230608720673,
+        "im_mean": 22.24878201909309,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 86.56971175385328,
+      "frf_peak_band_mean_pct": 12.476186852778122,
+      "nesting": {
+        "objective_prev_order": 6.8275920637845084,
+        "objective_embedded": 6.8275768571378945,
+        "objective_warm_start": 4.6026987513819675,
+        "multistart_minus_warm": -1.5775416528640562e-09,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "GHM",
+      "sampling": "C_log_5_500",
+      "order": 3,
+      "n_params": 10,
+      "objective": 4.13497641909165,
+      "objective_rms_rel_pct": 20.67488209545825,
+      "starts": {
+        "n": 30,
+        "best": 4.13497641909165,
+        "median": 4.134976429777013,
+        "worst": 4.161282771253579,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 51,
+        "best_optimality": 0.0061084132637438575,
+        "best_jacobian_condition_free": 16.616422469169855
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "alpha_3@upper",
+        "what_3@upper",
+        "zeta_2@upper",
+        "zeta_3@upper"
+      ],
+      "parameters": {
+        "G_inf_Pa": 16217.772412275452,
+        "alpha": [
+          49.979431533317616,
+          98.71670576842266,
+          999.9999999999989
+        ],
+        "what_hz": [
+          6.191507998631023,
+          46.39579621722547,
+          1499.999999999997
+        ],
+        "zeta": [
+          0.3164395712877029,
+          0.9499999999999998,
+          0.9499999999999998
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 91.14550093788723,
+        "re_mean": 22.911190788181575,
+        "im_max": 52.44398871546312,
+        "im_mean": 26.30399187484786,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 10.730705989292023
+      },
+      "comparison_band_errors": {
+        "re_max": 91.14550093788723,
+        "re_mean": 16.43544257838458,
+        "im_max": 51.99430082140874,
+        "im_mean": 19.875941440098835,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 9.974874371859297
+      },
+      "frf_peak_band_max_pct": 47.62878984045009,
+      "frf_peak_band_mean_pct": 10.540020793621094,
+      "nesting": {
+        "objective_prev_order": 4.602698749804426,
+        "objective_embedded": 4.602693768198625,
+        "objective_warm_start": 4.161282766525337,
+        "multistart_minus_warm": -0.026306347433687094,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "GHM",
+      "sampling": "C_log_5_500",
+      "order": 4,
+      "n_params": 13,
+      "objective": 3.8353042003714535,
+      "objective_rms_rel_pct": 19.176521001857267,
+      "starts": {
+        "n": 30,
+        "best": 3.8353042003714535,
+        "median": 3.835304501045469,
+        "worst": 3.835305532503848,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 470,
+        "best_optimality": 0.002559050532618684,
+        "best_jacobian_condition_free": 417.00287940560946
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "alpha_4@upper",
+        "zeta_1@upper",
+        "zeta_3@upper",
+        "zeta_4@lower"
+      ],
+      "parameters": {
+        "G_inf_Pa": 38200.23479191116,
+        "alpha": [
+          14.789119046624178,
+          40.64407371141693,
+          227.4614908711998,
+          999.9999999999989
+        ],
+        "what_hz": [
+          5.510422781860835,
+          30.735113211286773,
+          629.5364632486909,
+          1359.2128996379802
+        ],
+        "zeta": [
+          0.20754241520148037,
+          0.9499999999999998,
+          0.9499999999999998,
+          0.010000000829107993
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 91.54665756182183,
+        "re_mean": 22.83588481314014,
+        "im_max": 49.05933530815897,
+        "im_mean": 23.874151294254364,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 8.513845861129502
+      },
+      "comparison_band_errors": {
+        "re_max": 91.54665756182183,
+        "re_mean": 17.549715647230215,
+        "im_max": 46.97966876644839,
+        "im_mean": 14.436291315875758,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 9.974874371859297
+      },
+      "frf_peak_band_max_pct": 51.94570033407403,
+      "frf_peak_band_mean_pct": 10.857897807461644,
+      "nesting": {
+        "objective_prev_order": 4.13497641909165,
+        "objective_embedded": 4.1349719432896395,
+        "objective_warm_start": 3.835304360112539,
+        "multistart_minus_warm": -1.5974108569238865e-07,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "GHM",
+      "sampling": "C_log_5_500",
+      "order": 5,
+      "n_params": 16,
+      "objective": 3.666636734744975,
+      "objective_rms_rel_pct": 18.333183673724875,
+      "starts": {
+        "n": 30,
+        "best": 3.666636734744975,
+        "median": 3.666642804228627,
+        "worst": 3.666646226271547,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 326,
+        "best_optimality": 0.011180464798745073,
+        "best_jacobian_condition_free": 462.0733682223594
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "alpha_5@upper",
+        "zeta_2@upper",
+        "zeta_4@upper",
+        "zeta_5@lower"
+      ],
+      "parameters": {
+        "G_inf_Pa": 34847.841556486965,
+        "alpha": [
+          8.846637038713475,
+          15.063993772108816,
+          39.63050854204657,
+          253.75635194133662,
+          999.9999999999989
+        ],
+        "what_hz": [
+          4.957094868432974,
+          7.9280387341841365,
+          41.17688405059552,
+          666.2155514457011,
+          1332.4152537285793
+        ],
+        "zeta": [
+          0.0771506649582925,
+          0.2891287956444421,
+          0.9499999953626527,
+          0.9499868320168411,
+          0.01000709025568968
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 67.65851783908688,
+        "re_mean": 20.806276612357433,
+        "im_max": 46.679064820236945,
+        "im_mean": 22.878782048645235,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 12.329055379113017
+      },
+      "comparison_band_errors": {
+        "re_max": 67.65851783908688,
+        "re_mean": 17.36169768143169,
+        "im_max": 46.673159248141985,
+        "im_mean": 13.247174877265342,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 12.462311557788944
+      },
+      "frf_peak_band_max_pct": 43.07221180429865,
+      "frf_peak_band_mean_pct": 10.36723080487308,
+      "nesting": {
+        "objective_prev_order": 3.8353042003714535,
+        "objective_embedded": 3.835294559288642,
+        "objective_warm_start": 3.6666421133919673,
+        "multistart_minus_warm": -5.37864699223789e-06,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "GHM",
+      "sampling": "C_log_5_500",
+      "order": 6,
+      "n_params": 19,
+      "objective": 3.5624278160028924,
+      "objective_rms_rel_pct": 17.81213908001446,
+      "starts": {
+        "n": 30,
+        "best": 3.5624278160028924,
+        "median": 3.5624284632483585,
+        "worst": 3.6666427063398377,
+        "n_within_1pct_of_best": 28,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 194,
+        "best_optimality": 0.0029019754382860813,
+        "best_jacobian_condition_free": 769.7804189834784
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "alpha_6@upper",
+        "zeta_3@upper",
+        "zeta_6@lower"
+      ],
+      "parameters": {
+        "G_inf_Pa": 34751.59686281818,
+        "alpha": [
+          5.904068068807576,
+          10.043682648424241,
+          14.77567036165369,
+          36.98257559916105,
+          237.63832158141793,
+          999.9999999999989
+        ],
+        "what_hz": [
+          4.871897563664989,
+          6.047422531092063,
+          11.11265621635412,
+          55.34265622176469,
+          581.1101806565352,
+          1312.8791923906742
+        ],
+        "zeta": [
+          0.03184984365470927,
+          0.15263190457576162,
+          0.3399993254831392,
+          0.9499999967092488,
+          0.8321138818257554,
+          0.010000000047723967
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 56.21317924602579,
+        "re_mean": 20.627279478049104,
+        "im_max": 44.00291169282823,
+        "im_mean": 21.90468716021912,
+        "f_at_re_max_hz": 5.613338867554068,
+        "f_at_im_max_hz": 17.04642534873406
+      },
+      "comparison_band_errors": {
+        "re_max": 40.28414934636511,
+        "re_mean": 16.45507699355796,
+        "im_max": 43.930387109309606,
+        "im_mean": 13.009789717201185,
+        "f_at_re_max_hz": 59.723618090452256,
+        "f_at_im_max_hz": 17.43718592964824
+      },
+      "frf_peak_band_max_pct": 35.685320146013524,
+      "frf_peak_band_mean_pct": 10.014508004731283,
+      "nesting": {
+        "objective_prev_order": 3.666636734744975,
+        "objective_embedded": 3.6666322402685414,
+        "objective_warm_start": 3.6666214905760817,
+        "multistart_minus_warm": -0.10419367457318929,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "ADF",
+      "sampling": "C_log_5_500",
+      "order": 1,
+      "n_params": 3,
+      "objective": 6.6989672603667865,
+      "objective_rms_rel_pct": 33.49483630183393,
+      "starts": {
+        "n": 30,
+        "best": 6.6989672603667865,
+        "median": 6.698967264712172,
+        "worst": 6.698967270701795,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 27,
+        "best_optimality": 0.0010139182039058292,
+        "best_jacobian_condition_free": 4.087186431752376
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [],
+      "parameters": {
+        "G_e_Pa": 1413253.926172455,
+        "Gv_Pa": [
+          11225794.464455059
+        ],
+        "Omega_hz": [
+          386.75269058151343
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 56.88830965165522,
+        "re_mean": 16.929996961698752,
+        "im_max": 93.32058212130379,
+        "im_mean": 45.28971914986518,
+        "f_at_re_max_hz": 500.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "comparison_band_errors": {
+        "re_max": 56.88830965165522,
+        "re_mean": 32.790155754124186,
+        "im_max": 93.32058212130379,
+        "im_mean": 17.657162046012207,
+        "f_at_re_max_hz": 500.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 55.80052295169913,
+      "frf_peak_band_mean_pct": 18.47261529622697
+    },
+    {
+      "method": "ADF",
+      "sampling": "C_log_5_500",
+      "order": 2,
+      "n_params": 5,
+      "objective": 4.289618216895234,
+      "objective_rms_rel_pct": 21.44809108447617,
+      "starts": {
+        "n": 30,
+        "best": 4.289618216895234,
+        "median": 4.289618217713519,
+        "worst": 4.289618219670205,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 21,
+        "best_optimality": 7.890140757555854e-05,
+        "best_jacobian_condition_free": 8.887245808818236
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "G_e@lower"
+      ],
+      "parameters": {
+        "G_e_Pa": 100.00000000000013,
+        "Gv_Pa": [
+          2507666.945666862,
+          21408145.937334668
+        ],
+        "Omega_hz": [
+          11.105681250631177,
+          1030.3817503016273
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 72.72475572233367,
+        "re_mean": 26.735809598573663,
+        "im_max": 52.007009123432454,
+        "im_mean": 27.568058005884144,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "comparison_band_errors": {
+        "re_max": 72.72475572233367,
+        "re_mean": 17.066408617430437,
+        "im_max": 52.007009123432454,
+        "im_mean": 20.406914442253633,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 62.44664155050595,
+      "frf_peak_band_mean_pct": 11.188492996285486,
+      "nesting": {
+        "objective_prev_order": 6.6989672603667865,
+        "objective_embedded": 6.698967260919831,
+        "objective_warm_start": 4.289618218918912,
+        "multistart_minus_warm": -2.0236781139715276e-09,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "ADF",
+      "sampling": "C_log_5_500",
+      "order": 3,
+      "n_params": 7,
+      "objective": 4.152113521508717,
+      "objective_rms_rel_pct": 20.760567607543585,
+      "starts": {
+        "n": 30,
+        "best": 4.152113521508717,
+        "median": 4.152113528339285,
+        "worst": 4.152113532281612,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 20,
+        "best_optimality": 9.253282120149819e-05,
+        "best_jacobian_condition_free": 16.120231147146384
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "G_e@lower",
+        "Omega_3@upper"
+      ],
+      "parameters": {
+        "G_e_Pa": 100.00000000000013,
+        "Gv_Pa": [
+          2133194.5443724627,
+          1223997.355418269,
+          26564761.567414388
+        ],
+        "Omega_hz": [
+          8.978455567651375,
+          98.25192122726818,
+          1499.999999999968
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 67.22910358752391,
+        "re_mean": 25.869672167014556,
+        "im_max": 51.32497266291212,
+        "im_mean": 25.36293742108549,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "comparison_band_errors": {
+        "re_max": 67.22910358752391,
+        "re_mean": 18.197098509169145,
+        "im_max": 51.32497266291212,
+        "im_mean": 15.745573081386567,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 45.810287011293745,
+      "frf_peak_band_mean_pct": 10.812100584332569,
+      "nesting": {
+        "objective_prev_order": 4.289618216895234,
+        "objective_embedded": 4.289602039175021,
+        "objective_warm_start": 4.152113526237366,
+        "multistart_minus_warm": -4.728648583807171e-09,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "ADF",
+      "sampling": "C_log_5_500",
+      "order": 4,
+      "n_params": 9,
+      "objective": 4.152113524120869,
+      "objective_rms_rel_pct": 20.76056762060435,
+      "starts": {
+        "n": 30,
+        "best": 4.152113524120869,
+        "median": 4.152113954698934,
+        "worst": 4.152161368720586,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 24,
+        "best_optimality": 0.0005663108290027908,
+        "best_jacobian_condition_free": 654226115.902669
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "G_e@lower",
+        "Omega_3@upper",
+        "Omega_4@upper"
+      ],
+      "parameters": {
+        "G_e_Pa": 100.00000000019473,
+        "Gv_Pa": [
+          2133274.4424217953,
+          1224026.8871304078,
+          208.52943589020998,
+          26564140.606500156
+        ],
+        "Omega_hz": [
+          8.978989626519839,
+          98.27156199359234,
+          1499.9998942601705,
+          1499.9999999987263
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 67.23091620111452,
+        "re_mean": 25.87017222937423,
+        "im_max": 51.3252796415569,
+        "im_mean": 25.362832262963853,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "comparison_band_errors": {
+        "re_max": 67.23091620111452,
+        "re_mean": 18.19762738292427,
+        "im_max": 51.3252796415569,
+        "im_mean": 15.745457120792052,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 45.811871353380724,
+      "frf_peak_band_mean_pct": 10.812236484167466,
+      "nesting": {
+        "objective_prev_order": 4.152113521508717,
+        "objective_embedded": 4.152113556949985,
+        "objective_warm_start": 4.152113521609766,
+        "multistart_minus_warm": 2.5111033252755988e-09,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "ADF",
+      "sampling": "C_log_5_500",
+      "order": 5,
+      "n_params": 11,
+      "objective": 4.152113528303422,
+      "objective_rms_rel_pct": 20.76056764151711,
+      "starts": {
+        "n": 30,
+        "best": 4.152113528303422,
+        "median": 4.152118873756287,
+        "worst": 4.1521611052028575,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 23,
+        "best_optimality": 0.007727218690200337,
+        "best_jacobian_condition_free": 1240675793.275127
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "G_e@lower",
+        "Omega_3@upper",
+        "Omega_4@upper",
+        "Omega_5@upper"
+      ],
+      "parameters": {
+        "G_e_Pa": 100.00000000000013,
+        "Gv_Pa": [
+          2133095.620716148,
+          1223964.9060097178,
+          1877.0731772930953,
+          13496.965748203418,
+          26550254.886071954
+        ],
+        "Omega_hz": [
+          8.977782512870027,
+          98.22806576864937,
+          1499.999999999997,
+          1499.999999999997,
+          1499.999999999997
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 67.22679463772008,
+        "re_mean": 25.869151083399828,
+        "im_max": 51.32451252838868,
+        "im_mean": 25.363183603742026,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "comparison_band_errors": {
+        "re_max": 67.22679463772008,
+        "re_mean": 18.19677297739819,
+        "im_max": 51.32451252838868,
+        "im_mean": 15.74659462592415,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 45.80759348527631,
+      "frf_peak_band_mean_pct": 10.812265308625717,
+      "nesting": {
+        "objective_prev_order": 4.152113524120869,
+        "objective_embedded": 4.1521135598867565,
+        "objective_warm_start": 4.152113521837593,
+        "multistart_minus_warm": 6.4658296494712886e-09,
+        "objective_monotone": false
+      }
+    },
+    {
+      "method": "ADF",
+      "sampling": "C_log_5_500",
+      "order": 6,
+      "n_params": 13,
+      "objective": 4.152113521604694,
+      "objective_rms_rel_pct": 20.760567608023468,
+      "starts": {
+        "n": 30,
+        "best": 4.152113521604694,
+        "median": 4.152119354424393,
+        "worst": 4.1521639656055385,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 27,
+        "best_optimality": 0.00024023192694364658,
+        "best_jacobian_condition_free": 1246582965.9291322
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "G_e@lower",
+        "Omega_3@upper",
+        "Omega_4@upper",
+        "Omega_5@upper",
+        "Omega_6@upper"
+      ],
+      "parameters": {
+        "G_e_Pa": 100.00000000000013,
+        "Gv_Pa": [
+          2133186.6601346,
+          1223996.4892881769,
+          416.5114254967864,
+          859.8629834484578,
+          5329.947849551533,
+          26558192.11691093
+        ],
+        "Omega_hz": [
+          8.978397574804783,
+          98.25020850066353,
+          1499.9999999993472,
+          1499.9999999996776,
+          1499.9999999999786,
+          1499.999999999997
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 67.22889602157134,
+        "re_mean": 25.86961716267527,
+        "im_max": 51.32493173764755,
+        "im_mean": 25.362953663052412,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "comparison_band_errors": {
+        "re_max": 67.22889602157134,
+        "re_mean": 18.197061697907728,
+        "im_max": 51.32493173764755,
+        "im_mean": 15.745589989520681,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 45.810130021772075,
+      "frf_peak_band_mean_pct": 10.812093838815102,
+      "nesting": {
+        "objective_prev_order": 4.152113528303422,
+        "objective_embedded": 4.152113565995152,
+        "objective_warm_start": 4.152113522402887,
+        "multistart_minus_warm": -7.981935112866267e-10,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "GHM",
+      "sampling": "D_uniform_5_500",
+      "order": 1,
+      "n_params": 4,
+      "objective": 3.361690636598317,
+      "objective_rms_rel_pct": 16.808453182991585,
+      "starts": {
+        "n": 30,
+        "best": 3.361690636598317,
+        "median": 3.3616906367830914,
+        "worst": 3.3616906375222193,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 22,
+        "best_optimality": 3.6471404040557607e-05,
+        "best_jacobian_condition_free": 6.761321296276153
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "zeta_1@upper"
+      ],
+      "parameters": {
+        "G_inf_Pa": 1612196.1338442948,
+        "alpha": [
+          6.357971066461464
+        ],
+        "what_hz": [
+          956.2289615494248
+        ],
+        "zeta": [
+          0.9499999999999998
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 29.171691117426406,
+        "re_mean": 8.36797489640147,
+        "im_max": 95.31255196737357,
+        "im_mean": 16.68594136264195,
+        "f_at_re_max_hz": 500.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "comparison_band_errors": {
+        "re_max": 29.171691117426406,
+        "re_mean": 8.36797489640147,
+        "im_max": 95.31255196737357,
+        "im_mean": 16.68594136264195,
+        "f_at_re_max_hz": 500.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 102.09606504512654,
+      "frf_peak_band_mean_pct": 9.916938614728807
+    },
+    {
+      "method": "GHM",
+      "sampling": "D_uniform_5_500",
+      "order": 2,
+      "n_params": 7,
+      "objective": 2.3264330640753466,
+      "objective_rms_rel_pct": 11.632165320376734,
+      "starts": {
+        "n": 30,
+        "best": 2.3264330640753466,
+        "median": 2.326433068235351,
+        "worst": 2.326433071283992,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 24,
+        "best_optimality": 0.0004979045804935277,
+        "best_jacobian_condition_free": 136.7630544060508
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "zeta_1@upper",
+        "zeta_2@upper"
+      ],
+      "parameters": {
+        "G_inf_Pa": 222038.64832197453,
+        "alpha": [
+          8.170075581353064,
+          53.30124577344386
+        ],
+        "what_hz": [
+          59.68625341183272,
+          1225.0153261771804
+        ],
+        "zeta": [
+          0.9499999999999996,
+          0.9499999999999558
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 83.53474089426938,
+        "re_mean": 10.702718162907827,
+        "im_max": 82.63333666666864,
+        "im_mean": 9.889584949893596,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "comparison_band_errors": {
+        "re_max": 83.53474089426938,
+        "re_mean": 10.702718162907827,
+        "im_max": 82.63333666666864,
+        "im_mean": 9.889584949893596,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 50.249338173330734,
+      "frf_peak_band_mean_pct": 5.6925969977691295,
+      "nesting": {
+        "objective_prev_order": 3.361690636598317,
+        "objective_embedded": 3.361671466773441,
+        "objective_warm_start": 2.3264330661663384,
+        "multistart_minus_warm": -2.0909918241329706e-09,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "GHM",
+      "sampling": "D_uniform_5_500",
+      "order": 3,
+      "n_params": 10,
+      "objective": 2.0509555070671683,
+      "objective_rms_rel_pct": 10.254777535335842,
+      "starts": {
+        "n": 30,
+        "best": 2.0509555070671683,
+        "median": 2.0509555094772107,
+        "worst": 2.1435529583659925,
+        "n_within_1pct_of_best": 26,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 54,
+        "best_optimality": 0.000194748450198919,
+        "best_jacobian_condition_free": 68.73207652388705
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "alpha_3@upper",
+        "what_3@upper",
+        "zeta_1@upper",
+        "zeta_2@upper"
+      ],
+      "parameters": {
+        "G_inf_Pa": 15955.354249107062,
+        "alpha": [
+          106.6241219193235,
+          234.2874215335682,
+          999.9999999999989
+        ],
+        "what_hz": [
+          35.88757976104237,
+          460.5882421100546,
+          1499.999999999997
+        ],
+        "zeta": [
+          0.9499999999999998,
+          0.9499999999999998,
+          0.3881470463653957
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 93.47803998603814,
+        "re_mean": 8.564231654921887,
+        "im_max": 74.45658068606117,
+        "im_mean": 8.346548253881242,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "comparison_band_errors": {
+        "re_max": 93.47803998603814,
+        "re_mean": 8.564231654921887,
+        "im_max": 74.45658068606117,
+        "im_mean": 8.346548253881242,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 44.13135989507095,
+      "frf_peak_band_mean_pct": 6.074970461533276,
+      "nesting": {
+        "objective_prev_order": 2.3264330640753466,
+        "objective_embedded": 2.3263894750371015,
+        "objective_warm_start": 2.0509555078800683,
+        "multistart_minus_warm": -8.128999695600214e-10,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "GHM",
+      "sampling": "D_uniform_5_500",
+      "order": 4,
+      "n_params": 13,
+      "objective": 1.8804563039808173,
+      "objective_rms_rel_pct": 9.402281519904086,
+      "starts": {
+        "n": 30,
+        "best": 1.8804563039808173,
+        "median": 1.9316005715058977,
+        "worst": 1.987957016157061,
+        "n_within_1pct_of_best": 3,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 40,
+        "best_optimality": 0.00014726858710591893,
+        "best_jacobian_condition_free": 316.3984968226602
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "alpha_4@upper",
+        "what_4@upper",
+        "zeta_1@lower",
+        "zeta_2@upper",
+        "zeta_3@upper"
+      ],
+      "parameters": {
+        "G_inf_Pa": 16528.56568129103,
+        "alpha": [
+          3.478274942006551,
+          102.49719002426926,
+          278.2212356264249,
+          999.9999999999989
+        ],
+        "what_hz": [
+          4.958036311521288,
+          40.0582666425673,
+          527.7205198410072,
+          1499.999999999997
+        ],
+        "zeta": [
+          0.01000000000000001,
+          0.9499999999999998,
+          0.9499999999999998,
+          0.2951306615359119
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 82.65960415344067,
+        "re_mean": 7.897689214363168,
+        "im_max": 65.81511945004412,
+        "im_mean": 7.957780359853167,
+        "f_at_re_max_hz": 7.4874371859296485,
+        "f_at_im_max_hz": 7.4874371859296485
+      },
+      "comparison_band_errors": {
+        "re_max": 82.65960415344067,
+        "re_mean": 7.897689214363168,
+        "im_max": 65.81511945004412,
+        "im_mean": 7.957780359853167,
+        "f_at_re_max_hz": 7.4874371859296485,
+        "f_at_im_max_hz": 7.4874371859296485
+      },
+      "frf_peak_band_max_pct": 30.36136098461669,
+      "frf_peak_band_mean_pct": 5.56704939079825,
+      "nesting": {
+        "objective_prev_order": 2.0509555070671683,
+        "objective_embedded": 2.050957060818033,
+        "objective_warm_start": 1.9316005723819019,
+        "multistart_minus_warm": -0.05114426840108455,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "GHM",
+      "sampling": "D_uniform_5_500",
+      "order": 5,
+      "n_params": 16,
+      "objective": 1.772180192327974,
+      "objective_rms_rel_pct": 8.860900961639869,
+      "starts": {
+        "n": 30,
+        "best": 1.772180192327974,
+        "median": 1.8235838987277706,
+        "worst": 1.9289336130834205,
+        "n_within_1pct_of_best": 2,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 175,
+        "best_optimality": 0.0001956439122046835,
+        "best_jacobian_condition_free": 1010.2310627786006
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "alpha_4@upper",
+        "what_4@upper",
+        "zeta_1@upper",
+        "zeta_2@lower",
+        "zeta_4@lower"
+      ],
+      "parameters": {
+        "G_inf_Pa": 21265.653654295325,
+        "alpha": [
+          2.6486132687260073,
+          36.82842701095647,
+          58.107391711962165,
+          410.01269706530826,
+          999.9999999999989
+        ],
+        "what_hz": [
+          4.957147095778782,
+          14.464005748147619,
+          78.9656121915379,
+          767.0147822653805,
+          1499.999999999997
+        ],
+        "zeta": [
+          0.01000000000000001,
+          0.5196464468985063,
+          0.9499999999999998,
+          0.8966876233168151,
+          0.01000000000000001
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 84.5313415467621,
+        "re_mean": 7.611144250623173,
+        "im_max": 59.227617950139845,
+        "im_mean": 7.7341595314898495,
+        "f_at_re_max_hz": 7.4874371859296485,
+        "f_at_im_max_hz": 7.4874371859296485
+      },
+      "comparison_band_errors": {
+        "re_max": 84.5313415467621,
+        "re_mean": 7.611144250623173,
+        "im_max": 59.227617950139845,
+        "im_mean": 7.7341595314898495,
+        "f_at_re_max_hz": 7.4874371859296485,
+        "f_at_im_max_hz": 7.4874371859296485
+      },
+      "frf_peak_band_max_pct": 26.131228849017397,
+      "frf_peak_band_mean_pct": 5.36074633206771,
+      "nesting": {
+        "objective_prev_order": 1.8804563039808173,
+        "objective_embedded": 1.8804521596558421,
+        "objective_warm_start": 1.7721801943649955,
+        "multistart_minus_warm": -2.0370214404152875e-09,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "GHM",
+      "sampling": "D_uniform_5_500",
+      "order": 6,
+      "n_params": 19,
+      "objective": 1.7184052887881178,
+      "objective_rms_rel_pct": 8.59202644394059,
+      "starts": {
+        "n": 30,
+        "best": 1.7184052887881178,
+        "median": 1.7248468581273892,
+        "worst": 1.9196885637127512,
+        "n_within_1pct_of_best": 18,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 117,
+        "best_optimality": 0.00014369049023439526,
+        "best_jacobian_condition_free": 658.2147883391891
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "alpha_6@upper",
+        "what_6@upper",
+        "zeta_1@lower",
+        "zeta_2@lower",
+        "zeta_4@upper",
+        "zeta_6@lower"
+      ],
+      "parameters": {
+        "G_inf_Pa": 21946.32819414044,
+        "alpha": [
+          2.569440429461545,
+          1.5300079473627886,
+          43.35052719618723,
+          51.512118066630705,
+          375.2441425477952,
+          999.9999999999989
+        ],
+        "what_hz": [
+          4.9584962548666764,
+          12.357803585852983,
+          21.835895528236282,
+          99.78687316220731,
+          696.1822494946924,
+          1499.999999999997
+        ],
+        "zeta": [
+          0.01000000000000001,
+          0.01000000000000001,
+          0.7176062126519724,
+          0.9499999999999991,
+          0.8233492185026526,
+          0.010000000009309968
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 83.92101704134967,
+        "re_mean": 7.417679330894298,
+        "im_max": 64.6276077412406,
+        "im_mean": 7.208443561407287,
+        "f_at_re_max_hz": 7.4874371859296485,
+        "f_at_im_max_hz": 7.4874371859296485
+      },
+      "comparison_band_errors": {
+        "re_max": 83.92101704134967,
+        "re_mean": 7.417679330894298,
+        "im_max": 64.6276077412406,
+        "im_mean": 7.208443561407287,
+        "f_at_re_max_hz": 7.4874371859296485,
+        "f_at_im_max_hz": 7.4874371859296485
+      },
+      "frf_peak_band_max_pct": 29.84840709718542,
+      "frf_peak_band_mean_pct": 5.251080825694481,
+      "nesting": {
+        "objective_prev_order": 1.772180192327974,
+        "objective_embedded": 1.7721804662125393,
+        "objective_warm_start": 1.7425609847366827,
+        "multistart_minus_warm": -0.024155695948564926,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "ADF",
+      "sampling": "D_uniform_5_500",
+      "order": 1,
+      "n_params": 3,
+      "objective": 3.248689896948328,
+      "objective_rms_rel_pct": 16.24344948474164,
+      "starts": {
+        "n": 30,
+        "best": 3.248689896948328,
+        "median": 3.248689897435935,
+        "worst": 3.2486898980878047,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 14,
+        "best_optimality": 7.983125898994142e-05,
+        "best_jacobian_condition_free": 5.679249479228576
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [],
+      "parameters": {
+        "G_e_Pa": 1543937.8689434947,
+        "Gv_Pa": [
+          13301613.54689773
+        ],
+        "Omega_hz": [
+          620.3030758945936
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 26.12819543905958,
+        "re_mean": 8.311763416746327,
+        "im_max": 95.06485829015033,
+        "im_mean": 15.205887026707325,
+        "f_at_re_max_hz": 500.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "comparison_band_errors": {
+        "re_max": 26.12819543905958,
+        "re_mean": 8.311763416746327,
+        "im_max": 95.06485829015033,
+        "im_mean": 15.205887026707325,
+        "f_at_re_max_hz": 500.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 92.92374067189489,
+      "frf_peak_band_mean_pct": 9.545244035050233
+    },
+    {
+      "method": "ADF",
+      "sampling": "D_uniform_5_500",
+      "order": 2,
+      "n_params": 5,
+      "objective": 2.1225073720345935,
+      "objective_rms_rel_pct": 10.612536860172968,
+      "starts": {
+        "n": 30,
+        "best": 2.1225073720345935,
+        "median": 2.1225073723967753,
+        "worst": 2.1225073730851207,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 13,
+        "best_optimality": 8.855242335547663e-05,
+        "best_jacobian_condition_free": 9.841344390345133
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "G_e@lower"
+      ],
+      "parameters": {
+        "G_e_Pa": 100.00000000406817,
+        "Gv_Pa": [
+          2373999.055048319,
+          16715948.006331105
+        ],
+        "Omega_hz": [
+          25.420297938700777,
+          945.1409970307836
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 94.26492114304546,
+        "re_mean": 9.235428854089722,
+        "im_max": 75.23559095871269,
+        "im_mean": 8.983438585051504,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "comparison_band_errors": {
+        "re_max": 94.26492114304546,
+        "re_mean": 9.235428854089722,
+        "im_max": 75.23559095871269,
+        "im_mean": 8.983438585051504,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 45.717173421405406,
+      "frf_peak_band_mean_pct": 5.3141116528127625,
+      "nesting": {
+        "objective_prev_order": 3.248689896948328,
+        "objective_embedded": 3.2486898981236534,
+        "objective_warm_start": 3.2486898953411787,
+        "multistart_minus_warm": -1.1261825233065852,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "ADF",
+      "sampling": "D_uniform_5_500",
+      "order": 3,
+      "n_params": 7,
+      "objective": 2.0117922059922124,
+      "objective_rms_rel_pct": 10.058961029961063,
+      "starts": {
+        "n": 30,
+        "best": 2.0117922059922124,
+        "median": 2.011792205998298,
+        "worst": 2.0117922061667897,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 26,
+        "best_optimality": 7.751538109138769e-07,
+        "best_jacobian_condition_free": 18.735594846002474
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "G_e@lower",
+        "Omega_3@upper"
+      ],
+      "parameters": {
+        "G_e_Pa": 100.0000000007383,
+        "Gv_Pa": [
+          1862155.2565166282,
+          1763378.4655263654,
+          21274229.27592002
+        ],
+        "Omega_hz": [
+          16.309661389979215,
+          174.97888774507675,
+          1499.9999999995443
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 89.5760313188097,
+        "re_mean": 8.02618599509503,
+        "im_max": 70.39735074969165,
+        "im_mean": 8.023108425835742,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "comparison_band_errors": {
+        "re_max": 89.5760313188097,
+        "re_mean": 8.02618599509503,
+        "im_max": 70.39735074969165,
+        "im_mean": 8.023108425835742,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 37.114858815050766,
+      "frf_peak_band_mean_pct": 5.766340632469601,
+      "nesting": {
+        "objective_prev_order": 2.1225073720345935,
+        "objective_embedded": 2.1224983700846276,
+        "objective_warm_start": 2.011792206000318,
+        "multistart_minus_warm": -8.105516258183343e-12,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "ADF",
+      "sampling": "D_uniform_5_500",
+      "order": 4,
+      "n_params": 9,
+      "objective": 2.00941543684826,
+      "objective_rms_rel_pct": 10.0470771842413,
+      "starts": {
+        "n": 30,
+        "best": 2.00941543684826,
+        "median": 2.009417204684449,
+        "worst": 2.01179220607093,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 27,
+        "best_optimality": 5.61851505323076e-06,
+        "best_jacobian_condition_free": 205.4416743222366
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "G_e@lower",
+        "Omega_4@upper"
+      ],
+      "parameters": {
+        "G_e_Pa": 100.00029618018756,
+        "Gv_Pa": [
+          1625363.2717929045,
+          625537.3638183126,
+          1542725.9927462712,
+          20885637.386447914
+        ],
+        "Omega_hz": [
+          14.388580249499576,
+          65.00252812564,
+          232.51450503021007,
+          1499.999999649752
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 88.40980894518154,
+        "re_mean": 8.043332526573195,
+        "im_max": 69.86918030817567,
+        "im_mean": 8.056520325424914,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "comparison_band_errors": {
+        "re_max": 88.40980894518154,
+        "re_mean": 8.043332526573195,
+        "im_max": 69.86918030817567,
+        "im_mean": 8.056520325424914,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 36.046299989246286,
+      "frf_peak_band_mean_pct": 5.658725861248455,
+      "nesting": {
+        "objective_prev_order": 2.0117922059922124,
+        "objective_embedded": 2.011792205849914,
+        "objective_warm_start": 2.00941543676789,
+        "multistart_minus_warm": 8.036993293103478e-11,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "ADF",
+      "sampling": "D_uniform_5_500",
+      "order": 5,
+      "n_params": 11,
+      "objective": 2.00941543755126,
+      "objective_rms_rel_pct": 10.0470771877563,
+      "starts": {
+        "n": 30,
+        "best": 2.00941543755126,
+        "median": 2.0094183239063015,
+        "worst": 2.011792206002867,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 27,
+        "best_optimality": 1.0328114507515323e-05,
+        "best_jacobian_condition_free": 1497554324.697538
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "G_e@lower",
+        "Omega_1@upper",
+        "Omega_5@upper"
+      ],
+      "parameters": {
+        "G_e_Pa": 100.00003192896249,
+        "Gv_Pa": [
+          1625364.1753446436,
+          625478.0426807175,
+          1542782.3135658451,
+          8765770.096976394,
+          12119859.7252699
+        ],
+        "Omega_hz": [
+          14.388734521613864,
+          64.997696873838,
+          232.5083968876584,
+          1499.9999642525818,
+          1499.9999965453285
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 88.41000197855631,
+        "re_mean": 8.043322897635244,
+        "im_max": 69.86931496025298,
+        "im_mean": 8.056523449891442,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "comparison_band_errors": {
+        "re_max": 88.41000197855631,
+        "re_mean": 8.043322897635244,
+        "im_max": 69.86931496025298,
+        "im_mean": 8.056523449891442,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 36.04652427806703,
+      "frf_peak_band_mean_pct": 5.658722006589699,
+      "nesting": {
+        "objective_prev_order": 2.00941543684826,
+        "objective_embedded": 2.0094155014128265,
+        "objective_warm_start": 2.0094154392209598,
+        "multistart_minus_warm": -1.669699933870561e-09,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "ADF",
+      "sampling": "D_uniform_5_500",
+      "order": 6,
+      "n_params": 13,
+      "objective": 2.009415437973033,
+      "objective_rms_rel_pct": 10.047077189865165,
+      "starts": {
+        "n": 30,
+        "best": 2.009415437973033,
+        "median": 2.009418949808448,
+        "worst": 2.009423880386274,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 31,
+        "best_optimality": 3.4433300685160676e-05,
+        "best_jacobian_condition_free": 1241774343.3325624
+      },
+      "pole_box_extra_decades": 0.0,
+      "active_bounds": [
+        "G_e@lower",
+        "Omega_4@upper",
+        "Omega_5@upper",
+        "Omega_6@upper"
+      ],
+      "parameters": {
+        "G_e_Pa": 100.00000000000023,
+        "Gv_Pa": [
+          1625264.4970746199,
+          625484.1136785933,
+          1542815.8870862387,
+          2332.208474897113,
+          2703.7450364415236,
+          20880742.725328002
+        ],
+        "Omega_hz": [
+          14.38783257567436,
+          64.9839410753172,
+          232.49077061731066,
+          1499.9195144603057,
+          1499.9284607836769,
+          1499.9999999713427
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 88.40932146783744,
+        "re_mean": 8.043350662367969,
+        "im_max": 69.86894318044693,
+        "im_mean": 8.056530967497297,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "comparison_band_errors": {
+        "re_max": 88.40932146783744,
+        "re_mean": 8.043350662367969,
+        "im_max": 69.86894318044693,
+        "im_mean": 8.056530967497297,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 36.04584301206641,
+      "frf_peak_band_mean_pct": 5.658739612439025,
+      "nesting": {
+        "objective_prev_order": 2.00941543755126,
+        "objective_embedded": 2.009415502108144,
+        "objective_warm_start": 2.009415439147537,
+        "multistart_minus_warm": -1.1745040495725334e-09,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "GHM",
+      "sampling": "A_uniform_1_1500_wide_box",
+      "order": 1,
+      "n_params": 4,
+      "objective": 4.295451968559129,
+      "objective_rms_rel_pct": 21.477259842795643,
+      "starts": {
+        "n": 30,
+        "best": 4.295451968559129,
+        "median": 4.295451970131863,
+        "worst": 11.700175639648203,
+        "n_within_1pct_of_best": 21,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 15,
+        "best_optimality": 0.004654207132607565,
+        "best_jacobian_condition_free": 7.45012285932296
+      },
+      "pole_box_extra_decades": 1.0,
+      "active_bounds": [
+        "zeta_1@upper"
+      ],
+      "parameters": {
+        "G_inf_Pa": 2045446.606904889,
+        "alpha": [
+          6.2156420716575
+        ],
+        "what_hz": [
+          2204.759006304258
+        ],
+        "zeta": [
+          0.9499999999999998
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 63.47483204255126,
+        "re_mean": 25.565512587836075,
+        "im_max": 99.4956594064053,
+        "im_mean": 19.866860962707143,
+        "f_at_re_max_hz": 1500.0,
+        "f_at_im_max_hz": 1.0
+      },
+      "comparison_band_errors": {
+        "re_max": 35.92493723020094,
+        "re_mean": 24.665137854825115,
+        "im_max": 97.47831707705335,
+        "im_mean": 44.50380131949704,
+        "f_at_re_max_hz": 388.0653266331658,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 266.93103857115466,
+      "frf_peak_band_mean_pct": 33.885554649404746
+    },
+    {
+      "method": "GHM",
+      "sampling": "A_uniform_1_1500_wide_box",
+      "order": 2,
+      "n_params": 7,
+      "objective": 2.1339808048655433,
+      "objective_rms_rel_pct": 10.669904024327717,
+      "starts": {
+        "n": 30,
+        "best": 2.1339808048655433,
+        "median": 2.1339808057718876,
+        "worst": 11.70017561250746,
+        "n_within_1pct_of_best": 17,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 46,
+        "best_optimality": 0.0001130081317945444,
+        "best_jacobian_condition_free": 25.566470050728334
+      },
+      "pole_box_extra_decades": 1.0,
+      "active_bounds": [
+        "alpha_2@upper",
+        "zeta_1@upper"
+      ],
+      "parameters": {
+        "G_inf_Pa": 1618932.7206842017,
+        "alpha": [
+          3.5571097195014962,
+          999.9999858390803
+        ],
+        "what_hz": [
+          707.092620250107,
+          42537.95936590492
+        ],
+        "zeta": [
+          0.9499999999999998,
+          0.0727488562464826
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 11.551447536530631,
+        "re_mean": 6.337895941101562,
+        "im_max": 99.03280819331148,
+        "im_mean": 9.010967220451453,
+        "f_at_re_max_hz": 671.4070351758794,
+        "f_at_im_max_hz": 1.0
+      },
+      "comparison_band_errors": {
+        "re_max": 10.230963865874495,
+        "re_mean": 5.183359695218464,
+        "im_max": 95.16431616134294,
+        "im_mean": 15.185191076632773,
+        "f_at_re_max_hz": 129.3718592964824,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 98.3520590790398,
+      "frf_peak_band_mean_pct": 9.293526567438924,
+      "nesting": {
+        "objective_prev_order": 4.295451968559129,
+        "objective_embedded": 4.295419421522454,
+        "objective_warm_start": 2.1339808048236772,
+        "multistart_minus_warm": 4.18660661694048e-11,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "GHM",
+      "sampling": "A_uniform_1_1500_wide_box",
+      "order": 3,
+      "n_params": 10,
+      "objective": 1.662513804551599,
+      "objective_rms_rel_pct": 8.312569022757996,
+      "starts": {
+        "n": 30,
+        "best": 1.662513804551599,
+        "median": 1.6625138091216187,
+        "worst": 11.643400413527825,
+        "n_within_1pct_of_best": 19,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 38,
+        "best_optimality": 4.008381789496368e-05,
+        "best_jacobian_condition_free": 69.09230144606435
+      },
+      "pole_box_extra_decades": 1.0,
+      "active_bounds": [
+        "alpha_3@upper",
+        "zeta_1@upper",
+        "zeta_2@upper"
+      ],
+      "parameters": {
+        "G_inf_Pa": 599550.1058483757,
+        "alpha": [
+          2.6432802380971987,
+          10.748202414628675,
+          999.999999855074
+        ],
+        "what_hz": [
+          78.6682774677612,
+          918.8592562328326,
+          19302.608749554372
+        ],
+        "zeta": [
+          0.9499999999999998,
+          0.9499999999999998,
+          0.0736896312634682
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 61.318080686692525,
+        "re_mean": 7.779176676590241,
+        "im_max": 97.4144741347718,
+        "im_mean": 4.833434504843957,
+        "f_at_re_max_hz": 1.0,
+        "f_at_im_max_hz": 1.0
+      },
+      "comparison_band_errors": {
+        "re_max": 60.26128811924038,
+        "re_mean": 10.372574431722677,
+        "im_max": 87.1272861329457,
+        "im_mean": 9.105925759285595,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 35.47599098237546,
+      "frf_peak_band_mean_pct": 6.499421766909805,
+      "nesting": {
+        "objective_prev_order": 2.1339808048655433,
+        "objective_embedded": 2.133982385148422,
+        "objective_warm_start": 1.6625138078560897,
+        "multistart_minus_warm": -3.304490681088623e-09,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "GHM",
+      "sampling": "A_uniform_1_1500_wide_box",
+      "order": 4,
+      "n_params": 13,
+      "objective": 1.4067005642087094,
+      "objective_rms_rel_pct": 7.033502821043546,
+      "starts": {
+        "n": 30,
+        "best": 1.4067005642087094,
+        "median": 1.50837013429711,
+        "worst": 11.586179221009784,
+        "n_within_1pct_of_best": 8,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 31,
+        "best_optimality": 0.0004184027325957744,
+        "best_jacobian_condition_free": 858.265323196053
+      },
+      "pole_box_extra_decades": 1.0,
+      "active_bounds": [
+        "alpha_4@upper",
+        "zeta_1@lower",
+        "zeta_2@upper",
+        "zeta_3@upper"
+      ],
+      "parameters": {
+        "G_inf_Pa": 299362.44560830214,
+        "alpha": [
+          0.18626470561394007,
+          5.7788494673074196,
+          21.220699881960332,
+          999.9999999999989
+        ],
+        "what_hz": [
+          0.994361084212684,
+          66.9730443009284,
+          889.2840905088731,
+          13936.67326351673
+        ],
+        "zeta": [
+          0.01000000000000001,
+          0.9499999999999998,
+          0.9499999999999998,
+          0.10871880009333452
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 72.34302380006527,
+        "re_mean": 7.602368642109606,
+        "im_max": 74.05416118720322,
+        "im_mean": 4.452353508113548,
+        "f_at_re_max_hz": 8.532663316582916,
+        "f_at_im_max_hz": 8.532663316582916
+      },
+      "comparison_band_errors": {
+        "re_max": 75.32411916414648,
+        "re_mean": 10.531060850142865,
+        "im_max": 84.60577501668732,
+        "im_mean": 8.599033056553186,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 45.134792195579834,
+      "frf_peak_band_mean_pct": 6.227902629877876,
+      "nesting": {
+        "objective_prev_order": 1.662513804551599,
+        "objective_embedded": 1.6624846717208615,
+        "objective_warm_start": 1.5083701346906866,
+        "multistart_minus_warm": -0.10166957048197722,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "GHM",
+      "sampling": "A_uniform_1_1500_wide_box",
+      "order": 5,
+      "n_params": 16,
+      "objective": 1.1943215427403877,
+      "objective_rms_rel_pct": 5.971607713701939,
+      "starts": {
+        "n": 30,
+        "best": 1.1943215427403877,
+        "median": 1.266869214588604,
+        "worst": 1.5083701190851313,
+        "n_within_1pct_of_best": 15,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 68,
+        "best_optimality": 0.0001285849872347571,
+        "best_jacobian_condition_free": 1479.7400886552393
+      },
+      "pole_box_extra_decades": 1.0,
+      "active_bounds": [
+        "alpha_5@upper",
+        "zeta_1@lower",
+        "zeta_2@lower",
+        "zeta_3@upper",
+        "zeta_4@upper"
+      ],
+      "parameters": {
+        "G_inf_Pa": 215938.38248241294,
+        "alpha": [
+          0.2662949909810697,
+          0.22894025693101994,
+          8.160071166795145,
+          29.611376702488663,
+          999.9999979929884
+        ],
+        "what_hz": [
+          0.9940073160668271,
+          8.472194932001731,
+          72.14457400907708,
+          899.7956533940966,
+          11708.709313983405
+        ],
+        "zeta": [
+          0.01000000000000001,
+          0.010000002134174011,
+          0.9499999999999998,
+          0.9499999999999998,
+          0.12447508079795723
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 64.94290019994436,
+        "re_mean": 7.232389650078095,
+        "im_max": 55.96214167473278,
+        "im_mean": 3.9349237090892437,
+        "f_at_re_max_hz": 16.06532663316583,
+        "f_at_im_max_hz": 16.06532663316583
+      },
+      "comparison_band_errors": {
+        "re_max": 90.36240826797817,
+        "re_mean": 10.929646742332817,
+        "im_max": 85.17362479339494,
+        "im_mean": 8.276675398315286,
+        "f_at_re_max_hz": 7.4874371859296485,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 53.43097677757327,
+      "frf_peak_band_mean_pct": 6.357227011239373,
+      "nesting": {
+        "objective_prev_order": 1.4067005642087094,
+        "objective_embedded": 1.406663777447752,
+        "objective_warm_start": 1.19632315248176,
+        "multistart_minus_warm": -0.002001609741372201,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "GHM",
+      "sampling": "A_uniform_1_1500_wide_box",
+      "order": 6,
+      "n_params": 19,
+      "objective": 0.96220643706139,
+      "objective_rms_rel_pct": 4.81103218530695,
+      "starts": {
+        "n": 30,
+        "best": 0.96220643706139,
+        "median": 1.3948675062581377,
+        "worst": 1.5121555681446468,
+        "n_within_1pct_of_best": 2,
+        "status_counts": {
+          "0": 6,
+          "2": 24
+        },
+        "best_status": 2,
+        "best_nfev": 114,
+        "best_optimality": 0.00024814978725727356,
+        "best_jacobian_condition_free": 3038.235601697907
+      },
+      "pole_box_extra_decades": 1.0,
+      "active_bounds": [
+        "alpha_6@upper",
+        "zeta_1@upper",
+        "zeta_2@lower",
+        "zeta_3@lower",
+        "zeta_4@upper",
+        "zeta_6@lower"
+      ],
+      "parameters": {
+        "G_inf_Pa": 108709.51768166809,
+        "alpha": [
+          0.5484543111263255,
+          0.4572673627314763,
+          14.493000259159647,
+          31.290530817968243,
+          87.84024017593175,
+          999.9999999999989
+        ],
+        "what_hz": [
+          0.9935129106796516,
+          8.465092882596434,
+          51.627722137475445,
+          523.6992507208798,
+          1647.775859716206,
+          5737.81245647134
+        ],
+        "zeta": [
+          0.01000000000000001,
+          0.010000000000000177,
+          0.9499999999999998,
+          0.9499999999999994,
+          0.7630346114866138,
+          0.01000002568452687
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 62.53042694613372,
+        "re_mean": 3.588269359521454,
+        "im_max": 48.49524338237903,
+        "im_mean": 3.486057936872352,
+        "f_at_re_max_hz": 16.06532663316583,
+        "f_at_im_max_hz": 16.06532663316583
+      },
+      "comparison_band_errors": {
+        "re_max": 94.94751183030448,
+        "re_mean": 7.213130242185014,
+        "im_max": 81.82763370129682,
+        "im_mean": 7.913764023705568,
+        "f_at_re_max_hz": 7.4874371859296485,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 53.24048849362888,
+      "frf_peak_band_mean_pct": 5.142007967584568,
+      "nesting": {
+        "objective_prev_order": 1.1943215427403877,
+        "objective_embedded": 1.194307977349655,
+        "objective_warm_start": 0.9622064404434116,
+        "multistart_minus_warm": -3.382021662723389e-09,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "ADF",
+      "sampling": "A_uniform_1_1500_wide_box",
+      "order": 1,
+      "n_params": 3,
+      "objective": 3.9890607091471173,
+      "objective_rms_rel_pct": 19.945303545735587,
+      "starts": {
+        "n": 30,
+        "best": 3.9890607091471173,
+        "median": 3.9890607102098374,
+        "worst": 3.9890607129746214,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 12,
+        "best_optimality": 0.0012598863227506738,
+        "best_jacobian_condition_free": 4.804075060669164
+      },
+      "pole_box_extra_decades": 1.0,
+      "active_bounds": [],
+      "parameters": {
+        "G_e_Pa": 1830408.3663184077,
+        "Gv_Pa": [
+          15901766.19489713
+        ],
+        "Omega_hz": [
+          1279.9702589542899
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 59.964766721578734,
+        "re_mean": 24.48130930185217,
+        "im_max": 99.42812294970948,
+        "im_mean": 15.96969849039893,
+        "f_at_re_max_hz": 1500.0,
+        "f_at_im_max_hz": 1.0
+      },
+      "comparison_band_errors": {
+        "re_max": 33.71436797082431,
+        "re_mean": 23.24731562561789,
+        "im_max": 97.14065663538084,
+        "im_mean": 38.71877097378368,
+        "f_at_re_max_hz": 343.29145728643215,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 194.68444695487236,
+      "frf_peak_band_mean_pct": 29.694321094536647
+    },
+    {
+      "method": "ADF",
+      "sampling": "A_uniform_1_1500_wide_box",
+      "order": 2,
+      "n_params": 5,
+      "objective": 2.185563479787669,
+      "objective_rms_rel_pct": 10.927817398938345,
+      "starts": {
+        "n": 30,
+        "best": 2.185563479787669,
+        "median": 2.1855634798006887,
+        "worst": 2.1855634799913726,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 21,
+        "best_optimality": 0.00010859353343419758,
+        "best_jacobian_condition_free": 5.351324796960165
+      },
+      "pole_box_extra_decades": 1.0,
+      "active_bounds": [
+        "Omega_2@upper"
+      ],
+      "parameters": {
+        "G_e_Pa": 1266035.9984578986,
+        "Gv_Pa": [
+          6274288.262834288,
+          253377838.94237953
+        ],
+        "Omega_hz": [
+          329.7864097477289,
+          44999.99999999994
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 21.027743693471457,
+        "re_mean": 5.970299378965985,
+        "im_max": 98.86505266506545,
+        "im_mean": 12.350203702284011,
+        "f_at_re_max_hz": 23.597989949748744,
+        "f_at_im_max_hz": 1.0
+      },
+      "comparison_band_errors": {
+        "re_max": 21.121827315179647,
+        "re_mean": 7.613796014699297,
+        "im_max": 94.32622939398337,
+        "im_mean": 15.312457296637847,
+        "f_at_re_max_hz": 27.38693467336683,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 71.38660499649097,
+      "frf_peak_band_mean_pct": 8.664552721029134,
+      "nesting": {
+        "objective_prev_order": 3.9890607091471173,
+        "objective_embedded": 3.989060709826381,
+        "objective_warm_start": 2.1855634798180814,
+        "multistart_minus_warm": -3.041256135816184e-11,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "ADF",
+      "sampling": "A_uniform_1_1500_wide_box",
+      "order": 3,
+      "n_params": 7,
+      "objective": 1.9219568472404298,
+      "objective_rms_rel_pct": 9.609784236202149,
+      "starts": {
+        "n": 30,
+        "best": 1.9219568472404298,
+        "median": 1.921956847240525,
+        "worst": 2.1855634797986165,
+        "n_within_1pct_of_best": 26,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 23,
+        "best_optimality": 1.5690937582291191e-07,
+        "best_jacobian_condition_free": 14.256647788286179
+      },
+      "pole_box_extra_decades": 1.0,
+      "active_bounds": [
+        "G_e@lower",
+        "Omega_3@upper"
+      ],
+      "parameters": {
+        "G_e_Pa": 100.00000001907661,
+        "Gv_Pa": [
+          1847314.8547022738,
+          5997471.667979724,
+          245038503.1802448
+        ],
+        "Omega_hz": [
+          19.23702040337472,
+          402.7857109873522,
+          44999.99999999994
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 99.67033258688015,
+        "re_mean": 5.98031924871585,
+        "im_max": 94.6554587254195,
+        "im_mean": 11.071229537777194,
+        "f_at_re_max_hz": 1.0,
+        "f_at_im_max_hz": 1.0
+      },
+      "comparison_band_errors": {
+        "re_max": 92.40025350459233,
+        "re_mean": 5.122690968669349,
+        "im_max": 74.61687126694926,
+        "im_mean": 12.84108182099651,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 43.823876671819626,
+      "frf_peak_band_mean_pct": 6.856067007274885,
+      "nesting": {
+        "objective_prev_order": 2.185563479787669,
+        "objective_embedded": 2.1855642865527796,
+        "objective_warm_start": 2.185563479804771,
+        "multistart_minus_warm": -0.26360663256434136,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "ADF",
+      "sampling": "A_uniform_1_1500_wide_box",
+      "order": 4,
+      "n_params": 9,
+      "objective": 1.9148884346825172,
+      "objective_rms_rel_pct": 9.574442173412587,
+      "starts": {
+        "n": 30,
+        "best": 1.9148884346825172,
+        "median": 1.9215012611854896,
+        "worst": 2.1855634798795793,
+        "n_within_1pct_of_best": 28,
+        "status_counts": {
+          "2": 29,
+          "4": 1
+        },
+        "best_status": 2,
+        "best_nfev": 569,
+        "best_optimality": 6.0529617370937185e-05,
+        "best_jacobian_condition_free": 204324.07080831795
+      },
+      "pole_box_extra_decades": 1.0,
+      "active_bounds": [
+        "Omega_4@upper"
+      ],
+      "parameters": {
+        "G_e_Pa": 409.9125082226484,
+        "Gv_Pa": [
+          322938.13757243915,
+          1577442.0130278482,
+          5958923.84664484,
+          245058269.9357625
+        ],
+        "Omega_hz": [
+          0.6893184307453526,
+          24.43421463767161,
+          406.9827257827338,
+          44999.99999999994
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 85.69326150069311,
+        "re_mean": 6.036357359224323,
+        "im_max": 89.16219685529275,
+        "im_mean": 11.234256534261995,
+        "f_at_re_max_hz": 1.0,
+        "f_at_im_max_hz": 1.0
+      },
+      "comparison_band_errors": {
+        "re_max": 75.40633698817086,
+        "re_mean": 5.326367162195243,
+        "im_max": 79.10446234659351,
+        "im_mean": 13.3803447416293,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 39.00988845713631,
+      "frf_peak_band_mean_pct": 7.174053763417298,
+      "nesting": {
+        "objective_prev_order": 1.9219568472404298,
+        "objective_embedded": 1.9219585720431003,
+        "objective_warm_start": 1.9148714954805883,
+        "multistart_minus_warm": 1.693920192891163e-05,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "ADF",
+      "sampling": "A_uniform_1_1500_wide_box",
+      "order": 5,
+      "n_params": 11,
+      "objective": 1.9148857648100845,
+      "objective_rms_rel_pct": 9.574428824050422,
+      "starts": {
+        "n": 30,
+        "best": 1.9148857648100845,
+        "median": 1.921502114328999,
+        "worst": 1.9219953682863962,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 541,
+        "best_optimality": 7.684016536498919e-05,
+        "best_jacobian_condition_free": 2055966893.7122872
+      },
+      "pole_box_extra_decades": 1.0,
+      "active_bounds": [
+        "Omega_5@upper"
+      ],
+      "parameters": {
+        "G_e_Pa": 360.9279561177285,
+        "Gv_Pa": [
+          149278.77230513425,
+          173741.98130106824,
+          1577413.5864747183,
+          5958920.453874613,
+          245058223.9400169
+        ],
+        "Omega_hz": [
+          0.6893046480227926,
+          0.6901209037624635,
+          24.434878761058894,
+          406.9832835616076,
+          44999.99999999994
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 85.69842878075245,
+        "re_mean": 6.036385264183275,
+        "im_max": 89.15903271410002,
+        "im_mean": 11.23424330989154,
+        "f_at_re_max_hz": 1.0,
+        "f_at_im_max_hz": 1.0
+      },
+      "comparison_band_errors": {
+        "re_max": 75.40502630068657,
+        "re_mean": 5.32636796028627,
+        "im_max": 79.10337339187173,
+        "im_mean": 13.380351865710836,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 39.00785527187206,
+      "frf_peak_band_mean_pct": 7.174042602023566,
+      "nesting": {
+        "objective_prev_order": 1.9148884346825172,
+        "objective_embedded": 1.9148893036534433,
+        "objective_warm_start": 1.9148715140450092,
+        "multistart_minus_warm": 1.4250765075329852e-05,
+        "objective_monotone": true
+      }
+    },
+    {
+      "method": "ADF",
+      "sampling": "A_uniform_1_1500_wide_box",
+      "order": 6,
+      "n_params": 13,
+      "objective": 1.914885820629773,
+      "objective_rms_rel_pct": 9.574429103148866,
+      "starts": {
+        "n": 30,
+        "best": 1.914885820629773,
+        "median": 1.9215025608237037,
+        "worst": 1.9219793549440376,
+        "n_within_1pct_of_best": 30,
+        "status_counts": {
+          "2": 30
+        },
+        "best_status": 2,
+        "best_nfev": 464,
+        "best_optimality": 4.8764502395841396e-05,
+        "best_jacobian_condition_free": 2001768275.7184527
+      },
+      "pole_box_extra_decades": 1.0,
+      "active_bounds": [
+        "Omega_6@upper"
+      ],
+      "parameters": {
+        "G_e_Pa": 362.08137806720976,
+        "Gv_Pa": [
+          125525.0349369797,
+          44171.41375055717,
+          153306.64048724648,
+          1577427.5942843463,
+          5958921.933224264,
+          245058255.13699946
+        ],
+        "Omega_hz": [
+          0.6893048194513709,
+          0.689375634231569,
+          0.6895301072187339,
+          24.434555393266503,
+          406.9829815605157,
+          44999.99999999994
+        ]
+      },
+      "fit_grid_errors": {
+        "re_max": 85.69487100794517,
+        "re_mean": 6.036367526142585,
+        "im_max": 89.1604995736078,
+        "im_mean": 11.234251642398698,
+        "f_at_re_max_hz": 1.0,
+        "f_at_im_max_hz": 1.0
+      },
+      "comparison_band_errors": {
+        "re_max": 75.40557243340594,
+        "re_mean": 5.32636995414364,
+        "im_max": 79.10408501614202,
+        "im_mean": 13.380354293976644,
+        "f_at_re_max_hz": 5.0,
+        "f_at_im_max_hz": 5.0
+      },
+      "frf_peak_band_max_pct": 39.00897458101691,
+      "frf_peak_band_mean_pct": 7.174052944393985,
+      "nesting": {
+        "objective_prev_order": 1.9148857648100845,
+        "objective_embedded": 1.9148866338099118,
+        "objective_warm_start": 1.9148861850449446,
+        "multistart_minus_warm": -3.6441517159424563e-07,
+        "objective_monotone": false
+      }
+    }
+  ]
+}

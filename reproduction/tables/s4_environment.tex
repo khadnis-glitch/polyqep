@@ -1,0 +1,9 @@
+Processor & Apple M5 Max (Mac17,6), 18 physical cores \\
+Memory & 128\,GB \\
+Operating system & macOS 26.6.2 (arm64) \\
+Python & 3.9.6 \\
+NumPy & 2.0.2, BLAS/LAPACK: accelerate \\
+SciPy & 1.13.1, BLAS/LAPACK: openblas 0.3.27 \\
+Threads & one; \texttt{OPENBLAS\_NUM\_THREADS=1, VECLIB\_MAXIMUM\_THREADS=1, OMP\_NUM\_THREADS=1, MKL\_NUM\_THREADS=1} \\
+Clock & \texttt{time.perf\_counter} \\
+Statistic & median of 10 online sweeps after 1 warm-up sweep; 5 repeats of the offline stages; 3 repeats of the segment QEP solves \\

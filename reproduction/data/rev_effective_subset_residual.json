@@ -1,0 +1,143 @@
+{
+  "environment": {
+    "processor": "Apple M5 Max",
+    "machine_model": "Mac17,6",
+    "cores_physical": "18",
+    "memory_gb": 128.0,
+    "os": "macOS 26.6.2 (Darwin 25.6.0, arm64)",
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "numpy_blas_lapack": {
+      "blas": {
+        "name": "accelerate",
+        "version": "unknown"
+      },
+      "lapack": {
+        "name": "accelerate",
+        "version": "unknown"
+      }
+    },
+    "scipy_blas_lapack": {
+      "blas": {
+        "name": "openblas",
+        "version": "0.3.27"
+      },
+      "lapack": {
+        "name": "openblas",
+        "version": "0.3.27"
+      }
+    },
+    "thread_env": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "version": "0.3.27",
+        "num_threads": 1
+      }
+    ],
+    "timestamp": "2026-10-13 17:55:08 +0900"
+  },
+  "n_free_dof": 471,
+  "n_freq": 200,
+  "band_hz": [
+    5.0,
+    500.0
+  ],
+  "reference": "full-order solve with fitted segment matrices",
+  "effective_counts": [
+    1,
+    119,
+    5,
+    12,
+    34
+  ],
+  "n_effective_conj_all": 342,
+  "variants": {
+    "complete": {
+      "peak_band_max_pct": 0.0002759363370471805,
+      "peak_band_mean_pct": 7.335332392509303e-05,
+      "peak_band_median_pct": 3.204120618554416e-05,
+      "all_max_pct": 0.0004213137273324203,
+      "all_mean_pct": 0.0001403731980008921,
+      "n_peak_band": 134
+    },
+    "effective_only": {
+      "peak_band_max_pct": 107.96153221142954,
+      "peak_band_mean_pct": 45.57522535035957,
+      "peak_band_median_pct": 30.00973272308424,
+      "all_max_pct": 158.00475004463465,
+      "all_mean_pct": 53.74171659651728,
+      "n_peak_band": 134
+    },
+    "effective_conj": {
+      "peak_band_max_pct": 100.81442327059324,
+      "peak_band_mean_pct": 41.37091987062066,
+      "peak_band_median_pct": 29.81610389614208,
+      "all_max_pct": 136.38310079096684,
+      "all_mean_pct": 48.964025049891426,
+      "n_peak_band": 134
+    },
+    "effective_conj_all": {
+      "peak_band_max_pct": 37.85252226174221,
+      "peak_band_mean_pct": 10.437089160225973,
+      "peak_band_median_pct": 9.074462297086523,
+      "all_max_pct": 49.031072634061026,
+      "all_mean_pct": 15.517991951882477,
+      "n_peak_band": 134
+    }
+  },
+  "effective_conj_all_by_segment": [
+    {
+      "band_hz": [
+        1.0,
+        50.0
+      ],
+      "n_peak_band": 19,
+      "peak_band_max_pct": 9.594091021855347,
+      "peak_band_mean_pct": 4.570633775625871
+    },
+    {
+      "band_hz": [
+        50.0,
+        150.0
+      ],
+      "n_peak_band": 30,
+      "peak_band_max_pct": 37.85252226174221,
+      "peak_band_mean_pct": 15.634707235962503
+    },
+    {
+      "band_hz": [
+        150.0,
+        349.99999999999994
+      ],
+      "n_peak_band": 64,
+      "peak_band_max_pct": 19.91447216539903,
+      "peak_band_mean_pct": 8.641969724446751
+    },
+    {
+      "band_hz": [
+        349.99999999999994,
+        699.9999999999999
+      ],
+      "n_peak_band": 21,
+      "peak_band_max_pct": 15.856466023461627,
+      "peak_band_mean_pct": 13.790506013805786
+    },
+    {
+      "band_hz": [
+        699.9999999999999,
+        1500.0
+      ],
+      "n_peak_band": 0,
+      "peak_band_max_pct": null,
+      "peak_band_mean_pct": null
+    }
+  ]
+}

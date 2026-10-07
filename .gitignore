@@ -7,3 +7,7 @@ dist/
 .DS_Store
 examples/*.png
 examples/*.pdf
+
+# reproduction tree: regenerated caches and figure pickles
+reproduction/data/cache/
+reproduction/figures/_pkl/

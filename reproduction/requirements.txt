@@ -1,0 +1,6 @@
+# Environment used for the results shipped in data/ (see README.md).
+# The polyqep package itself is installed from the repository root: pip install -e .
+numpy==2.0.2
+scipy==1.13.1
+matplotlib==3.9.4
+threadpoolctl>=3.5

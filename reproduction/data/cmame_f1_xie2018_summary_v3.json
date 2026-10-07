@@ -1,0 +1,221 @@
+{
+  "benchmark": {
+    "mesh": "Amichi 2010 §5.1, 8×8, simply_supported_w (471 free DOF)",
+    "freq_range_hz": [
+      5.0,
+      500.0
+    ],
+    "n_freq": 496,
+    "n_segments": 5,
+    "m_per_seg_baseline": 20
+  },
+  "shared_offline_costs_ms": {
+    "g_fit_and_segment_assemble": 8.266667000000005,
+    "qep_per_segment_solve": 16741.444874999997,
+    "effective_eigenvalue_counts": [
+      1,
+      119,
+      5,
+      12,
+      34
+    ]
+  },
+  "methods": {
+    "D_dense": {
+      "label": "Direct dense LU (baseline)",
+      "rom_dim_m": 471,
+      "online_G_evaluation": "raw G(jω)",
+      "modal_info_available": "yes (full)",
+      "t_build_s": 0.0,
+      "t_solve_s": 3.6486315840000003,
+      "t_total_s": 3.6486315840000003,
+      "per_freq_ms": 7.35611206451613,
+      "speedup_solve_only": 1.0,
+      "speedup_total_wall": 1.0
+    },
+    "D_sparse": {
+      "label": "Direct sparse LU",
+      "rom_dim_m": 471,
+      "online_G_evaluation": "raw G(jω)",
+      "modal_info_available": "yes (full)",
+      "t_build_s": 0.0,
+      "t_solve_s": 1.1273836670000001,
+      "t_total_s": 1.1273836670000001,
+      "per_freq_ms": 2.2729509415322586,
+      "speedup_solve_only": 3.236370803303468,
+      "speedup_total_wall": 3.236370803303468,
+      "error": {
+        "max_pct": 1.7003459454414136e-10,
+        "mean_pct": 1.1414100155271563e-11,
+        "p95_pct": 3.055757945765245e-11,
+        "p99_pct": 6.705742736408673e-11
+      }
+    },
+    "PW": {
+      "label": "PolyQEP + per-segment SOAR (polynomial G online)",
+      "rom_dim_m": 100,
+      "online_G_evaluation": "polynomial fit",
+      "modal_info_available": "yes",
+      "t_build_s": 16.888389584000002,
+      "t_solve_s": 0.007259208000000683,
+      "t_total_s": 16.895648792000003,
+      "per_freq_ms": 0.014635500000001378,
+      "speedup_solve_only": 502.6211652840994,
+      "speedup_total_wall": 0.21595096044655043,
+      "error": {
+        "max_pct": 5.344733064273269,
+        "mean_pct": 1.4095028336213022,
+        "p95_pct": 4.3619155211699425,
+        "p99_pct": 5.031667542174034
+      },
+      "m_per_seg": 20,
+      "n_segments": 5
+    },
+    "PW-R": {
+      "label": "PW-Refined: SOAR basis + raw G online [NEW]",
+      "rom_dim_m": 100,
+      "online_G_evaluation": "raw G(jω)",
+      "modal_info_available": "yes (from QEP offline)",
+      "t_build_s": 16.885567917,
+      "t_solve_s": 0.010551457999998348,
+      "t_total_s": 16.896119374999998,
+      "per_freq_ms": 0.021273100806448283,
+      "speedup_solve_only": 345.79406789095606,
+      "speedup_total_wall": 0.21594494587902974,
+      "error": {
+        "max_pct": 0.023398133928502898,
+        "mean_pct": 0.003930609791644804,
+        "p95_pct": 0.013926529312420964,
+        "p99_pct": 0.020631698836229447
+      },
+      "m_per_seg": 20,
+      "n_segments": 5,
+      "m_reduced_per_segment": [
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    "PW-RH": {
+      "label": "PW-Refined Hybrid: SOAR + modal eigenvec augment [NEW]",
+      "rom_dim_m": 100,
+      "online_G_evaluation": "raw G(jω)",
+      "modal_info_available": "yes (basis-embedded)",
+      "t_build_s": 16.889637333,
+      "t_solve_s": 0.009447208000000984,
+      "t_total_s": 16.899084541,
+      "per_freq_ms": 0.019046790322582628,
+      "speedup_solve_only": 386.21268675354884,
+      "speedup_total_wall": 0.21590705550633887,
+      "error": {
+        "max_pct": 0.018508446909554922,
+        "mean_pct": 0.004508592724154631,
+        "p95_pct": 0.017966981702219026,
+        "p99_pct": 0.018478570961899577
+      },
+      "m_soar_per_seg": 15,
+      "n_modal_augment": 5,
+      "n_segments": 5,
+      "m_reduced_per_segment": [
+        20,
+        20,
+        20,
+        20,
+        20
+      ]
+    },
+    "PW-RG": {
+      "label": "PW-Refined Global: cross-segment union-SVD [NEW]",
+      "rom_dim_m": 81,
+      "online_G_evaluation": "raw G(jω)",
+      "modal_info_available": "yes (basis-embedded, global)",
+      "t_build_s": 16.898827834,
+      "t_solve_s": 0.04221579199999681,
+      "t_total_s": 16.941043625999995,
+      "per_freq_ms": 0.0851124838709613,
+      "speedup_solve_only": 86.42812111638878,
+      "speedup_total_wall": 0.2153723031797357,
+      "error": {
+        "max_pct": 2.453878593079445e-10,
+        "mean_pct": 1.3759740745732907e-11,
+        "p95_pct": 4.427749168821395e-11,
+        "p99_pct": 1.3410445462148929e-10
+      },
+      "m_soar_per_seg": 20,
+      "n_modal_augment": 0,
+      "n_segments": 5,
+      "source_dims_per_segment": [
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      "source_dims_sum": 100
+    },
+    "XS": {
+      "label": "Xie 2018 single-point (Taylor + R2)",
+      "rom_dim_m": 100,
+      "online_G_evaluation": "Taylor + R2",
+      "modal_info_available": "no",
+      "t_build_s": 0.05210587499999875,
+      "t_solve_s": 0.05318150000000088,
+      "t_total_s": 0.10528737499999963,
+      "per_freq_ms": 0.10722076612903404,
+      "speedup_solve_only": 68.60715820350948,
+      "speedup_total_wall": 34.654027455808574,
+      "error": {
+        "max_pct": 7.655458299755003e-05,
+        "mean_pct": 1.64453884489491e-05,
+        "p95_pct": 7.14044374967693e-05,
+        "p99_pct": 7.56991326844624e-05
+      }
+    },
+    "XA": {
+      "label": "Xie 2018 adaptive (Taylor-Krylov, raw G online)",
+      "rom_dim_m": 40,
+      "online_G_evaluation": "raw G(jω)",
+      "modal_info_available": "no",
+      "t_build_s": 0.21036300000000097,
+      "t_solve_s": 0.0,
+      "t_total_s": 0.21036300000000097,
+      "per_freq_ms": 0.4241189516129052,
+      "speedup_solve_only": 17.3444549849545,
+      "speedup_total_wall": 17.3444549849545,
+      "error": {
+        "max_pct": 3.3043064831564124e-05,
+        "mean_pct": 8.394519787635767e-06,
+        "p95_pct": 3.111159371295298e-05,
+        "p99_pct": 3.2960830435300653e-05
+      },
+      "n_expansion_points": 2
+    }
+  },
+  "reframe_summary": {
+    "claim": "XA 가 v2에서 PW 대비 4000배 정확도로 나온 진짜 원인은 xie2018_rom._adaptive_frf_from_reduced 에서 online evaluation 시 원본 G(jω) 를 직접 사용하기 때문임. 이는 Xie 2018 의 model order reduction (Taylor 절단)이 아니라 단순한 Krylov subspace projection 임.",
+    "fair_metric_axes": [
+      "Accuracy (err_max/mean vs Direct dense)",
+      "ROM dim m (segment-summed)",
+      "Per-freq online cost [ms]",
+      "Modal information availability (yes/partial/no)"
+    ],
+    "new_methods_pw_r_family": {
+      "PW-R": "Piecewise SOAR basis (polynomial G로 build) + online은 raw G(jω). Q^H K_base Q, Q^H K_shear Q, Q^H M Q reduced operator pieces 사전 계산. modal-info 보존.",
+      "PW-RH": "PW-R + per-segment effective eigenvectors augmented via thin SVD orthogonalization. Total dim ≈ m_soar + n_modal.",
+      "PW-RG": "Cross-segment union-SVD of per-segment hybrid bases → 단일 광대역 basis Q_global. Online segment dispatch 불필요. Xie XA 의 union-SVD 기법을 source basis에 SOAR+modal hybrid 를 결합해 적용한 변형."
+    },
+    "pw_r_vs_pw_ratio": 228.42561208535,
+    "pw_r_vs_xa_ratio": 708.1102811671398,
+    "pw_rh_vs_xa_ratio": 560.1310593887428,
+    "pw_rg_vs_xa_ratio": 7.426304447205506e-06,
+    "goal_achieved": true
+  },
+  "xa_diagnostic": {
+    "source": "src/methods/xie2018_rom.py::_adaptive_frf_from_reduced",
+    "line_range": "527-558",
+    "key_line": "G_val = complex(G_func(s))   # raw G(jω) used in online operator",
+    "implication": "XA 는 Taylor 다항식을 SOAR basis 생성에만 사용. 실제 reduced operator 는 Q^H[K_e + G_raw(jω) K_v - ω² M]Q 로 raw G 사용 → fit-residual floor 부재."
+  }
+}

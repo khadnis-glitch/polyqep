@@ -1,0 +1,584 @@
+{
+  "environment": {
+    "processor": "Apple M5 Max",
+    "machine_model": "Mac17,6",
+    "cores_physical": "18",
+    "memory_gb": 128.0,
+    "os": "Darwin 26.6.2 (arm64)",
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "numpy_blas_lapack": {
+      "blas": {
+        "name": "accelerate",
+        "version": "unknown"
+      },
+      "lapack": {
+        "name": "accelerate",
+        "version": "unknown"
+      }
+    },
+    "scipy_blas_lapack": {
+      "blas": {
+        "name": "openblas",
+        "version": "0.3.27"
+      },
+      "lapack": {
+        "name": "openblas",
+        "version": "0.3.27"
+      }
+    },
+    "thread_env": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "version": "0.3.27",
+        "num_threads": 1
+      }
+    ],
+    "timestamp": "2026-10-04 23:51:09 +0900"
+  },
+  "data_band_hz": [
+    75.0,
+    639.0
+  ],
+  "n_data": 142,
+  "frf_grid_hz": [
+    75.0,
+    500.0,
+    200
+  ],
+  "n_starts": 30,
+  "seed": 20260509,
+  "rows": [
+    {
+      "method": "PolyQEP",
+      "setting": "uniform partition",
+      "order": 1,
+      "n_free_params": 6,
+      "fit": {
+        "re_max": 15.751602211514601,
+        "re_mean": 2.3863699049464424,
+        "im_max": 1.6245941018020238,
+        "im_mean": 0.6009126398606182
+      },
+      "frf": {
+        "peak_band_max_pct": 3.6095354605511285,
+        "peak_band_mean_pct": 1.4159561495251247,
+        "all_max_pct": 3.6095354605511285,
+        "all_mean_pct": 1.4159561495251247
+      }
+    },
+    {
+      "method": "PolyQEP",
+      "setting": "uniform partition",
+      "order": 2,
+      "n_free_params": 8,
+      "fit": {
+        "re_max": 3.538405708465278,
+        "re_mean": 0.893969348404711,
+        "im_max": 3.123218578570299,
+        "im_mean": 0.5557136135552845
+      },
+      "frf": {
+        "peak_band_max_pct": 1.2027078136063578,
+        "peak_band_mean_pct": 0.6767065286580316,
+        "all_max_pct": 1.2027078136063578,
+        "all_mean_pct": 0.6767065286580316
+      }
+    },
+    {
+      "method": "PolyQEP",
+      "setting": "uniform partition",
+      "order": 3,
+      "n_free_params": 10,
+      "fit": {
+        "re_max": 3.4116946686813505,
+        "re_mean": 0.21780077964937722,
+        "im_max": 3.6953935150579085,
+        "im_mean": 0.5888854469734491
+      },
+      "frf": {
+        "peak_band_max_pct": 1.312903724837138,
+        "peak_band_mean_pct": 0.43288318918453617,
+        "all_max_pct": 1.312903724837138,
+        "all_mean_pct": 0.43288318918453617
+      }
+    },
+    {
+      "method": "PolyQEP",
+      "setting": "uniform partition",
+      "order": 4,
+      "n_free_params": 12,
+      "fit": {
+        "re_max": 4.248703534164436,
+        "re_mean": 0.3531056776808638,
+        "im_max": 1.0036060870444932,
+        "im_mean": 0.2927000705286658
+      },
+      "frf": {
+        "peak_band_max_pct": 1.310452293443983,
+        "peak_band_mean_pct": 0.3401902554692221,
+        "all_max_pct": 1.310452293443983,
+        "all_mean_pct": 0.3401902554692221
+      }
+    },
+    {
+      "method": "PolyQEP",
+      "setting": "uniform partition",
+      "order": 5,
+      "n_free_params": 14,
+      "fit": {
+        "re_max": 3.20734766480159,
+        "re_mean": 0.27139625270297013,
+        "im_max": 0.8174978638760421,
+        "im_mean": 0.10278913111201138
+      },
+      "frf": {
+        "peak_band_max_pct": 1.0982536752959575,
+        "peak_band_mean_pct": 0.18637480370077678,
+        "all_max_pct": 1.0982536752959575,
+        "all_mean_pct": 0.18637480370077678
+      }
+    },
+    {
+      "method": "PolyQEP",
+      "setting": "uniform partition",
+      "order": 6,
+      "n_free_params": 16,
+      "fit": {
+        "re_max": 2.1190941083988406,
+        "re_mean": 0.2010475377464733,
+        "im_max": 1.1815752152388435,
+        "im_mean": 0.1530131207053747
+      },
+      "frf": {
+        "peak_band_max_pct": 0.8638313315670431,
+        "peak_band_mean_pct": 0.16328732013802685,
+        "all_max_pct": 0.8638313315670431,
+        "all_mean_pct": 0.16328732013802685
+      }
+    },
+    {
+      "method": "PolyQEP",
+      "setting": "log partition",
+      "order": 1,
+      "n_free_params": 6,
+      "fit": {
+        "re_max": 15.751602211514601,
+        "re_mean": 2.3863699049464424,
+        "im_max": 1.6245941018020238,
+        "im_mean": 0.6009126398606182
+      },
+      "frf": {
+        "peak_band_max_pct": 3.6095354605511285,
+        "peak_band_mean_pct": 1.4159561495251247,
+        "all_max_pct": 3.6095354605511285,
+        "all_mean_pct": 1.4159561495251247
+      }
+    },
+    {
+      "method": "PolyQEP",
+      "setting": "log partition",
+      "order": 2,
+      "n_free_params": 8,
+      "fit": {
+        "re_max": 6.527667767074899,
+        "re_mean": 0.6549459878454782,
+        "im_max": 2.953987409993396,
+        "im_mean": 0.624485472509117
+      },
+      "frf": {
+        "peak_band_max_pct": 2.108141593940722,
+        "peak_band_mean_pct": 0.6114505149223544,
+        "all_max_pct": 2.108141593940722,
+        "all_mean_pct": 0.6114505149223544
+      }
+    },
+    {
+      "method": "PolyQEP",
+      "setting": "log partition",
+      "order": 3,
+      "n_free_params": 10,
+      "fit": {
+        "re_max": 3.3035379859653102,
+        "re_mean": 0.45747912924288586,
+        "im_max": 1.0907462312645946,
+        "im_mean": 0.3291564885772593
+      },
+      "frf": {
+        "peak_band_max_pct": 1.4856727099391123,
+        "peak_band_mean_pct": 0.37693693246816906,
+        "all_max_pct": 1.4856727099391123,
+        "all_mean_pct": 0.37693693246816906
+      }
+    },
+    {
+      "method": "PolyQEP",
+      "setting": "log partition",
+      "order": 4,
+      "n_free_params": 12,
+      "fit": {
+        "re_max": 0.5859861098561153,
+        "re_mean": 0.18926802169899215,
+        "im_max": 1.4790844790779514,
+        "im_mean": 0.4664197670083893
+      },
+      "frf": {
+        "peak_band_max_pct": 0.8330498024047978,
+        "peak_band_mean_pct": 0.33973799367015045,
+        "all_max_pct": 0.8330498024047978,
+        "all_mean_pct": 0.33973799367015045
+      }
+    },
+    {
+      "method": "PolyQEP",
+      "setting": "log partition",
+      "order": 5,
+      "n_free_params": 14,
+      "fit": {
+        "re_max": 0.5262045795454833,
+        "re_mean": 0.11777089858743464,
+        "im_max": 0.5910171609554697,
+        "im_mean": 0.21158878060539932
+      },
+      "frf": {
+        "peak_band_max_pct": 0.5365308038518727,
+        "peak_band_mean_pct": 0.1653100103445328,
+        "all_max_pct": 0.5365308038518727,
+        "all_mean_pct": 0.1653100103445328
+      }
+    },
+    {
+      "method": "PolyQEP",
+      "setting": "log partition",
+      "order": 6,
+      "n_free_params": 16,
+      "fit": {
+        "re_max": 0.39036003713689904,
+        "re_mean": 0.095392194296298,
+        "im_max": 0.43225228608127514,
+        "im_mean": 0.12185890024924517
+      },
+      "frf": {
+        "peak_band_max_pct": 0.4578817389992869,
+        "peak_band_mean_pct": 0.10225769669192877,
+        "all_max_pct": 0.4578817389992869,
+        "all_mean_pct": 0.10225769669192877
+      }
+    },
+    {
+      "method": "GHM",
+      "setting": "30-start bounded NLLS",
+      "order": 1,
+      "n_free_params": 4,
+      "objective": 1.1892680776904547,
+      "objective_rms_rel_pct": 7.05700770639247,
+      "fit": {
+        "re_max": 41.99607450488735,
+        "re_mean": 11.739208871299267,
+        "im_max": 22.86636087475021,
+        "im_mean": 4.193258791823191
+      },
+      "frf": {
+        "peak_band_max_pct": 14.012874502368234,
+        "peak_band_mean_pct": 6.528952850632533,
+        "all_max_pct": 14.012874502368234,
+        "all_mean_pct": 6.528952850632533
+      }
+    },
+    {
+      "method": "GHM",
+      "setting": "30-start bounded NLLS",
+      "order": 2,
+      "n_free_params": 7,
+      "objective": 0.5392012202218152,
+      "objective_rms_rel_pct": 3.1995705911749743,
+      "fit": {
+        "re_max": 23.57056467476114,
+        "re_mean": 4.582869798664718,
+        "im_max": 8.15372770682411,
+        "im_mean": 2.9177599798332725
+      },
+      "frf": {
+        "peak_band_max_pct": 6.395310927123762,
+        "peak_band_mean_pct": 3.3464620583890996,
+        "all_max_pct": 6.395310927123762,
+        "all_mean_pct": 3.3464620583890996
+      }
+    },
+    {
+      "method": "GHM",
+      "setting": "30-start bounded NLLS",
+      "order": 3,
+      "n_free_params": 10,
+      "objective": 0.46405919204478197,
+      "objective_rms_rel_pct": 2.753684687175031,
+      "fit": {
+        "re_max": 20.85677970749552,
+        "re_mean": 3.4113350334397157,
+        "im_max": 8.278852038884423,
+        "im_mean": 2.67231350683278
+      },
+      "frf": {
+        "peak_band_max_pct": 6.791230104796241,
+        "peak_band_mean_pct": 2.9285118385643263,
+        "all_max_pct": 6.791230104796241,
+        "all_mean_pct": 2.9285118385643263
+      }
+    },
+    {
+      "method": "GHM",
+      "setting": "30-start bounded NLLS",
+      "order": 4,
+      "n_free_params": 13,
+      "objective": 0.436413974290704,
+      "objective_rms_rel_pct": 2.5896405003384566,
+      "fit": {
+        "re_max": 19.556148376358927,
+        "re_mean": 3.095662401684693,
+        "im_max": 8.239150748173078,
+        "im_mean": 2.467616173294261
+      },
+      "frf": {
+        "peak_band_max_pct": 6.987040537033875,
+        "peak_band_mean_pct": 2.8305381034728168,
+        "all_max_pct": 6.987040537033875,
+        "all_mean_pct": 2.8305381034728168
+      }
+    },
+    {
+      "method": "GHM",
+      "setting": "30-start bounded NLLS",
+      "order": 5,
+      "n_free_params": 16,
+      "objective": 0.413446202459253,
+      "objective_rms_rel_pct": 2.4533518486427193,
+      "fit": {
+        "re_max": 15.970596182860817,
+        "re_mean": 3.1285859160864256,
+        "im_max": 9.89026587461956,
+        "im_mean": 2.4748956167804175
+      },
+      "frf": {
+        "peak_band_max_pct": 6.771967583760051,
+        "peak_band_mean_pct": 2.69147865188446,
+        "all_max_pct": 6.771967583760051,
+        "all_mean_pct": 2.69147865188446
+      }
+    },
+    {
+      "method": "GHM",
+      "setting": "30-start bounded NLLS",
+      "order": 6,
+      "n_free_params": 19,
+      "objective": 0.3960885319653243,
+      "objective_rms_rel_pct": 2.350353023786883,
+      "fit": {
+        "re_max": 12.354020279706502,
+        "re_mean": 2.933995033276458,
+        "im_max": 12.076474135863165,
+        "im_mean": 2.5352028767756165
+      },
+      "frf": {
+        "peak_band_max_pct": 5.249904561908562,
+        "peak_band_mean_pct": 2.6289233575046094,
+        "all_max_pct": 5.249904561908562,
+        "all_mean_pct": 2.6289233575046094
+      }
+    },
+    {
+      "method": "ADF",
+      "setting": "30-start bounded NLLS",
+      "order": 1,
+      "n_free_params": 3,
+      "objective": 1.0811698382917252,
+      "objective_rms_rel_pct": 6.415562667385169,
+      "fit": {
+        "re_max": 39.21659965466467,
+        "re_mean": 10.704159806049768,
+        "im_max": 20.16106528102038,
+        "im_mean": 4.087437177066564
+      },
+      "frf": {
+        "peak_band_max_pct": 12.434419022145512,
+        "peak_band_mean_pct": 5.811571184006538,
+        "all_max_pct": 12.434419022145512,
+        "all_mean_pct": 5.811571184006538
+      }
+    },
+    {
+      "method": "ADF",
+      "setting": "30-start bounded NLLS",
+      "order": 2,
+      "n_free_params": 5,
+      "objective": 0.6106464118052575,
+      "objective_rms_rel_pct": 3.62351980586185,
+      "fit": {
+        "re_max": 26.628355024465826,
+        "re_mean": 4.8781280514363585,
+        "im_max": 6.673346312700419,
+        "im_mean": 3.4669010251323624
+      },
+      "frf": {
+        "peak_band_max_pct": 7.788265502759035,
+        "peak_band_mean_pct": 3.620752097889784,
+        "all_max_pct": 7.788265502759035,
+        "all_mean_pct": 3.620752097889784
+      }
+    },
+    {
+      "method": "ADF",
+      "setting": "30-start bounded NLLS",
+      "order": 3,
+      "n_free_params": 7,
+      "objective": 0.6106464117770788,
+      "objective_rms_rel_pct": 3.6235198056946403,
+      "fit": {
+        "re_max": 26.62839432088863,
+        "re_mean": 4.878108412437222,
+        "im_max": 6.673382158376041,
+        "im_mean": 3.466910754558462
+      },
+      "frf": {
+        "peak_band_max_pct": 7.788263648663336,
+        "peak_band_mean_pct": 3.6207537654535624,
+        "all_max_pct": 7.788263648663336,
+        "all_mean_pct": 3.6207537654535624
+      }
+    },
+    {
+      "method": "ADF",
+      "setting": "30-start bounded NLLS",
+      "order": 4,
+      "n_free_params": 9,
+      "objective": 0.6106464118038779,
+      "objective_rms_rel_pct": 3.6235198058536637,
+      "fit": {
+        "re_max": 26.628432482719305,
+        "re_mean": 4.878070045469359,
+        "im_max": 6.673459080591846,
+        "im_mean": 3.4669361168806097
+      },
+      "frf": {
+        "peak_band_max_pct": 7.788270702719415,
+        "peak_band_mean_pct": 3.6207529286457416,
+        "all_max_pct": 7.788270702719415,
+        "all_mean_pct": 3.6207529286457416
+      }
+    },
+    {
+      "method": "ADF",
+      "setting": "30-start bounded NLLS",
+      "order": 5,
+      "n_free_params": 11,
+      "objective": 0.6106464128351123,
+      "objective_rms_rel_pct": 3.6235198119729146,
+      "fit": {
+        "re_max": 26.62837151092677,
+        "re_mean": 4.878114768047617,
+        "im_max": 6.673366943651864,
+        "im_mean": 3.466908431148708
+      },
+      "frf": {
+        "peak_band_max_pct": 7.788258991390815,
+        "peak_band_mean_pct": 3.6207545754327466,
+        "all_max_pct": 7.788258991390815,
+        "all_mean_pct": 3.6207545754327466
+      }
+    },
+    {
+      "method": "ADF",
+      "setting": "30-start bounded NLLS",
+      "order": 6,
+      "n_free_params": 13,
+      "objective": 0.6106464131861251,
+      "objective_rms_rel_pct": 3.6235198140557925,
+      "fit": {
+        "re_max": 26.62851809761183,
+        "re_mean": 4.87805946803486,
+        "im_max": 6.673494453415121,
+        "im_mean": 3.466935160670736
+      },
+      "frf": {
+        "peak_band_max_pct": 7.7882927188540965,
+        "peak_band_mean_pct": 3.620748149110004,
+        "all_max_pct": 7.7882927188540965,
+        "all_mean_pct": 3.620748149110004
+      }
+    },
+    {
+      "method": "Prony floor",
+      "setting": "NNLS, 73 poles over +-4 decades",
+      "order": 4,
+      "n_free_params": null,
+      "objective_rms_rel_pct": 3.643789300373316,
+      "fit": {
+        "re_max": 26.661070931549336,
+        "re_mean": 4.921309767520503,
+        "im_max": 6.6009733965725115,
+        "im_mean": 3.473644471560532
+      },
+      "frf": {
+        "peak_band_max_pct": 7.821472624390621,
+        "peak_band_mean_pct": 3.639967206044771,
+        "all_max_pct": 7.821472624390621,
+        "all_mean_pct": 3.639967206044771
+      }
+    },
+    {
+      "method": "PW-R",
+      "setting": "uniform partition, 3 segments",
+      "order": 3,
+      "m_online": 20,
+      "frf": {
+        "peak_band_max_pct": 0.001092092246734008,
+        "peak_band_mean_pct": 0.00015142636767621518,
+        "all_max_pct": 0.001092092246734008,
+        "all_mean_pct": 0.00015142636767621518
+      }
+    },
+    {
+      "method": "PW-RG",
+      "setting": "uniform partition, 3 segments",
+      "order": 3,
+      "m_online": 54,
+      "frf": {
+        "peak_band_max_pct": 4.3664904817423553e-11,
+        "peak_band_mean_pct": 5.717416931924551e-12,
+        "all_max_pct": 4.3664904817423553e-11,
+        "all_mean_pct": 5.717416931924551e-12
+      }
+    },
+    {
+      "method": "PW-R",
+      "setting": "uniform partition, 5 segments",
+      "order": 5,
+      "m_online": 20,
+      "frf": {
+        "peak_band_max_pct": 0.0002346585964517591,
+        "peak_band_mean_pct": 2.6535979389590213e-05,
+        "all_max_pct": 0.0002346585964517591,
+        "all_mean_pct": 2.6535979389590213e-05
+      }
+    },
+    {
+      "method": "PW-RG",
+      "setting": "uniform partition, 5 segments",
+      "order": 5,
+      "m_online": 73,
+      "frf": {
+        "peak_band_max_pct": 4.130750696833011e-11,
+        "peak_band_mean_pct": 5.824911782880618e-12,
+        "all_max_pct": 4.130750696833011e-11,
+        "all_mean_pct": 5.824911782880618e-12
+      }
+    }
+  ]
+}

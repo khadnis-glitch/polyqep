@@ -1,0 +1,213 @@
+{
+  "environment": {
+    "processor": "Apple M5 Max",
+    "machine_model": "Mac17,6",
+    "cores_physical": "18",
+    "memory_gb": 128.0,
+    "os": "Darwin 26.6.2 (arm64)",
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "numpy_blas_lapack": {
+      "blas": {
+        "name": "accelerate",
+        "version": "unknown"
+      },
+      "lapack": {
+        "name": "accelerate",
+        "version": "unknown"
+      }
+    },
+    "scipy_blas_lapack": {
+      "blas": {
+        "name": "openblas",
+        "version": "0.3.27"
+      },
+      "lapack": {
+        "name": "openblas",
+        "version": "0.3.27"
+      }
+    },
+    "thread_env": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "version": "0.3.27",
+        "num_threads": 1
+      }
+    ],
+    "timestamp": "2026-10-05 00:33:09 +0900"
+  },
+  "n_free_dof": 471,
+  "freq_grid_hz": [
+    5.0,
+    500.0,
+    200
+  ],
+  "fit_samples_hz": [
+    1.0,
+    1500.0,
+    200
+  ],
+  "n_starts": 30,
+  "seed": 20260509,
+  "timing_protocol": {
+    "statistic": "median",
+    "augmented_repeats": 3,
+    "online_repeats": 10
+  },
+  "rows": {
+    "Direct": {
+      "size": 471,
+      "size_kind": "full order",
+      "per_freq_ms": 2.6108043750000016,
+      "offline_ms": 0.0
+    },
+    "GHM N=3": {
+      "size": 1569,
+      "size_kind": "augmented system",
+      "n_fit_params": 10,
+      "fit": {
+        "re_max": 58.398716671340466,
+        "re_mean": 8.770584822731633,
+        "im_max": 97.62541348102418,
+        "im_mean": 5.003785404526823
+      },
+      "per_freq_ms": 61.252048125,
+      "offline_ms": 622.4086249999993,
+      "offline_fit_ms": 595.6962499999996,
+      "offline_assembly_ms": 26.71237499999979,
+      "frf": {
+        "max_pct": 34.414631014986654,
+        "mean_pct": 7.448689376372313
+      }
+    },
+    "GHM N=5": {
+      "size": 2301,
+      "size_kind": "augmented system",
+      "n_fit_params": 16,
+      "fit": {
+        "re_max": 80.78939805215134,
+        "re_mean": 4.26867468966951,
+        "im_max": 64.2063234265333,
+        "im_mean": 4.189509846984167
+      },
+      "per_freq_ms": 169.88455562500002,
+      "offline_ms": 3739.670791999998,
+      "offline_fit_ms": 3709.2182920000027,
+      "offline_assembly_ms": 30.452499999995553,
+      "frf": {
+        "max_pct": 46.7167667971158,
+        "mean_pct": 5.484623746762062
+      }
+    },
+    "ADF N=2": {
+      "size": 1674,
+      "size_kind": "augmented system",
+      "n_fit_params": 5,
+      "fit": {
+        "re_max": 32.75314064658366,
+        "re_mean": 8.457028550641553,
+        "im_max": 98.78304772043349,
+        "im_mean": 14.448880305494969
+      },
+      "per_freq_ms": 68.89585541500011,
+      "offline_ms": 105.28679099999749,
+      "offline_fit_ms": 73.93995800001107,
+      "offline_assembly_ms": 31.346832999986418,
+      "frf": {
+        "max_pct": 63.71216808953866,
+        "mean_pct": 10.18609975403795
+      }
+    },
+    "ADF N=5": {
+      "size": 2772,
+      "size_kind": "augmented system",
+      "n_fit_params": 11,
+      "fit": {
+        "re_max": 90.13239976732554,
+        "re_mean": 8.727909721949214,
+        "im_max": 91.28404683753246,
+        "im_mean": 13.678235247516001
+      },
+      "per_freq_ms": 229.69363708499998,
+      "offline_ms": 4379.578291999991,
+      "offline_fit_ms": 4347.219249999995,
+      "offline_assembly_ms": 32.35904199999595,
+      "frf": {
+        "max_pct": 43.41243073800246,
+        "mean_pct": 9.2653648674006
+      }
+    },
+    "PolyQEP modal expansion": {
+      "size": 699,
+      "size_kind": "poles per segment (2n eigenvalues before clustering)",
+      "poles_per_segment": [
+        695,
+        698,
+        698,
+        699,
+        698
+      ],
+      "effective_counts": [
+        1,
+        119,
+        5,
+        12,
+        34
+      ],
+      "n_fit_params": 14,
+      "n_stored_coefficients": 30,
+      "fit": {
+        "re_max": 7.378154574761087,
+        "re_mean": 1.0755000350362716,
+        "im_max": 6.635940096173338,
+        "im_mean": 0.9073321065868558,
+        "evaluated_on": "the 200 fit samples, 1-1500 Hz"
+      },
+      "per_freq_ms": 0.004056667499980904,
+      "offline_ms": 17716.93349899999,
+      "offline_fit_ms": 5.934000000024753,
+      "offline_qep_ms": 17083.880916,
+      "offline_weights_ms": 627.1185829999695,
+      "frf": {
+        "max_pct": 5.22390810588233,
+        "mean_pct": 1.4762087430298207
+      },
+      "frf_fitted_full_order": {
+        "max_pct": 5.223937363710205,
+        "mean_pct": 1.4763200353709558
+      },
+      "modal_vs_fitted_full_order": {
+        "max_pct": 0.011072503174690862,
+        "mean_pct": 0.0007997850649329914
+      }
+    },
+    "PW-R": {
+      "size": 20,
+      "size_kind": "online basis per segment",
+      "per_freq_ms": 0.021255627499954244,
+      "offline_ms": 142.47375000002194,
+      "frf": {
+        "max_pct": 0.021984854788171426,
+        "mean_pct": 0.0045110691630463745
+      }
+    },
+    "PW-RG": {
+      "size": 82,
+      "size_kind": "online basis",
+      "per_freq_ms": 0.08324698000009789,
+      "offline_ms": 149.5355410000343,
+      "frf": {
+        "max_pct": 1.1146963402641109e-10,
+        "mean_pct": 1.2987131340057973e-11
+      }
+    }
+  }
+}

@@ -10,10 +10,9 @@ frequency-dependent viscoelastic damping, together with the **PW-R** and
 This repository accompanies the paper:
 
 > S.-H. Bae, S. Baek, T. Kim, I. Song,
-> *PolyQEP: A Piecewise-Continuous Modulus Framework and Reduced-Order Models
-> for Efficient Frequency-Response Analysis of Structures with
-> Frequency-Dependent Viscoelastic Damping*, submitted to
-> the Journal of Sound and Vibration.
+> *PolyQEP: Piecewise-quadratic moduli and segmentwise quadratic
+> eigenproblems for fast frequency response of viscoelastically damped
+> structures* (revised manuscript, under review).
 
 ## What it does
 
@@ -92,10 +91,13 @@ Y = pw_refined_global_response(omegas, rom, G_of_s, idx_obs)
 
 ## Data and reproduction
 
-This repository contains the implementation code for the PolyQEP framework
-and the PW-R / PW-RG reduced-order models. The remaining materials of the
-paper, including the reproduction scripts and validation data, are available
-from the corresponding author upon reasonable request.
+The `reproduction/` directory regenerates every table and figure of the
+paper and of its Supplementary Material. It contains the comparison
+baselines (GHM, ADF, the Krylov reductions of Xie et al. 2018, the corner
+mount, the Won et al. 2013 beam), the benchmark scripts, the result files
+the paper reports, and the generated figures. See
+[reproduction/README.md](reproduction/README.md) for the environment, the
+run order, and the mapping from scripts to tables and figures.
 
 ## Citation
 

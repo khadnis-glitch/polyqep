@@ -1,0 +1,136 @@
+{
+  "test_setup": {
+    "synthetic_G_model": "2-relaxation Maxwell + glassy plateau",
+    "G_inf_Pa": 10000000.0,
+    "G_glass_Pa": 2000000000.0,
+    "delta_G_1_Pa": 995000000.0,
+    "delta_G_2_Pa": 995000000.0,
+    "tau_1_s": 0.001,
+    "tau_2_s": 0.1,
+    "tau1_peak_omega_rad_s": 1000.0,
+    "tau1_peak_f_hz": 159.15494309189532,
+    "analysis_range_hz": [
+      5.0,
+      500.0
+    ],
+    "n_freq": 496,
+    "mesh": "Amichi 8×8 simply_supported_w",
+    "n_dof_free": 471
+  },
+  "methods": {
+    "Direct": {
+      "label": "Per-frequency dense LU (synthetic G)",
+      "t_solve_s": 3.7133997499999998,
+      "n_dof": 471
+    },
+    "PW": {
+      "label": "Piecewise SOAR (polynomial G online)",
+      "m_total": 100,
+      "n_segments": 5,
+      "t_build_s": 16.236828457999994,
+      "t_solve_s": 0.0069442920000000186,
+      "g_fit": {
+        "fit_err_re_max": 143.3044442766059,
+        "fit_err_re_mean": 0.7995048127480123,
+        "fit_err_im_max": 33.916847558691146,
+        "fit_err_im_mean": 1.364039539480952
+      },
+      "error": {
+        "max_pct": 2.9606523768214053,
+        "mean_pct": 0.08655820543390863,
+        "p95_pct": 0.28644986006022155,
+        "p99_pct": 1.0351925703414988
+      },
+      "online_G_evaluation": "polynomial fit",
+      "modal_info": "yes"
+    },
+    "PW-RG": {
+      "label": "PW-Refined Global (raw G online)",
+      "m_global": 77,
+      "source_dims_per_segment": [
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      "t_build_s": 0.1450350829999998,
+      "t_solve_s": 0.03345725000000144,
+      "error": {
+        "max_pct": 1.4839419546573436e-09,
+        "mean_pct": 1.3181705963125792e-11,
+        "p95_pct": 3.6528633663423364e-11,
+        "p99_pct": 9.108727493125886e-11
+      },
+      "online_G_evaluation": "raw G(jω)",
+      "modal_info": "yes (basis-embedded)"
+    }
+  },
+  "ghm_adf_methods": [
+    {
+      "method": "GHM_N1",
+      "n_aug": 837,
+      "n_internal": 366,
+      "t_fit": 0.1246440419999999,
+      "t_build": 0.023964041999999353,
+      "t_solve": 18.440620834,
+      "fit_re_max": 233.8026622817497,
+      "fit_re_mean": 3.668959002806886,
+      "fit_im_max": 98.85583206433549,
+      "fit_im_mean": 46.484404857905574,
+      "err_max_pct": 25.680914463559386,
+      "err_mean_pct": 1.1509754128318874
+    },
+    {
+      "method": "GHM_N2",
+      "n_aug": 1203,
+      "n_internal": 366,
+      "t_fit": 0.37712762499999997,
+      "t_build": 0.023712875000001077,
+      "t_solve": 52.08923433299999,
+      "fit_re_max": 25.9889082526214,
+      "fit_re_mean": 2.6851876585965857,
+      "fit_im_max": 82.06980063089978,
+      "fit_im_mean": 43.13430915680042,
+      "err_max_pct": 22.273110568573415,
+      "err_mean_pct": 0.9807896074917338
+    },
+    {
+      "method": "ADF_N1",
+      "n_aug": 1308,
+      "n_internal": 366,
+      "t_fit": 0.03553254100000913,
+      "t_build": 0.029356250000006412,
+      "t_solve": 64.4756695,
+      "fit_re_max": 196.38104052112956,
+      "fit_re_mean": 1.4672553610496548,
+      "fit_im_max": 98.17016482894698,
+      "fit_im_mean": 5.814637680790023,
+      "err_max_pct": 8.381379287187926,
+      "err_mean_pct": 0.22723280824805608
+    },
+    {
+      "method": "ADF_N2",
+      "n_aug": 1674,
+      "n_internal": 366,
+      "t_fit": 0.13567679199999816,
+      "t_build": 0.03055633300002114,
+      "t_solve": 135.62480025000002,
+      "fit_re_max": 7.209939452505289e-14,
+      "fit_re_mean": 2.979206384544224e-14,
+      "fit_im_max": 7.51672828074638e-14,
+      "fit_im_mean": 2.1787611217309018e-14,
+      "err_max_pct": 0.0009011776419638856,
+      "err_mean_pct": 6.248590764534939e-06
+    }
+  ],
+  "interpretation": {
+    "claim": "Sharp-resonance synthetic G (2-relaxation Maxwell) 에서 GHM N=2 와 ADF N=2 는 모듈러스 자체와 동일 차수 → fit residual ~0. 이 조건에서 PolyQEP framework 가 어떤 성능을 보이는지 검증.",
+    "expected_outcomes": {
+      "GHM_N=2": "fit residual ~0, FRF err 매우 작음 (자기 모델 표현)",
+      "ADF_N=2": "fit residual ~0, FRF err 매우 작음",
+      "PW": "piecewise-quadratic fit 이 sharp peak 부근에서 oscillation",
+      "PW-RG": "raw G online → fit 무관, FRF err 머신 정밀도 부근"
+    }
+  }
+}

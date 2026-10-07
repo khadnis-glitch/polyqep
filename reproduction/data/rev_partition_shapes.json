@@ -1,0 +1,2003 @@
+{
+  "environment": {
+    "processor": "Apple M5 Max",
+    "machine_model": "Mac17,6",
+    "cores_physical": "18",
+    "memory_gb": 128.0,
+    "os": "macOS 26.6.2 (Darwin 25.6.0, arm64)",
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "numpy_blas_lapack": {
+      "blas": {
+        "name": "accelerate",
+        "version": "unknown"
+      },
+      "lapack": {
+        "name": "accelerate",
+        "version": "unknown"
+      }
+    },
+    "scipy_blas_lapack": {
+      "blas": {
+        "name": "openblas",
+        "version": "0.3.27"
+      },
+      "lapack": {
+        "name": "openblas",
+        "version": "0.3.27"
+      }
+    },
+    "thread_env": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "version": "0.3.27",
+        "num_threads": 1
+      }
+    ],
+    "timestamp": "2026-10-11 10:15:32 +0900"
+  },
+  "m_per_segment": 20,
+  "svd_truncation": 1e-10,
+  "peak_hz": 159.15494309189532,
+  "shapes": {
+    "representative": {
+      "fit_band_hz": [
+        1.0,
+        1500.0
+      ],
+      "reported_band_hz": [
+        5.0,
+        500.0
+      ],
+      "n_freq": 496,
+      "n_fit_samples": 2000,
+      "rows": [
+        {
+          "group": "baseline",
+          "label": "50/150/350/700 Hz",
+          "n_segments": 5,
+          "edges_hz": [
+            1.0,
+            50.0,
+            150.0,
+            350.0,
+            700.0,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            1,
+            2,
+            8,
+            14,
+            34
+          ],
+          "max_resonances_reported": 14,
+          "fit_eval_band": {
+            "re_max": 7.491620135304868,
+            "re_mean": 1.8140200026639886,
+            "im_max": 6.775376232713379,
+            "im_mean": 1.6171929750620349
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 5.08756000991652,
+            "mean_pct": 1.2839983954492933
+          },
+          "fitted_over_fit_residual": 0.6791001035865367,
+          "frf_pw_r": {
+            "max_pct": 0.017263803576831868,
+            "mean_pct": 0.0032766824459183174
+          },
+          "frf_pw_rg": {
+            "max_pct": 2.0662964607177576e-10,
+            "mean_pct": 8.25588518235972e-12
+          },
+          "m_pw_rg": 82
+        },
+        {
+          "group": "single",
+          "label": "N=1",
+          "n_segments": 1,
+          "edges_hz": [
+            1.0,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            58
+          ],
+          "max_resonances_reported": 58,
+          "fit_eval_band": {
+            "re_max": 14.073973001878661,
+            "re_mean": 6.325958088355851,
+            "im_max": 10.968316598497056,
+            "im_mean": 5.544971909831274
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 10.210047392498454,
+            "mean_pct": 4.150085423919145
+          },
+          "fitted_over_fit_residual": 0.7254559456050945,
+          "frf_pw_r": {
+            "max_pct": 0.3659977076371898,
+            "mean_pct": 0.06995630177581974
+          },
+          "frf_pw_rg": {
+            "max_pct": 0.3659977079029984,
+            "mean_pct": 0.06995630154290583
+          },
+          "m_pw_rg": 20
+        },
+        {
+          "group": "log-uniform",
+          "label": "N=2",
+          "n_segments": 2,
+          "edges_hz": [
+            1.0,
+            38.729833462074176,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            0,
+            58
+          ],
+          "max_resonances_reported": 58,
+          "fit_eval_band": {
+            "re_max": 11.870841096277916,
+            "re_mean": 4.653374992060532,
+            "im_max": 9.152211306888361,
+            "im_mean": 4.129194516148663
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 7.19803475687525,
+            "mean_pct": 3.1917141744393858
+          },
+          "fitted_over_fit_residual": 0.606362657750695,
+          "frf_pw_r": {
+            "max_pct": 1.867140337062954,
+            "mean_pct": 0.11025961087303253
+          },
+          "frf_pw_rg": {
+            "max_pct": 1.3573387774516975e-06,
+            "mean_pct": 1.3376800322059639e-07
+          },
+          "m_pw_rg": 40
+        },
+        {
+          "group": "uniform",
+          "label": "N=2",
+          "n_segments": 2,
+          "edges_hz": [
+            1.0,
+            750.5,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            26,
+            32
+          ],
+          "max_resonances_reported": 26,
+          "fit_eval_band": {
+            "re_max": 13.377928890095802,
+            "re_mean": 6.295227611611257,
+            "im_max": 11.312883698735112,
+            "im_mean": 5.536105181604995
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 10.142513934865761,
+            "mean_pct": 4.114595860542482
+          },
+          "fitted_over_fit_residual": 0.7581527767257499,
+          "frf_pw_r": {
+            "max_pct": 0.044801055506624825,
+            "mean_pct": 0.013950199499850345
+          },
+          "frf_pw_rg": {
+            "max_pct": 0.0001411303551145214,
+            "mean_pct": 3.207573996937773e-05
+          },
+          "m_pw_rg": 40
+        },
+        {
+          "group": "log-uniform",
+          "label": "N=3",
+          "n_segments": 3,
+          "edges_hz": [
+            1.0,
+            11.447142425533322,
+            131.03706971044488,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            0,
+            3,
+            55
+          ],
+          "max_resonances_reported": 55,
+          "fit_eval_band": {
+            "re_max": 8.819885197388071,
+            "re_mean": 3.0811742716202555,
+            "im_max": 7.063598578672916,
+            "im_mean": 3.1718090155408483
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 5.5757447106222315,
+            "mean_pct": 2.46203413896761
+          },
+          "fitted_over_fit_residual": 0.6321788306579589,
+          "frf_pw_r": {
+            "max_pct": 0.16818694902966003,
+            "mean_pct": 0.04826440491497
+          },
+          "frf_pw_rg": {
+            "max_pct": 1.3834095887531454e-10,
+            "mean_pct": 7.771344507194266e-12
+          },
+          "m_pw_rg": 57
+        },
+        {
+          "group": "uniform",
+          "label": "N=3",
+          "n_segments": 3,
+          "edges_hz": [
+            1.0,
+            500.6666666666667,
+            1000.3333333333334,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            15,
+            18,
+            23
+          ],
+          "max_resonances_reported": 15,
+          "fit_eval_band": {
+            "re_max": 9.414976867983532,
+            "re_mean": 5.357861048707436,
+            "im_max": 8.149095530134382,
+            "im_mean": 4.92050913097545
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 8.252894299277992,
+            "mean_pct": 3.6624536790310835
+          },
+          "fitted_over_fit_residual": 0.8765708524832063,
+          "frf_pw_r": {
+            "max_pct": 0.052242483882444034,
+            "mean_pct": 0.01375988904236576
+          },
+          "frf_pw_rg": {
+            "max_pct": 9.301494202092701e-10,
+            "mean_pct": 1.1106041855988763e-10
+          },
+          "m_pw_rg": 56
+        },
+        {
+          "group": "log-uniform",
+          "label": "N=4",
+          "n_segments": 4,
+          "edges_hz": [
+            1.0,
+            6.223329772884783,
+            38.729833462074176,
+            241.02852568339557,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            0,
+            0,
+            6,
+            50
+          ],
+          "max_resonances_reported": 50,
+          "fit_eval_band": {
+            "re_max": 7.810180500522036,
+            "re_mean": 3.606725975195688,
+            "im_max": 7.323553227706148,
+            "im_mean": 3.717255684114452
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 5.390886773462765,
+            "mean_pct": 2.746662672396588
+          },
+          "fitted_over_fit_residual": 0.6902384359878028,
+          "frf_pw_r": {
+            "max_pct": 0.19947378303642468,
+            "mean_pct": 0.052163614270612065
+          },
+          "frf_pw_rg": {
+            "max_pct": 1.335948058496595e-10,
+            "mean_pct": 8.35278800494818e-12
+          },
+          "m_pw_rg": 71
+        },
+        {
+          "group": "uniform",
+          "label": "N=4",
+          "n_segments": 4,
+          "edges_hz": [
+            1.0,
+            375.75,
+            750.5,
+            1125.25,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            13,
+            13,
+            17,
+            16
+          ],
+          "max_resonances_reported": 13,
+          "fit_eval_band": {
+            "re_max": 5.934999967439384,
+            "re_mean": 3.211687193908909,
+            "im_max": 6.090017904102452,
+            "im_mean": 3.0544687403528576
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 6.413822723089034,
+            "mean_pct": 2.2800862301806726
+          },
+          "fitted_over_fit_residual": 1.0531697647010947,
+          "frf_pw_r": {
+            "max_pct": 0.07807323532103252,
+            "mean_pct": 0.006843292040567427
+          },
+          "frf_pw_rg": {
+            "max_pct": 7.084960513238702e-10,
+            "mean_pct": 3.119718982831248e-11
+          },
+          "m_pw_rg": 70
+        },
+        {
+          "group": "log-uniform",
+          "label": "N=5",
+          "n_segments": 5,
+          "edges_hz": [
+            1.0,
+            4.317359883766554,
+            18.639596365956756,
+            80.47384559998254,
+            347.4345526857883,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            0,
+            0,
+            1,
+            10,
+            48
+          ],
+          "max_resonances_reported": 48,
+          "fit_eval_band": {
+            "re_max": 10.62004789149659,
+            "re_mean": 3.731041611077693,
+            "im_max": 9.812629160062713,
+            "im_mean": 3.432352947336809
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 7.087753411275751,
+            "mean_pct": 2.6436080786019605
+          },
+          "fitted_over_fit_residual": 0.6673937334078196,
+          "frf_pw_r": {
+            "max_pct": 0.13105164366844424,
+            "mean_pct": 0.030420143043243156
+          },
+          "frf_pw_rg": {
+            "max_pct": 1.4431810211852831e-10,
+            "mean_pct": 9.447511154225805e-12
+          },
+          "m_pw_rg": 86
+        },
+        {
+          "group": "uniform",
+          "label": "N=5",
+          "n_segments": 5,
+          "edges_hz": [
+            1.0,
+            300.8,
+            600.6,
+            900.4000000000001,
+            1200.2,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            8,
+            12,
+            11,
+            12,
+            13
+          ],
+          "max_resonances_reported": 12,
+          "fit_eval_band": {
+            "re_max": 4.366274589442342,
+            "re_mean": 1.4489281223381165,
+            "im_max": 4.3649599442338785,
+            "im_mean": 1.5419536540771097
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 4.424515768499269,
+            "mean_pct": 1.1485909465639799
+          },
+          "fitted_over_fit_residual": 1.0133388722728878,
+          "frf_pw_r": {
+            "max_pct": 0.014517763485127809,
+            "mean_pct": 0.002764626177854673
+          },
+          "frf_pw_rg": {
+            "max_pct": 9.141302797885866e-10,
+            "mean_pct": 7.343537293218438e-11
+          },
+          "m_pw_rg": 81
+        },
+        {
+          "group": "log-uniform",
+          "label": "N=6",
+          "n_segments": 6,
+          "edges_hz": [
+            1.0,
+            3.3833625914958216,
+            11.447142425533322,
+            38.729833462074176,
+            131.03706971044488,
+            443.3459197575496,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            0,
+            0,
+            0,
+            3,
+            10,
+            43
+          ],
+          "max_resonances_reported": 43,
+          "fit_eval_band": {
+            "re_max": 10.2978772550694,
+            "re_mean": 2.757980784968491,
+            "im_max": 9.195726495645463,
+            "im_mean": 2.3629443335309785
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 6.774392678643186,
+            "mean_pct": 1.8540658079646655
+          },
+          "fitted_over_fit_residual": 0.6578436031861142,
+          "frf_pw_r": {
+            "max_pct": 0.029052037819823427,
+            "mean_pct": 0.006957017027844418
+          },
+          "frf_pw_rg": {
+            "max_pct": 1.1441646262622377e-10,
+            "mean_pct": 9.785718259036007e-12
+          },
+          "m_pw_rg": 97
+        },
+        {
+          "group": "uniform",
+          "label": "N=6",
+          "n_segments": 6,
+          "edges_hz": [
+            1.0,
+            250.83333333333334,
+            500.6666666666667,
+            750.5,
+            1000.3333333333334,
+            1250.1666666666667,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            8,
+            9,
+            9,
+            9,
+            11,
+            12
+          ],
+          "max_resonances_reported": 9,
+          "fit_eval_band": {
+            "re_max": 4.783462928899683,
+            "re_mean": 0.8509708394033457,
+            "im_max": 3.9226098633299693,
+            "im_mean": 0.8448816813331479
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 3.164983711164197,
+            "mean_pct": 0.6711736197301529
+          },
+          "fitted_over_fit_residual": 0.6616511423225817,
+          "frf_pw_r": {
+            "max_pct": 0.0017480375195456526,
+            "mean_pct": 0.00039646828043198577
+          },
+          "frf_pw_rg": {
+            "max_pct": 5.735824735557495e-10,
+            "mean_pct": 2.860029667758611e-11
+          },
+          "m_pw_rg": 87
+        },
+        {
+          "group": "log-uniform",
+          "label": "N=8",
+          "n_segments": 8,
+          "edges_hz": [
+            1.0,
+            2.4946602519952057,
+            6.223329772884783,
+            15.525093419474022,
+            38.729833462074176,
+            96.61777610423032,
+            241.02852568339557,
+            601.2842826193726,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            5,
+            14,
+            37
+          ],
+          "max_resonances_reported": 14,
+          "fit_eval_band": {
+            "re_max": 4.768007482195604,
+            "re_mean": 1.0390602406445941,
+            "im_max": 4.4888800455268125,
+            "im_mean": 1.0100074429549624
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 3.3950382836580633,
+            "mean_pct": 0.8038753943521028
+          },
+          "fitted_over_fit_residual": 0.7120455025155903,
+          "frf_pw_r": {
+            "max_pct": 0.004790391910959156,
+            "mean_pct": 0.00123251290425469
+          },
+          "frf_pw_rg": {
+            "max_pct": 1.539673000672361e-10,
+            "mean_pct": 8.024901505156637e-12
+          },
+          "m_pw_rg": 120
+        },
+        {
+          "group": "uniform",
+          "label": "N=8",
+          "n_segments": 8,
+          "edges_hz": [
+            1.0,
+            188.375,
+            375.75,
+            563.125,
+            750.5,
+            937.875,
+            1125.25,
+            1312.625,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            4,
+            7,
+            6,
+            7,
+            9,
+            9,
+            10,
+            6
+          ],
+          "max_resonances_reported": 7,
+          "fit_eval_band": {
+            "re_max": 6.444933049884413,
+            "re_mean": 1.3973316853661433,
+            "im_max": 5.772008489692731,
+            "im_mean": 1.2475042776968361
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 4.396173216150522,
+            "mean_pct": 1.0264338711990526
+          },
+          "fitted_over_fit_residual": 0.682113092893861,
+          "frf_pw_r": {
+            "max_pct": 0.01660741717401961,
+            "mean_pct": 0.002045454948429159
+          },
+          "frf_pw_rg": {
+            "max_pct": 4.213823023690629e-10,
+            "mean_pct": 1.7160733539439234e-11
+          },
+          "m_pw_rg": 100
+        },
+        {
+          "group": "log-uniform",
+          "label": "N=10",
+          "n_segments": 10,
+          "edges_hz": [
+            1.0,
+            2.0778257587599964,
+            4.317359883766554,
+            8.97072157632721,
+            18.639596365956756,
+            38.729833462074176,
+            80.47384559998254,
+            167.21062929411846,
+            347.4345526857883,
+            721.9084630537881,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            3,
+            6,
+            14,
+            34
+          ],
+          "max_resonances_reported": 14,
+          "fit_eval_band": {
+            "re_max": 7.154026470689627,
+            "re_mean": 1.7053872258116054,
+            "im_max": 6.510939205422201,
+            "im_mean": 1.5211351241220212
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 4.88959202864652,
+            "mean_pct": 1.2538210503886325
+          },
+          "fitted_over_fit_residual": 0.6834741314809781,
+          "frf_pw_r": {
+            "max_pct": 0.01585624318636663,
+            "mean_pct": 0.0031817255104094407
+          },
+          "frf_pw_rg": {
+            "max_pct": 1.4955263773786272e-10,
+            "mean_pct": 9.344643078859088e-12
+          },
+          "m_pw_rg": 135
+        },
+        {
+          "group": "uniform",
+          "label": "N=10",
+          "n_segments": 10,
+          "edges_hz": [
+            1.0,
+            150.9,
+            300.8,
+            450.70000000000005,
+            600.6,
+            750.5,
+            900.4000000000001,
+            1050.3,
+            1200.2,
+            1350.1000000000001,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            3,
+            5,
+            5,
+            7,
+            4,
+            7,
+            2,
+            10,
+            9,
+            4
+          ],
+          "max_resonances_reported": 7,
+          "fit_eval_band": {
+            "re_max": 4.5964027466547694,
+            "re_mean": 0.9059291263248922,
+            "im_max": 4.4369041501273925,
+            "im_mean": 0.9228238235137282
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 3.3252218304988688,
+            "mean_pct": 0.6915437042880176
+          },
+          "fitted_over_fit_residual": 0.723440049486295,
+          "frf_pw_r": {
+            "max_pct": 0.0010939618508965848,
+            "mean_pct": 0.0002228835932505864
+          },
+          "frf_pw_rg": {
+            "max_pct": 2.621389394952137e-10,
+            "mean_pct": 1.1574400222989998e-11
+          },
+          "m_pw_rg": 115
+        }
+      ]
+    },
+    "digitized": {
+      "fit_band_hz": [
+        75.0,
+        639.0
+      ],
+      "reported_band_hz": [
+        75.0,
+        500.0
+      ],
+      "n_freq": 200,
+      "n_fit_samples": 142,
+      "rows": [
+        {
+          "group": "single",
+          "label": "N=1",
+          "n_segments": 1,
+          "edges_hz": [
+            75.0,
+            639.0
+          ],
+          "resonances_per_segment": [
+            21
+          ],
+          "max_resonances_reported": 21,
+          "fit_eval_band": {
+            "re_max": 15.751602211514601,
+            "re_mean": 2.8471729283575287,
+            "im_max": 1.610409242276963,
+            "im_mean": 0.7382665056823676
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 3.609535460545082,
+            "mean_pct": 1.4159561495247164
+          },
+          "fitted_over_fit_residual": 0.22915354337138288,
+          "frf_pw_r": {
+            "max_pct": 0.027542076467997403,
+            "mean_pct": 0.005267637445204969
+          },
+          "frf_pw_rg": {
+            "max_pct": 0.02754207630005691,
+            "mean_pct": 0.005267637406544585
+          },
+          "m_pw_rg": 20
+        },
+        {
+          "group": "log-uniform",
+          "label": "N=2",
+          "n_segments": 2,
+          "edges_hz": [
+            75.0,
+            218.91779278989628,
+            639.0
+          ],
+          "resonances_per_segment": [
+            5,
+            18
+          ],
+          "max_resonances_reported": 18,
+          "fit_eval_band": {
+            "re_max": 6.527667767074899,
+            "re_mean": 0.7908638563916071,
+            "im_max": 2.953987409993396,
+            "im_mean": 0.7568172339567397
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 2.1081415939634742,
+            "mean_pct": 0.6114505149228622
+          },
+          "fitted_over_fit_residual": 0.32295479322596554,
+          "frf_pw_r": {
+            "max_pct": 0.0022931052954619567,
+            "mean_pct": 0.0005066697075924707
+          },
+          "frf_pw_rg": {
+            "max_pct": 1.5278069187150846e-09,
+            "mean_pct": 1.4144630166652228e-10
+          },
+          "m_pw_rg": 39
+        },
+        {
+          "group": "uniform",
+          "label": "N=2",
+          "n_segments": 2,
+          "edges_hz": [
+            75.0,
+            357.0,
+            639.0
+          ],
+          "resonances_per_segment": [
+            10,
+            12
+          ],
+          "max_resonances_reported": 12,
+          "fit_eval_band": {
+            "re_max": 3.5126709799241205,
+            "re_mean": 1.0798020644764612,
+            "im_max": 3.123218578570299,
+            "im_mean": 0.6359124011938863
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 1.2027078136026765,
+            "mean_pct": 0.6767065286583076
+          },
+          "fitted_over_fit_residual": 0.34239125169322204,
+          "frf_pw_r": {
+            "max_pct": 0.0017832674332903615,
+            "mean_pct": 0.0005990808888719526
+          },
+          "frf_pw_rg": {
+            "max_pct": 1.248641764234733e-09,
+            "mean_pct": 1.4392336335242068e-10
+          },
+          "m_pw_rg": 38
+        },
+        {
+          "group": "log-uniform",
+          "label": "N=3",
+          "n_segments": 3,
+          "edges_hz": [
+            75.0,
+            153.18202096842847,
+            312.8630873062941,
+            639.0
+          ],
+          "resonances_per_segment": [
+            2,
+            5,
+            12
+          ],
+          "max_resonances_reported": 12,
+          "fit_eval_band": {
+            "re_max": 3.3035379859653102,
+            "re_mean": 0.5597578463961591,
+            "im_max": 1.0907462312645946,
+            "im_mean": 0.3290879114556452
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 1.485672709925383,
+            "mean_pct": 0.37693693246843724
+          },
+          "fitted_over_fit_residual": 0.4497216972340223,
+          "frf_pw_r": {
+            "max_pct": 0.0014113608785747548,
+            "mean_pct": 0.0002140032235713186
+          },
+          "frf_pw_rg": {
+            "max_pct": 4.403475794265374e-11,
+            "mean_pct": 6.7979213358808135e-12
+          },
+          "m_pw_rg": 54
+        },
+        {
+          "group": "uniform",
+          "label": "N=3",
+          "n_segments": 3,
+          "edges_hz": [
+            75.0,
+            263.0,
+            451.0,
+            639.0
+          ],
+          "resonances_per_segment": [
+            7,
+            7,
+            7
+          ],
+          "max_resonances_reported": 7,
+          "fit_eval_band": {
+            "re_max": 3.4116946686813505,
+            "re_mean": 0.26238991979357884,
+            "im_max": 3.6953935150579085,
+            "im_mean": 0.7092994432726732
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 1.3129037248450781,
+            "mean_pct": 0.43288318918468394
+          },
+          "fitted_over_fit_residual": 0.355281168161195,
+          "frf_pw_r": {
+            "max_pct": 0.001092092246734008,
+            "mean_pct": 0.00015142636779883088
+          },
+          "frf_pw_rg": {
+            "max_pct": 4.3664904817423553e-11,
+            "mean_pct": 5.7005951521102555e-12
+          },
+          "m_pw_rg": 54
+        },
+        {
+          "group": "log-uniform",
+          "label": "N=4",
+          "n_segments": 4,
+          "edges_hz": [
+            75.0,
+            128.13599985656734,
+            218.91779278989628,
+            374.01667020701615,
+            639.0
+          ],
+          "resonances_per_segment": [
+            2,
+            3,
+            7,
+            11
+          ],
+          "max_resonances_reported": 11,
+          "fit_eval_band": {
+            "re_max": 0.5844318897333333,
+            "re_mean": 0.2255031170946079,
+            "im_max": 1.4790844790779514,
+            "im_mean": 0.5154036975277687
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 0.8330498024117828,
+            "mean_pct": 0.3397379936702716
+          },
+          "fitted_over_fit_residual": 0.5632198932484904,
+          "frf_pw_r": {
+            "max_pct": 0.0015645740313708638,
+            "mean_pct": 0.00021651684000419786
+          },
+          "frf_pw_rg": {
+            "max_pct": 4.3498883710391124e-11,
+            "mean_pct": 1.0404857406445988e-11
+          },
+          "m_pw_rg": 65
+        },
+        {
+          "group": "uniform",
+          "label": "N=4",
+          "n_segments": 4,
+          "edges_hz": [
+            75.0,
+            216.0,
+            357.0,
+            498.0,
+            639.0
+          ],
+          "resonances_per_segment": [
+            5,
+            5,
+            7,
+            5
+          ],
+          "max_resonances_reported": 7,
+          "fit_eval_band": {
+            "re_max": 4.248703534164436,
+            "re_mean": 0.43243665686847843,
+            "im_max": 0.9764588695567058,
+            "im_mean": 0.36412205676953735
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 1.3104522934353875,
+            "mean_pct": 0.3401902554688255
+          },
+          "fitted_over_fit_residual": 0.3084358046867361,
+          "frf_pw_r": {
+            "max_pct": 0.0006595780931888012,
+            "mean_pct": 8.5890490148348e-05
+          },
+          "frf_pw_rg": {
+            "max_pct": 4.358033110319709e-11,
+            "mean_pct": 5.716850563563654e-12
+          },
+          "m_pw_rg": 67
+        },
+        {
+          "group": "log-uniform",
+          "label": "N=5",
+          "n_segments": 5,
+          "edges_hz": [
+            75.0,
+            115.11957625850093,
+            176.7002245058239,
+            271.2220662652324,
+            416.3062578721143,
+            639.0
+          ],
+          "resonances_per_segment": [
+            2,
+            1,
+            4,
+            7,
+            9
+          ],
+          "max_resonances_reported": 9,
+          "fit_eval_band": {
+            "re_max": 0.5236582384184145,
+            "re_mean": 0.13612843336726826,
+            "im_max": 0.5912098739509234,
+            "im_mean": 0.22536432553585692
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 0.5365308038549758,
+            "mean_pct": 0.16531001034496298
+          },
+          "fitted_over_fit_residual": 0.907513266430177,
+          "frf_pw_r": {
+            "max_pct": 0.0020738365546043025,
+            "mean_pct": 0.00012589009793373632
+          },
+          "frf_pw_rg": {
+            "max_pct": 4.253111961802299e-11,
+            "mean_pct": 6.3054664258526065e-12
+          },
+          "m_pw_rg": 73
+        },
+        {
+          "group": "uniform",
+          "label": "N=5",
+          "n_segments": 5,
+          "edges_hz": [
+            75.0,
+            187.8,
+            300.6,
+            413.4,
+            526.2,
+            639.0
+          ],
+          "resonances_per_segment": [
+            3,
+            4,
+            5,
+            4,
+            5
+          ],
+          "max_resonances_reported": 5,
+          "fit_eval_band": {
+            "re_max": 3.20734766480159,
+            "re_mean": 0.3388365011333862,
+            "im_max": 0.8174978638760421,
+            "im_mean": 0.1170290026151203
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 1.098253675307004,
+            "mean_pct": 0.18637480370119433
+          },
+          "fitted_over_fit_residual": 0.34241803199558757,
+          "frf_pw_r": {
+            "max_pct": 0.0002346585964517591,
+            "mean_pct": 2.6535979525127038e-05
+          },
+          "frf_pw_rg": {
+            "max_pct": 4.130750696833011e-11,
+            "mean_pct": 5.8582592239538254e-12
+          },
+          "m_pw_rg": 73
+        },
+        {
+          "group": "log-uniform",
+          "label": "N=6",
+          "n_segments": 6,
+          "edges_hz": [
+            75.0,
+            107.18512757202907,
+            153.18202096842847,
+            218.91779278989628,
+            312.8630873062941,
+            447.12359900672004,
+            639.0
+          ],
+          "resonances_per_segment": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "max_resonances_reported": 7,
+          "fit_eval_band": {
+            "re_max": 0.3952700881928096,
+            "re_mean": 0.10545484936348043,
+            "im_max": 0.42967336395999284,
+            "im_mean": 0.12957034433585318
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 0.45788173898083717,
+            "mean_pct": 0.10225769669213895
+          },
+          "fitted_over_fit_residual": 1.0656507416723902,
+          "frf_pw_r": {
+            "max_pct": 0.0002041448895919713,
+            "mean_pct": 1.4814521341446809e-05
+          },
+          "frf_pw_rg": {
+            "max_pct": 4.287717866731105e-11,
+            "mean_pct": 6.475858109976327e-12
+          },
+          "m_pw_rg": 79
+        },
+        {
+          "group": "uniform",
+          "label": "N=6",
+          "n_segments": 6,
+          "edges_hz": [
+            75.0,
+            169.0,
+            263.0,
+            357.0,
+            451.0,
+            545.0,
+            639.0
+          ],
+          "resonances_per_segment": [
+            3,
+            3,
+            3,
+            5,
+            2,
+            5
+          ],
+          "max_resonances_reported": 5,
+          "fit_eval_band": {
+            "re_max": 2.1190941083988406,
+            "re_mean": 0.24425536083105848,
+            "im_max": 1.1815752152388435,
+            "im_mean": 0.18070149381082928
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 0.863831331557853,
+            "mean_pct": 0.16328732013846778
+          },
+          "fitted_over_fit_residual": 0.4076417975653533,
+          "frf_pw_r": {
+            "max_pct": 0.00025653969400652214,
+            "mean_pct": 2.3300126518767265e-05
+          },
+          "frf_pw_rg": {
+            "max_pct": 4.251088292531227e-11,
+            "mean_pct": 5.696382107447543e-12
+          },
+          "m_pw_rg": 79
+        }
+      ]
+    },
+    "peaked": {
+      "fit_band_hz": [
+        1.0,
+        1500.0
+      ],
+      "reported_band_hz": [
+        5.0,
+        500.0
+      ],
+      "n_freq": 496,
+      "n_fit_samples": 2000,
+      "rows": [
+        {
+          "group": "single",
+          "label": "N=1",
+          "n_segments": 1,
+          "edges_hz": [
+            1.0,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            39
+          ],
+          "max_resonances_reported": 39,
+          "fit_eval_band": {
+            "re_max": 12.9038280205757,
+            "re_mean": 7.649822002285556,
+            "im_max": 80.45894980448193,
+            "im_mean": 18.652437850129147
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 46.206328442889685,
+            "mean_pct": 1.2298031160620637
+          },
+          "fitted_over_fit_residual": 0.5742845084999578,
+          "frf_pw_r": {
+            "max_pct": 0.7378748846375566,
+            "mean_pct": 0.007680956127484656
+          },
+          "frf_pw_rg": {
+            "max_pct": 0.7378748847899487,
+            "mean_pct": 0.007680956139625059
+          },
+          "m_pw_rg": 20
+        },
+        {
+          "group": "log-uniform",
+          "label": "N=2",
+          "n_segments": 2,
+          "edges_hz": [
+            1.0,
+            38.729833462074176,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            0,
+            39
+          ],
+          "max_resonances_reported": 39,
+          "fit_eval_band": {
+            "re_max": 17.368423378650498,
+            "re_mean": 5.782945346888293,
+            "im_max": 76.48802161023313,
+            "im_mean": 20.00789174507788
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 41.36058155847062,
+            "mean_pct": 1.2661141933882076
+          },
+          "fitted_over_fit_residual": 0.540745866970327,
+          "frf_pw_r": {
+            "max_pct": 0.550415150008301,
+            "mean_pct": 0.007529975793305372
+          },
+          "frf_pw_rg": {
+            "max_pct": 0.003436441390615805,
+            "mean_pct": 6.337147156902715e-05
+          },
+          "m_pw_rg": 40
+        },
+        {
+          "group": "uniform",
+          "label": "N=2",
+          "n_segments": 2,
+          "edges_hz": [
+            1.0,
+            750.5,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            17,
+            22
+          ],
+          "max_resonances_reported": 17,
+          "fit_eval_band": {
+            "re_max": 12.104332353502393,
+            "re_mean": 5.060057472747782,
+            "im_max": 75.86895761598117,
+            "im_mean": 17.531193748185395
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 26.669346452959598,
+            "mean_pct": 1.1734368333550365
+          },
+          "fitted_over_fit_residual": 0.3515185563501392,
+          "frf_pw_r": {
+            "max_pct": 0.1901550251075662,
+            "mean_pct": 0.0030623900301318093
+          },
+          "frf_pw_rg": {
+            "max_pct": 0.0008718932385504809,
+            "mean_pct": 1.216926523752096e-05
+          },
+          "m_pw_rg": 40
+        },
+        {
+          "group": "log-uniform",
+          "label": "N=3",
+          "n_segments": 3,
+          "edges_hz": [
+            1.0,
+            11.447142425533322,
+            131.03706971044488,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            0,
+            3,
+            36
+          ],
+          "max_resonances_reported": 36,
+          "fit_eval_band": {
+            "re_max": 11.978026851026163,
+            "re_mean": 4.942234644735727,
+            "im_max": 17.37299907561885,
+            "im_mean": 5.979427842360714
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 27.963770122850896,
+            "mean_pct": 0.9061138834035489
+          },
+          "fitted_over_fit_residual": 1.6096109831776289,
+          "frf_pw_r": {
+            "max_pct": 0.2610440189219783,
+            "mean_pct": 0.0036155961735189488
+          },
+          "frf_pw_rg": {
+            "max_pct": 3.6893560867337197e-09,
+            "mean_pct": 4.418049871412841e-11
+          },
+          "m_pw_rg": 56
+        },
+        {
+          "group": "uniform",
+          "label": "N=3",
+          "n_segments": 3,
+          "edges_hz": [
+            1.0,
+            500.6666666666667,
+            1000.3333333333334,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            11,
+            13,
+            15
+          ],
+          "max_resonances_reported": 11,
+          "fit_eval_band": {
+            "re_max": 13.959923015242834,
+            "re_mean": 3.565952775497889,
+            "im_max": 73.02213784260012,
+            "im_mean": 14.795910779582375
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 28.581708866906396,
+            "mean_pct": 1.0323628783808414
+          },
+          "fitted_over_fit_residual": 0.3914115597178835,
+          "frf_pw_r": {
+            "max_pct": 0.17030050166755614,
+            "mean_pct": 0.003305776206074743
+          },
+          "frf_pw_rg": {
+            "max_pct": 7.70059921925948e-09,
+            "mean_pct": 4.533126554147108e-11
+          },
+          "m_pw_rg": 56
+        },
+        {
+          "group": "log-uniform",
+          "label": "N=4",
+          "n_segments": 4,
+          "edges_hz": [
+            1.0,
+            6.223329772884783,
+            38.729833462074176,
+            241.02852568339557,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            0,
+            0,
+            4,
+            35
+          ],
+          "max_resonances_reported": 35,
+          "fit_eval_band": {
+            "re_max": 4.812394690281185,
+            "re_mean": 2.358897676312925,
+            "im_max": 25.15615587689508,
+            "im_mean": 7.412622431143026
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 18.50751074675849,
+            "mean_pct": 0.6369877838717791
+          },
+          "fitted_over_fit_residual": 0.7357050432239092,
+          "frf_pw_r": {
+            "max_pct": 0.04475202688399659,
+            "mean_pct": 0.0013256448075094432
+          },
+          "frf_pw_rg": {
+            "max_pct": 3.4726441314573865e-09,
+            "mean_pct": 1.8402687847175002e-11
+          },
+          "m_pw_rg": 68
+        },
+        {
+          "group": "uniform",
+          "label": "N=4",
+          "n_segments": 4,
+          "edges_hz": [
+            1.0,
+            375.75,
+            750.5,
+            1125.25,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            8,
+            9,
+            11,
+            11
+          ],
+          "max_resonances_reported": 9,
+          "fit_eval_band": {
+            "re_max": 14.875088511897872,
+            "re_mean": 2.2854008070394904,
+            "im_max": 72.18716087128199,
+            "im_mean": 10.225718197056507
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 10.996322655292703,
+            "mean_pct": 0.44176345536580885
+          },
+          "fitted_over_fit_residual": 0.15233072644178944,
+          "frf_pw_r": {
+            "max_pct": 0.019206011476516315,
+            "mean_pct": 0.0003635838802850022
+          },
+          "frf_pw_rg": {
+            "max_pct": 3.6482683857315374e-09,
+            "mean_pct": 1.5076907542419653e-11
+          },
+          "m_pw_rg": 70
+        },
+        {
+          "group": "log-uniform",
+          "label": "N=5",
+          "n_segments": 5,
+          "edges_hz": [
+            1.0,
+            4.317359883766554,
+            18.639596365956756,
+            80.47384559998254,
+            347.4345526857883,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            0,
+            0,
+            1,
+            7,
+            31
+          ],
+          "max_resonances_reported": 31,
+          "fit_eval_band": {
+            "re_max": 1.8877454103597993,
+            "re_mean": 0.49642671972248886,
+            "im_max": 16.500564086256237,
+            "im_mean": 7.528787661062544
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 9.945618457374483,
+            "mean_pct": 0.4056625733284194
+          },
+          "fitted_over_fit_residual": 0.6027441489505474,
+          "frf_pw_r": {
+            "max_pct": 0.019474905379708477,
+            "mean_pct": 0.00044510516940123685
+          },
+          "frf_pw_rg": {
+            "max_pct": 3.833373849962803e-09,
+            "mean_pct": 1.738565217703962e-11
+          },
+          "m_pw_rg": 82
+        },
+        {
+          "group": "uniform",
+          "label": "N=5",
+          "n_segments": 5,
+          "edges_hz": [
+            1.0,
+            300.8,
+            600.6,
+            900.4000000000001,
+            1200.2,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            6,
+            7,
+            9,
+            8,
+            9
+          ],
+          "max_resonances_reported": 7,
+          "fit_eval_band": {
+            "re_max": 15.358760492315104,
+            "re_mean": 2.267261674165504,
+            "im_max": 72.23150296926548,
+            "im_mean": 9.734211952360253
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 11.188672749652362,
+            "mean_pct": 0.4132451336723797
+          },
+          "fitted_over_fit_residual": 0.1549001791422386,
+          "frf_pw_r": {
+            "max_pct": 0.017345099356481097,
+            "mean_pct": 0.00036755564165966934
+          },
+          "frf_pw_rg": {
+            "max_pct": 3.7401632170140016e-09,
+            "mean_pct": 1.5634870500674533e-11
+          },
+          "m_pw_rg": 80
+        },
+        {
+          "group": "log-uniform",
+          "label": "N=6",
+          "n_segments": 6,
+          "edges_hz": [
+            1.0,
+            3.3833625914958216,
+            11.447142425533322,
+            38.729833462074176,
+            131.03706971044488,
+            443.3459197575496,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            0,
+            0,
+            0,
+            3,
+            5,
+            31
+          ],
+          "max_resonances_reported": 31,
+          "fit_eval_band": {
+            "re_max": 2.1923764356113105,
+            "re_mean": 0.9745982155999839,
+            "im_max": 6.745122220519439,
+            "im_mean": 3.8235621151382975
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 8.270998917142505,
+            "mean_pct": 0.2933838248122193
+          },
+          "fitted_over_fit_residual": 1.2262192806501226,
+          "frf_pw_r": {
+            "max_pct": 0.013467395536440819,
+            "mean_pct": 0.00021052485969966786
+          },
+          "frf_pw_rg": {
+            "max_pct": 3.5059281137463413e-09,
+            "mean_pct": 1.6053921080784498e-11
+          },
+          "m_pw_rg": 87
+        },
+        {
+          "group": "uniform",
+          "label": "N=6",
+          "n_segments": 6,
+          "edges_hz": [
+            1.0,
+            250.83333333333334,
+            500.6666666666667,
+            750.5,
+            1000.3333333333334,
+            1250.1666666666667,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            4,
+            7,
+            6,
+            7,
+            7,
+            8
+          ],
+          "max_resonances_reported": 7,
+          "fit_eval_band": {
+            "re_max": 15.642984343149552,
+            "re_mean": 2.2711588577579263,
+            "im_max": 72.40429973768912,
+            "im_mean": 11.624414989885665
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 12.875066133969677,
+            "mean_pct": 0.4998914987410822
+          },
+          "fitted_over_fit_residual": 0.1778218445674398,
+          "frf_pw_r": {
+            "max_pct": 0.0019435214261496246,
+            "mean_pct": 7.841956568087745e-05
+          },
+          "frf_pw_rg": {
+            "max_pct": 3.764364023348469e-09,
+            "mean_pct": 1.558291269343701e-11
+          },
+          "m_pw_rg": 84
+        },
+        {
+          "group": "log-uniform",
+          "label": "N=8",
+          "n_segments": 8,
+          "edges_hz": [
+            1.0,
+            2.4946602519952057,
+            6.223329772884783,
+            15.525093419474022,
+            38.729833462074176,
+            96.61777610423032,
+            241.02852568339557,
+            601.2842826193726,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            3,
+            9,
+            26
+          ],
+          "max_resonances_reported": 9,
+          "fit_eval_band": {
+            "re_max": 1.2459278459020626,
+            "re_mean": 0.4113712019409236,
+            "im_max": 2.681638283183876,
+            "im_mean": 1.2140870741818213
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 2.7994876180425696,
+            "mean_pct": 0.10243679647884879
+          },
+          "fitted_over_fit_residual": 1.043946767764209,
+          "frf_pw_r": {
+            "max_pct": 0.0005751403863309973,
+            "mean_pct": 1.887685691252652e-05
+          },
+          "frf_pw_rg": {
+            "max_pct": 3.4926324203981983e-09,
+            "mean_pct": 1.6953539204291947e-11
+          },
+          "m_pw_rg": 109
+        },
+        {
+          "group": "uniform",
+          "label": "N=8",
+          "n_segments": 8,
+          "edges_hz": [
+            1.0,
+            188.375,
+            375.75,
+            563.125,
+            750.5,
+            937.875,
+            1125.25,
+            1312.625,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            3,
+            5,
+            5,
+            4,
+            5,
+            6,
+            5,
+            6
+          ],
+          "max_resonances_reported": 5,
+          "fit_eval_band": {
+            "re_max": 16.022631305960264,
+            "re_mean": 2.32581362849694,
+            "im_max": 71.91982827354289,
+            "im_mean": 12.729078234243678
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 15.413414659996516,
+            "mean_pct": 0.46594241597249575
+          },
+          "fitted_over_fit_residual": 0.2143138412590821,
+          "frf_pw_r": {
+            "max_pct": 0.009636188400663184,
+            "mean_pct": 0.00029270506546427905
+          },
+          "frf_pw_rg": {
+            "max_pct": 3.655997038815517e-09,
+            "mean_pct": 1.528182696257121e-11
+          },
+          "m_pw_rg": 96
+        },
+        {
+          "group": "log-uniform",
+          "label": "N=10",
+          "n_segments": 10,
+          "edges_hz": [
+            1.0,
+            2.0778257587599964,
+            4.317359883766554,
+            8.97072157632721,
+            18.639596365956756,
+            38.729833462074176,
+            80.47384559998254,
+            167.21062929411846,
+            347.4345526857883,
+            721.9084630537881,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            5,
+            9,
+            22
+          ],
+          "max_resonances_reported": 9,
+          "fit_eval_band": {
+            "re_max": 0.4064428497735382,
+            "re_mean": 0.21015835461020899,
+            "im_max": 1.6014835736587147,
+            "im_mean": 0.7024321651994866
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 1.3455781205323005,
+            "mean_pct": 0.05707519450430404
+          },
+          "fitted_over_fit_residual": 0.8402072569862342,
+          "frf_pw_r": {
+            "max_pct": 0.0006400470729655639,
+            "mean_pct": 1.2851787543235169e-05
+          },
+          "frf_pw_rg": {
+            "max_pct": 3.963301441099908e-09,
+            "mean_pct": 1.8948797522646978e-11
+          },
+          "m_pw_rg": 128
+        },
+        {
+          "group": "uniform",
+          "label": "N=10",
+          "n_segments": 10,
+          "edges_hz": [
+            1.0,
+            150.9,
+            300.8,
+            450.70000000000005,
+            600.6,
+            750.5,
+            900.4000000000001,
+            1050.3,
+            1200.2,
+            1350.1000000000001,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            3,
+            3,
+            5,
+            2,
+            4,
+            5,
+            4,
+            4,
+            3,
+            6
+          ],
+          "max_resonances_reported": 5,
+          "fit_eval_band": {
+            "re_max": 16.334636294785845,
+            "re_mean": 2.44302485872168,
+            "im_max": 70.11504793565076,
+            "im_mean": 12.180715305877111
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 14.781976058768182,
+            "mean_pct": 0.5144394115952337
+          },
+          "fitted_over_fit_residual": 0.2108245875027367,
+          "frf_pw_r": {
+            "max_pct": 0.05044323315394121,
+            "mean_pct": 0.0006700241992150312
+          },
+          "frf_pw_rg": {
+            "max_pct": 3.8106199364925035e-09,
+            "mean_pct": 1.5685670580992412e-11
+          },
+          "m_pw_rg": 108
+        },
+        {
+          "group": "peak-centred",
+          "label": "K=1 on the peak decade",
+          "n_segments": 3,
+          "edges_hz": [
+            1.0,
+            50.32921210448703,
+            503.2921210448703,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            0,
+            11,
+            28
+          ],
+          "max_resonances_reported": 11,
+          "fit_eval_band": {
+            "re_max": 17.52768756506414,
+            "re_mean": 2.2798919474648245,
+            "im_max": 65.96663987955029,
+            "im_mean": 20.982531664691678
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 27.08140470217064,
+            "mean_pct": 1.0717784643457908
+          },
+          "fitted_over_fit_residual": 0.4105318195927378,
+          "frf_pw_r": {
+            "max_pct": 0.08330512918606917,
+            "mean_pct": 0.001574328404041095
+          },
+          "frf_pw_rg": {
+            "max_pct": 3.843129355518131e-09,
+            "mean_pct": 2.2315756725798936e-11
+          },
+          "m_pw_rg": 57
+        },
+        {
+          "group": "peak-centred",
+          "label": "K=2 on the peak decade",
+          "n_segments": 4,
+          "edges_hz": [
+            1.0,
+            50.32921210448703,
+            159.15494309189538,
+            503.2921210448703,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            0,
+            3,
+            8,
+            28
+          ],
+          "max_resonances_reported": 8,
+          "fit_eval_band": {
+            "re_max": 17.433466646373315,
+            "re_mean": 2.9107733503046758,
+            "im_max": 46.5922138027558,
+            "im_mean": 5.048976865527922
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 10.569770813981595,
+            "mean_pct": 0.48611909421803884
+          },
+          "fitted_over_fit_residual": 0.22685702076161968,
+          "frf_pw_r": {
+            "max_pct": 0.020000376193768755,
+            "mean_pct": 0.00038344000707402813
+          },
+          "frf_pw_rg": {
+            "max_pct": 4.1741011649538975e-09,
+            "mean_pct": 1.6595471898412042e-11
+          },
+          "m_pw_rg": 67
+        },
+        {
+          "group": "peak-centred",
+          "label": "K=3 on the peak decade",
+          "n_segments": 5,
+          "edges_hz": [
+            1.0,
+            50.32921210448703,
+            108.43100047987942,
+            233.6075089087161,
+            503.2921210448703,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            0,
+            1,
+            3,
+            7,
+            28
+          ],
+          "max_resonances_reported": 7,
+          "fit_eval_band": {
+            "re_max": 17.18448820186637,
+            "re_mean": 1.6414154291914138,
+            "im_max": 42.82488631505128,
+            "im_mean": 4.253889699258502
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 2.616521841641238,
+            "mean_pct": 0.08259663546152304
+          },
+          "fitted_over_fit_residual": 0.06109816199842736,
+          "frf_pw_r": {
+            "max_pct": 0.0002137915070722836,
+            "mean_pct": 7.47832060725145e-06
+          },
+          "frf_pw_rg": {
+            "max_pct": 3.803435726291088e-09,
+            "mean_pct": 1.5586674404137306e-11
+          },
+          "m_pw_rg": 76
+        },
+        {
+          "group": "peak-centred",
+          "label": "K=4 on the peak decade",
+          "n_segments": 6,
+          "edges_hz": [
+            1.0,
+            50.32921210448703,
+            89.49940160889099,
+            159.15494309189538,
+            283.021958306234,
+            503.2921210448703,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            28
+          ],
+          "max_resonances_reported": 5,
+          "fit_eval_band": {
+            "re_max": 17.041701117509476,
+            "re_mean": 1.6002976888143547,
+            "im_max": 40.68014768651519,
+            "im_mean": 4.312906035083608
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 4.893153538903632,
+            "mean_pct": 0.14174977572490222
+          },
+          "fitted_over_fit_residual": 0.1202835736145971,
+          "frf_pw_r": {
+            "max_pct": 0.0021334618275571956,
+            "mean_pct": 3.895996245650801e-05
+          },
+          "frf_pw_rg": {
+            "max_pct": 3.646489208626029e-09,
+            "mean_pct": 1.562279810034696e-11
+          },
+          "m_pw_rg": 85
+        },
+        {
+          "group": "peak-centred",
+          "label": "K=6 on the peak decade",
+          "n_segments": 8,
+          "edges_hz": [
+            1.0,
+            50.32921210448703,
+            73.87318066696186,
+            108.43100047987942,
+            159.15494309189538,
+            233.6075089087161,
+            342.8889304872298,
+            503.2921210448703,
+            1500.0
+          ],
+          "resonances_per_segment": [
+            0,
+            1,
+            0,
+            2,
+            1,
+            4,
+            3,
+            28
+          ],
+          "max_resonances_reported": 4,
+          "fit_eval_band": {
+            "re_max": 17.019179313980175,
+            "re_mean": 1.3634964897085984,
+            "im_max": 37.79343898682356,
+            "im_mean": 3.544567015520183
+          },
+          "frf_fitted_full_order": {
+            "max_pct": 2.4422594688305064,
+            "mean_pct": 0.07467216668211932
+          },
+          "fitted_over_fit_residual": 0.06462125528407152,
+          "frf_pw_r": {
+            "max_pct": 0.0010261852405094004,
+            "mean_pct": 1.493468508329524e-05
+          },
+          "frf_pw_rg": {
+            "max_pct": 4.3248961120488425e-09,
+            "mean_pct": 1.6884542550527293e-11
+          },
+          "m_pw_rg": 100
+        }
+      ]
+    }
+  }
+}

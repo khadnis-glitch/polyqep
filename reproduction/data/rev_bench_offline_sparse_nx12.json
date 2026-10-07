@@ -1,0 +1,81 @@
+{
+  "environment": {
+    "processor": "Apple M5 Max",
+    "machine_model": "Mac17,6",
+    "cores_physical": "18",
+    "memory_gb": 128.0,
+    "os": "Darwin 26.6.2 (arm64)",
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "numpy_blas_lapack": {
+      "blas": {
+        "name": "accelerate",
+        "version": "unknown"
+      },
+      "lapack": {
+        "name": "accelerate",
+        "version": "unknown"
+      }
+    },
+    "scipy_blas_lapack": {
+      "blas": {
+        "name": "openblas",
+        "version": "0.3.27"
+      },
+      "lapack": {
+        "name": "openblas",
+        "version": "0.3.27"
+      }
+    },
+    "thread_env": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "version": "0.3.27",
+        "num_threads": 1
+      }
+    ],
+    "timestamp": "2026-10-05 00:17:38 +0900"
+  },
+  "nx": 12,
+  "n_free_dof": 1039,
+  "n_freq": 200,
+  "offline_repeats": 3,
+  "offline_stage_ms": {
+    "g_fit": 4.320874999999891,
+    "segment_assembly": 1.4405840000000225,
+    "soar_bases": 44.12625000000014,
+    "pw_r_projection": 4.092624999999961,
+    "pw_rg_svd_compression": 11.049250000000121,
+    "pw_rg_projection": 3.4774590000001826
+  },
+  "offline_total_ms": {
+    "PW-R": 53.98033400000002,
+    "PW-RG": 64.41441800000037
+  },
+  "m_per_segment": [
+    20,
+    20,
+    20,
+    20,
+    20
+  ],
+  "m_pw_rg": 87,
+  "error_vs_sparse_direct": {
+    "PW-R": {
+      "max_pct": 0.0532092401185333,
+      "mean_pct": 0.00750839138903535
+    },
+    "PW-RG": {
+      "max_pct": 2.7377889946350955e-10,
+      "mean_pct": 1.8893434326902108e-11
+    }
+  }
+}

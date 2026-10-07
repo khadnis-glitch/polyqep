@@ -1,0 +1,168 @@
+{
+  "environment": {
+    "processor": "Apple M5 Max",
+    "machine_model": "Mac17,6",
+    "cores_physical": "18",
+    "memory_gb": 128.0,
+    "os": "Darwin 26.6.2 (arm64)",
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "numpy_blas_lapack": {
+      "blas": {
+        "name": "accelerate",
+        "version": "unknown"
+      },
+      "lapack": {
+        "name": "accelerate",
+        "version": "unknown"
+      }
+    },
+    "scipy_blas_lapack": {
+      "blas": {
+        "name": "openblas",
+        "version": "0.3.27"
+      },
+      "lapack": {
+        "name": "openblas",
+        "version": "0.3.27"
+      }
+    },
+    "thread_env": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "version": "0.3.27",
+        "num_threads": 1
+      }
+    ],
+    "timestamp": "2026-10-05 00:18:20 +0900"
+  },
+  "affine_residual_element": {
+    "n_dof": 28,
+    "residual_min": 9.959571974810436e-22,
+    "residual_max": 2.8476462765303594e-21,
+    "residuals": [
+      1.8069984689700658e-21,
+      9.959571974810436e-22,
+      2.8476462765303594e-21,
+      2.4673523796758347e-21,
+      2.5981876669284292e-21
+    ]
+  },
+  "affine_residual_8x8": {
+    "n_dof": 567,
+    "residual_min": 3.9039751852121254e-20,
+    "residual_max": 1.1901364468977069e-19,
+    "residuals": [
+      1.1901364468977069e-19,
+      3.9039751852121254e-20,
+      5.967855041287277e-20,
+      1.1848050020337117e-19,
+      9.900349367229048e-20
+    ]
+  },
+  "fit_residuals": {
+    "n_samples": 400,
+    "sampling": "uniform in frequency",
+    "re_max": 7.897123635197632,
+    "re_mean": 1.071222354759595,
+    "im_max": 7.105229092723343,
+    "im_mean": 0.9051009055901765,
+    "re_max_5_500": 7.897123635197632,
+    "im_max_5_500": 7.105229092723343,
+    "re_mean_5_500": 2.074469348135964,
+    "im_mean_5_500": 1.790304853879204,
+    "per_segment": [
+      {
+        "band_hz": [
+          1.0,
+          50.0
+        ],
+        "n_samples": 14,
+        "re_max": 2.8514676564799015,
+        "im_max": 2.7080572602496393
+      },
+      {
+        "band_hz": [
+          50.0,
+          150.0
+        ],
+        "n_samples": 26,
+        "re_max": 3.9603656715260858,
+        "im_max": 3.4384574780356663
+      },
+      {
+        "band_hz": [
+          150.0,
+          350.0
+        ],
+        "n_samples": 53,
+        "re_max": 7.897123635197632,
+        "im_max": 7.105229092723343
+      },
+      {
+        "band_hz": [
+          350.0,
+          700.0
+        ],
+        "n_samples": 94,
+        "re_max": 1.940865710928873,
+        "im_max": 1.672217309962761
+      },
+      {
+        "band_hz": [
+          700.0,
+          1500.0
+        ],
+        "n_samples": 213,
+        "re_max": 1.3626625407870463,
+        "im_max": 1.1091212017584327
+      }
+    ]
+  },
+  "simply_supported": {
+    "n_free_dof": 471,
+    "fitted_vs_raw_direct_200freq": {
+      "peak_band_max_pct": 5.220729018344451,
+      "peak_band_mean_pct": 1.4769498091940716,
+      "all_max_pct": 5.220729018344451,
+      "all_mean_pct": 1.406111726616757
+    },
+    "segment1": {
+      "n_eigenvalues": 942,
+      "n_finite": 942,
+      "residual_filter": 0.001,
+      "n_passing_residual_filter": 893,
+      "n_modes_used": 893,
+      "modal_vs_fitted_direct_max_rel": 2.382423648580213e-08,
+      "modal_vs_fitted_direct_mean_rel": 1.1503341246857529e-08,
+      "modal_sum_time_s": 0.008304687499999908,
+      "modal_sum_includes": "weights and 80-frequency pole sum"
+    }
+  },
+  "free_free": {
+    "n_free_dof": 567,
+    "eigenvalues_per_segment": 1134,
+    "effective_counts": [
+      1,
+      112,
+      11,
+      14,
+      36
+    ],
+    "lowest_effective_mode_hz": 35.27291674662136,
+    "fitted_vs_raw_direct": {
+      "peak_band_max_pct": 2.244383028075004,
+      "peak_band_mean_pct": 0.8016536405462752,
+      "all_max_pct": 6.698086787332196,
+      "all_mean_pct": 1.4577140261764554
+    }
+  }
+}
