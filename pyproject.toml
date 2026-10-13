@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "polyqep"
-version = "0.2.0"
+version = "1.1.0"
 description = "PolyQEP: piecewise-quadratic moduli and segmentwise quadratic eigenproblems for fast frequency response of viscoelastically damped structures, with the PW-R and PW-RG reduced-order models"
 readme = "README.md"
 requires-python = ">=3.9"
